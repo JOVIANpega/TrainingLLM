@@ -1,0 +1,154 @@
+{
+  "project_name": "KANGAROO",
+  "description": "KANGAROO專案邏輯模式參考",
+  "analysis_date": "2025-08-12T00:11:38.702569",
+  "logic_patterns": {
+    "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Test Item Code V2.04_20250310.xlsx": {},
+    "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    }
+  },
+  "flow_structures": {
+    "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Test Item Code V2.04_20250310.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "simple"
+    },
+    "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    }
+  },
+  "control_structures": {},
+  "error_handling_patterns": {}
+}

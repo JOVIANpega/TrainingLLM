@@ -1,0 +1,804 @@
+{
+  "project": "NOKIA360",
+  "sources": [
+    "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\CMD＿TABLE\\Kangaroo_Diag_Command_List_v1.4.xlsx",
+    "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\CMD＿TABLE\\MU310 _COMMAND LIST_0.1.xlsx",
+    "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\CMD＿TABLE\\MU310_Command_Verification_SR.xlsx",
+    "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\CMD＿TABLE\\VAL360_Diag_Command_List_Requirement_20250627.xlsx"
+  ],
+  "commands_catalog": [
+    {
+      "command": "fw_printenv -n mfg (只要不是1下次開機就會是一般模式)",
+      "description": "MFG mode read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "uci -P /var/state get pega.fw.cur_ver",
+      "description": "SW ver",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n hwver",
+      "description": "HW ver",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli at+cgmr",
+      "description": "Modem FW version",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n pega_model",
+      "description": "Model Name read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n sn",
+      "description": "Unit SN read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n mb_sn",
+      "description": "MB SN read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n uuid",
+      "description": "UUID read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "/etc/diag.sh resetBtnStatusGet\n\nOutput:( 1: pressed, 0 released)\n#INFO#1:pressed#END\n#INFO#0:released#END",
+      "description": "Get reset button status",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli at+cpin? (expect:  +CPIN: READY)",
+      "description": "Get sim detect",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli at+ccid",
+      "description": "Get sim iccid (need insert SIM)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli at+cimi",
+      "description": "Get sim imsi (need insert SIM)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli at+gsn",
+      "description": "Modem imei read/write",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n eth0_addr",
+      "description": "MAC address",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n fanless",
+      "description": "w/ or w/o FAN",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "/bin/fan.sh",
+      "description": "Status",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "/bin/fan.sh | grep duty_cycle",
+      "description": "Duty",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "/bin/fan.sh | grep rpm",
+      "description": "Speed (RPM)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n wifi0_addr",
+      "description": "MAC address",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n wifi0_ssid",
+      "description": "SSID (default)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n wifi0_password",
+      "description": "key (default)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "iwconfig wlan0 | grep ESSID | cut -d : -f 2 | tr -d '\"'",
+      "description": "SSID (MFG testing)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "iwlist wlan0 channel | grep Current",
+      "description": "Channel (MFG testing)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "5g  on off status:\natcli at+cfun?",
+      "description": "5G on/off \n",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli 'AT+QTHERMAL=\"thermal_level\"'",
+      "description": "5G module Thermal",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli 'AT+QCFG=\"usbcfg\"'",
+      "description": "Set USB port functions (AT/ADB enabled)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n fr2_only",
+      "description": "FR2 only",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n fr2_band",
+      "description": "FR2 band list",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "fw_printenv -n wifi_disable",
+      "description": "Wi-Fi disable",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "atcli 'AT+QCFG=\"ims\"'",
+      "description": "Disable IMS (CBNG only)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "Diag"
+    },
+    {
+      "command": "uci -P /var/state show pega.board.model",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "uci -P /var/state show pega.fw.cur_ver",
+      "description": null,
+      "reply": null,
+      "example": "pega.fw.cur_ver='V0.0.0.0_1'",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "uci -c /var/etc show cellstatus.sim.status",
+      "description": null,
+      "reply": null,
+      "example": "cellstatus.sim.status='SIM READY'",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "atcli 'AT+GMM' | awk '{if(NR==2){print \"module_sku=\\047\" $1 \"\\047\"}}'",
+      "description": null,
+      "reply": null,
+      "example": "module_sku='RG520N-EB'",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "ethtool eth0 | grep Speed | awk '{print \"ethernet_linkSpeed=\\047\" $2 \"\\047\"}'",
+      "description": null,
+      "reply": null,
+      "example": "ethernet_linkSpeed='1000Mb/s'",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "ping x.x.x.x",
+      "description": null,
+      "reply": null,
+      "example": "PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=176 ms",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "ping -6 xxxx::xxxx:xxxx",
+      "description": null,
+      "reply": null,
+      "example": "PING 2404:6800:4012:8::2004(2404:6800:4012:8::2004) 56 data bytes\n64 bytes from 2404:6800:4012:8::2004: icmp_seq=1 ttl=115 time=33.5 ms",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "echo 255 > /sys/class/leds/signal\\:blue/brightness\necho 0 > /sys/class/leds/signal\\:blue/brightness\necho 255 > /sys/class/leds/signal\\:green/brightness\necho 0 > /sys/class/leds/signal\\:green/brightness\necho 255 > /sys/class/leds/signal\\:red/brightness\necho 0 > /sys/class/leds/signal\\:red/brightness\necho 255 > /sys/class/leds/status\\:red/brightness\necho 0 > /sys/class/leds/status\\:red/brightness\necho 255 > /sys/class/leds/status\\:blue/brightness\necho 0 > /sys/class/leds/status\\:blue/brightness\necho 255 > /sys/class/leds/status\\:green/brightness\necho 0 > /sys/class/leds/status\\:green/brightness",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "systemctl stop pu_resetBtn_monitor.service\ntouch /tmp/MFG\n/usr/sbin/pu_resetBtn_monitor &\n\ncat /tmp/reset_button\n按下Reset button 10 秒後放開",
+      "description": null,
+      "reply": null,
+      "example": "Pressed RESET button over 10 seconds, do factory default action!\ncat /tmp/reset_button    Get 1 or 0",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "rm -f /tmp/MFG\nsystemctl restart pu_resetBtn_monitor.service\n按下Reset button 10 秒後放開",
+      "description": null,
+      "reply": null,
+      "example": "FACTORY RESET",
+      "source_sheet": "「工作表6」的副本"
+    },
+    {
+      "command": "[發送] uci -P /var/state get pega.led.booting_state\nuci -P /var/state get pega.led.booting_state\nBooting\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+cgmm\natcli at+cgmm\nat+cgmm\nRG520N-EB\n\nOK\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] uci -P /var/state get pega.fw.cur_ver\nuci -P /var/state get pega.fw.cur_ver\nV0.0.0.0_1\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] manufacture.sh\nmanufacture.sh\nmanufacture.sh  : set mfg mode\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv pega_model MU310\nfw_setenv pega_model MU310\nCannot read environment, using default\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n pega_model\nfw_printenv -n pega_model\nMU310\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv wifi0_ssid WIFI_SSIDName\nfw_setenv wifi0_ssid WIFI_SSIDName\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n wifi0_ssid\nfw_printenv -n wifi0_ssid\nWIFI_SSIDName\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv wifi0_password 12345678\nfw_setenv wifi0_password 12345678\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n wifi0_password\nfw_printenv -n wifi0_password\n12345678\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv eth0_addr 11:22:33:44:55:66\nfw_setenv eth0_addr 11:22:33:44:55:66\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv wifi0_addr 22:33:44:55:66:77\nfw_setenv wifi0_addr 22:33:44:55:66:77\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n eth0_addr\nfw_printenv -n eth0_addr\n11:22:33:44:55:66\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n wifi0_addr\nfw_printenv -n wifi0_addr\n22:33:44:55:66:77\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv hwver SR3\nfw_setenv hwver SR3\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n hwver\nfw_printenv -n hwver\nSR3\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv mb_sn MU310_1234\nfw_setenv mb_sn MU310_1234\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n mb_sn\nfw_printenv -n mb_sn\nMU310_1234\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+gsn\natcli at+gsn\nat+gsn\n868042070116515\n\nOK\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+cgmr\natcli at+cgmr\n\nat+cgmr\nRG520NEBDKR05A01F4G_OCPU_HS_BETA_20250627A\n\nOK\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] ethtool eth0\nethtool eth0\nSettings for eth0:\n Supported ports: [ TP ]\n Supported link modes:   10baseT/Half 10baseT/Full \n                         100baseT/Half 100baseT/Full \n                         1000baseT/Full \n                         2500baseT/Full \n Supported pause frame use: Symmetric Receive-only\n Supports auto-negotiation: Yes\n Supported FEC modes: Not reported\n Advertised link modes:  10baseT/Half 10baseT/Full \n                         100baseT/Half 100baseT/Full \n                         1000baseT/Full \n                         2500baseT/Full \n Advertised pause frame use: Symmetric Receive-only\n Advertised auto-negotiation: Yes\n Advertised FEC modes: Not reported\n Link partner advertised link modes:  10baseT/Half 10baseT/Full \n                                      100baseT/Half 100baseT/Full \n                                      1000baseT/Full \n Link partner advertised pause frame use: Symmetric Receive-only\n Link partner advertised auto-negotiation: Yes\n Link partner advertised FEC modes: Not reported\n Speed: 1000Mb/s\n Duplex: Full\n Port: Twisted Pair\n PHYAD: 0\n Transceiver: internal\n Auto-negotiation: on\n MDI-X: Unknown\n Supports Wake-on: pumbg\n Wake-on: pg\n Current message level: 0x00000033 (51)\n          drv probe ifdown ifup\n Link detected: yes\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+cpin?\natcli at+cpin?\nat+cpin?\n+CME ERROR: 10\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+ccid\natcli at+ccid\nat+ccid\n+CME ERROR: 13\nroot@Kangaroo:~# \nroot@Kangaroo:~# CPIN CME ERROR: 13\n[AT] at+cfun?\n+CFUN: 1\n\nOK\n[AT] at+cfun=0",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli at+cimi\natcli at+cimi\nat+cimi\n+CME ERROR: 3\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/signal\\:green/brightness\necho 255 > /sys/class/leds/signal\\:green/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/signal\\:green/brightness\necho 0 > /sys/class/leds/signal\\:green/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/signal\\:red/brightness\necho 255 > /sys/class/leds/signal\\:red/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/signal\\:red/brightness\necho 0 > /sys/class/leds/signal\\:red/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/signal\\:blue/brightness\necho 255 > /sys/class/leds/signal\\:blue/brightness\n\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/signal\\:blue/brightness\necho 0 > /sys/class/leds/signal\\:blue/brightness\nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/status\\:green/brightness\necho 255 > /sys/class/leds/status\\:green/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/status\\:green/brightness\necho 0 > /sys/class/leds/status\\:green/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/status\\:red/brightness\necho 255 > /sys/class/leds/status\\:red/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/status\\:red/brightness\necho 0 > /sys/class/leds/status\\:red/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] echo 255 > /sys/class/leds/status\\:blue/brightness\necho 255 > /sys/class/leds/status\\:blue/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~# \n[系統] 延遲 2 秒...\n剩餘 1 秒...\n剩餘 0 秒...\n[系統] 延遲結束\n\n[發送] echo 0 > /sys/class/leds/status\\:blue/brightness\necho 0 > /sys/class/leds/status\\:blue/brightness\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] ifconfig eth0 192.168.225.1\nifconfig eth0 192.168.225.1\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] /etc/diag.sh resetBtnStatusGet\n/etc/diag.sh resetBtnStatusGet\n-sh: /etc/diag.sh: not found\nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli 'AT+QCFG=\"usbcfg\",0x2C7C,0x0801,2,1,1,0,0,1,0'\natcli 'AT+QCFG=\"usbcfg\",0x2C7C,0x0801,2,1,1,0,0,1,0'\nAT+QCFG=\"usbcfg\",0x2C7C,0x0801,2,1,1,0,0,1,0\nOK\nroot@Kangaroo:~# \nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] atcli 'AT+QCFG=\"usbcfg\"'\natcli 'AT+QCFG=\"usbcfg\"'\nAT+QCFG=\"usbcfg\"\n+QCFG: \"usbcfg\",0x2C7C,0x0801,2,1,1,0,0,1,0\n\nOK\nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_setenv mfg 1\nfw_setenv mfg 1\nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "[發送] fw_printenv -n mfg\nfw_printenv -n mfg\n1\nroot@Kangaroo:~#",
+      "description": null,
+      "reply": null,
+      "example": null,
+      "source_sheet": "Command Verification"
+    },
+    {
+      "command": "pegacmd version",
+      "description": "Get firmware boot version\nGet firmware version",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "NA",
+      "description": "Frequency 1KHz tone ON/OFF\nSpeaker Frequency Response\nSpeaker THD",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g temp s0\ndiag -g temp s1\ndiag -g temp s2\ndiag -g temp s3\ndiag -g temp bat",
+      "description": "Get Temperature status",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g status eth0",
+      "description": "get PHY Ethernet Link status",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g crypto sn",
+      "description": "Get Microchip SN",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "wl ver",
+      "description": "Module ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "hciconfig hci0 revision",
+      "description": "Module ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "test5g at+simcomati",
+      "description": "Module ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "test5g at+cgps=1\ncat /dev/ttyUSB1",
+      "description": "GPS ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g status emmc",
+      "description": "eMMC ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g status sd\nmount |grep sd\necho \"1234\" > /mnt/sd/test_sd\ncat /mnt/sd/test_sd",
+      "description": "read/write /status",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "test5g at+cimi",
+      "description": "read/write /status\nget iccid\nget imsi",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g sn cam[0:3]",
+      "description": "Module ID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g mac eth",
+      "description": "Read MAC ADDRS",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g sn mb",
+      "description": "Write MB SN",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g sn dev",
+      "description": "Write device SN",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g sn nokia",
+      "description": "Write Nokia SN",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g who imu",
+      "description": "GYRO sensor detect",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "inv_self_test -c -w",
+      "description": "GYRO calibration",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "readmag_imu",
+      "description": "GYRO accuracy",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g imu acc_calib",
+      "description": "ACCEL calibration data\n(2024/08/13 added)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g imu ang_calib",
+      "description": "GYRO calibration data\n(2024/08/13 added)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g who mag",
+      "description": "E-compass sensor detect",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "readmag_imu_2d -c s -p 0",
+      "description": "E-compass calibration",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "readmag_imu -s 1000 -p 0 -d 50",
+      "description": "Standard deviation",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "*install battery first\ndiag -g temp bat \ndiag -g voltage bat\ndiag -g bat percent\ndiag -g current bat\ndiag -g capacity\ndiag -g voltage design\ndiag -g current design\ndiag -g current batNoPoE",
+      "description": "Temperature\nGet battery voltage\nGet battery percentage\nCharging STATUS\nDischarging STATUS",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "NA\nNA\ndiag -g status charger\ndiag -g charger acok\ndiag -g voltage charger\ndiag -g current charger\nNA\nNA\ndiag -g charger start_perc\ndiag -g charger stop_perc",
+      "description": "Set charger ON\nSet charger OFF\nGet Charge status charge/dischage\n\nSet/Get chaarger start/stop percentage (this function will be disabled if  input command \"diag -s charger on\" or \"diag -s charger off\". Power recycles can be recoverd)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "amixer -c 0 get 'DMIC1 Gain'\namixer -c 0 get 'DMIC2 Gain'\namixer -c 0 get 'DMIC3 Gain'\namixer -c 0 get 'DMIC4 Gain'",
+      "description": "enable/disable DMIC1~4 (for DMIC position check)",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "wl scan -s YOURSSID\nwl scanresults",
+      "description": "Scan a SSID and report if SSID is exist.",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "diag -g mac wifi",
+      "description": "Set/Get MAC address",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    },
+    {
+      "command": "wpa_cli list_network",
+      "description": "Set/Get SSID",
+      "reply": null,
+      "example": null,
+      "source_sheet": "FOR PT"
+    }
+  ],
+  "script_blueprints": [
+    {
+      "name": "版本號碼檢查",
+      "fields": {
+        "TestID": "<請填入 TestID，如 HAVU002>",
+        "Phase": 1,
+        "Title": "版本號碼檢查",
+        "Send": "UART1@ver",
+        "Reply": "@Version:",
+        "Ref": "version",
+        "Waiting": "3000",
+        "ExecMode": "0",
+        "Description": "讀取並檢查版本字串"
+      }
+    },
+    {
+      "name": "電壓測量",
+      "fields": {
+        "TestID": "<請查表填入>",
+        "Phase": 2,
+        "Title": "電壓測量",
+        "Instrument": "DMM.MeasureV",
+        "Send": ":DMM.MeasureV,\"CH1\",\"DC\"",
+        "Ref": "voltage",
+        "Validation": "(voltage,%f,4.75,5.25)",
+        "Waiting": "3000",
+        "ExecMode": "0",
+        "Description": "量測 5V 軌電壓"
+      }
+    },
+    {
+      "name": "BT狀態檢查",
+      "fields": {
+        "TestID": "<請查表填入>",
+        "Phase": 3,
+        "Title": "BT狀態檢查",
+        "Send": "UART1@bt status",
+        "Reply": "@BT:ON",
+        "Waiting": "3000",
+        "ExecMode": "0",
+        "Description": "檢查藍牙啟用狀態"
+      }
+    }
+  ]
+}

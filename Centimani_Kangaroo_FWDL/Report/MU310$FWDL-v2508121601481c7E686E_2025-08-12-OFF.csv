@@ -1,0 +1,16 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,020:Open  Commnad Line,022:flash_firmware_checkDMpor,025:flash_firmware_checkDMpor,029:Check Login,030:Login Linux_root,031:Login Linux_PW,032:Check BOOT Status,034:Check PCIE MODE
+UL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+'888,PASS,PASS,2025-08-12_16-10-57,278,512314,0,@DM PORT found,@SUCCESS,@MU310 login:,@Password,@root,@~#,@MU310
+'777,FAIL,NBOT035-022:flash_firmware_checkDMpor :Reply doesn't Match @DM PORT found,2025-08-12_16-46-37,17,512314,0,||D:\(((KANGAROO\MU310\CODE\Centimani_Kangaroo_FWDL>md /c "Tools
+'988,FAIL,NBOT035-022:flash_firmware_checkDMpor :Reply doesn't Match @DM PORT found,2025-08-12_16-47-03,17,512314,0,||D:\(((KANGAROO\MU310\CODE\Centimani_Kangaroo_FWDL>md /c "Tools
+'444,FAIL,NBOT035-022:flash_firmware_checkDMpor :Reply doesn't Match @DM PORT found,2025-08-12_16-47-28,17,512314,0,||D:\(((KANGAROO\MU310\CODE\Centimani_Kangaroo_FWDL>md /c "Tools
+'666,PASS,PASS,2025-08-12_16-52-31,277,512314,0,@DM PORT found,@SUCCESS,@MU310 login:,@Password,@root,@~#,@MU310
+'444,PASS,PASS,2025-08-12_16-58-55,287,512314,0,@DM PORT found,@SUCCESS,@MU310 login:,@Password,@root,@~#,@MU310

@@ -1,0 +1,215 @@
+{
+  "excel_examples": [
+    {
+      "file_name": "Centimani INI file setting(20210506).xlsx",
+      "structure": {
+        "sheets": [
+          "System.ini Setting",
+          "Global.ini Setting"
+        ],
+        "total_rows": 116,
+        "total_columns": 3
+      },
+      "sample_data": [
+        [
+          "[System]"
+        ],
+        [
+          "LargeWindow=0",
+          ": 程式視窗大小設定 (Default)"
+        ],
+        [
+          "DUTFlowDirection=0",
+          "(Default)"
+        ]
+      ],
+      "keywords": [
+        "setting",
+        "flow"
+      ]
+    },
+    {
+      "file_name": "Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+      "structure": {
+        "sheets": [
+          "Note",
+          "Summary",
+          "EditorScriptTool",
+          "SAu3751",
+          "SAn9000",
+          "ScpTDS3014B",
+          "iPower2401",
+          "iPowerPro800",
+          "DaqUSBNi",
+          "MDA2700",
+          "DAQ970A",
+          "OSP120",
+          "IQ_Log",
+          "LED_analyser",
+          "DigitIO6509",
+          "DaqNI4461",
+          "PMeterE4418B",
+          "QRDecode",
+          "RedRat",
+          "E4438C",
+          "SFE100",
+          "tf_LVDevice",
+          "FM480",
+          "BS2302",
+          "UtilityLibrary",
+          "DevUart",
+          "InstIQApi_A",
+          "InstIQApi_B",
+          "iRFSW3001",
+          "PSS2005",
+          "PSH1503",
+          "Agilent34401A",
+          "Agilent6643A",
+          "RF_Switch",
+          "SCPI_Controller"
+        ],
+        "total_rows": 1067,
+        "total_columns": 16
+      },
+      "sample_data": [
+        [
+          "Modify Date",
+          "Version",
+          "Item",
+          "DLL version"
+        ],
+        [
+          "43419",
+          "V1.08",
+          "增加 UtilityLibrary all API 說明範例 ",
+          "1.0.6.0"
+        ],
+        [
+          "43425",
+          "V1.09",
+          "增加 FeasaLED API for All LED by one time",
+          "1.0.1.0"
+        ]
+      ],
+      "keywords": [
+        "test",
+        "check",
+        "flow",
+        "parameter",
+        "usb"
+      ]
+    },
+    {
+      "file_name": "Centimani Script User Guide(202230104).xlsx",
+      "structure": {
+        "sheets": [
+          "DUTs說明",
+          "Station Sheet說明",
+          "Marco Sheet說明",
+          "Centimani內建Command說明",
+          "Ref輔助Function說明"
+        ],
+        "total_rows": 162,
+        "total_columns": 17
+      },
+      "sample_data": [
+        [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)"
+        ],
+        [
+          "啟動設定\n1.設定該機是否啟動\n(true/false)\n2. 可使用Global.ini設定變數來取值，如*$(Load)",
+          "機種名稱\n設定機種名稱",
+          "站別名稱\n1. 設定站別名稱\n2. 格式: \n    站別名稱,Skip Confirm(0/1)",
+          "參數設定\n1. 設定帶入Station Sheet的參數設定值\n2. 多個參數使用逗號來隔開\n3. Station Sheet使用{數字}來取值，數字由0開始(代表第一個參數)，數字值不能≧參數個數\n4. 格式: P1,P2,..",
+          "DeviceID\n設定SFIS DeviceID",
+          "條碼規則\n1. 設定要刷的條碼規則\n2. 可設定多個\n3. 不刷條碼的請空白不要設定\n4. 格式: (多個使用分號隔開)\n    {Name1,Length1,Pattern1};\n    {Name2,Length2,Pattern2}...",
+          "連線設定\n1. 格式: \"Type\",\"Name\",\"ConnectionString\"\n2. Type: TCP, UDP, Uart, SSH, HTTP, APP, DLL:LibraryName(Library須放置在API資料夾內)\n3. ConnectionString:\n    TCP    : 網卡IP,DUT IP,TCP Port,Connection Timeout,Response Timeout(Default)\n    UDP   : 網卡IP,DUT IP,UDP Port,Connection Timeout,Response Timeout(Default)\n    Uart   : Com Port,Baud Rate,Date Bit,Stop Bit,Parity,DUT Ready Timeout,Response Timeout(Default)\n    SSH    : 網卡IP,DUT IP,Port,User,Password,DUT Ready Timeout,Response Timeout(Default)\n    HTTP : 網卡IP,DUT IP,Port,DUT Ready Timeout,Response Timeout(Default),Path,ContentType\n    APP   : File path of application, check app action(0/1)\n    DLL    : 由Library開發者定義"
+        ],
+        [
+          "備註:\nSkip Confirm設0時，在啟動測試前會跳出\"Is DUT Ready ?\"的對話框",
+          "備註:\n1. 所有timeout單位都是ms\n2. APP Type的application必須支援std input/std output"
+        ]
+      ],
+      "keywords": [
+        "test",
+        "check",
+        "parameter",
+        "command",
+        "function"
+      ]
+    },
+    {
+      "file_name": "Test Item Code V2.00_20241106.xlsx",
+      "structure": {
+        "sheets": [
+          "七碼定義Definition",
+          "Test Item All"
+        ],
+        "total_rows": 5177,
+        "total_columns": 13
+      },
+      "sample_data": [
+        [
+          "和碩聯合科技(股)公司 PEGATRON CORP. "
+        ],
+        [
+          "CVP RD3 SW2 Product Error Code definition as below："
+        ],
+        [
+          "站位序號",
+          "測項序列號"
+        ]
+      ],
+      "keywords": [
+        "function",
+        "pega"
+      ]
+    },
+    {
+      "file_name": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "structure": {
+        "sheets": [
+          "Properties",
+          "Switch",
+          "Instrument",
+          "DUTs",
+          "eSIM_DW_FW_UP_OFFLINE"
+        ],
+        "total_rows": 198,
+        "total_columns": 256
+      },
+      "sample_data": [
+        [
+          "Name",
+          "Value"
+        ],
+        [
+          "Version",
+          "2504141449461"
+        ],
+        [
+          "Creator",
+          "kevintai"
+        ]
+      ],
+      "keywords": [
+        "test",
+        "parameter",
+        "setting",
+        "kangaroo",
+        "command"
+      ]
+    }
+  ],
+  "ini_examples": [],
+  "generated_date": "2025-08-11T11:11:06.433123"
+}

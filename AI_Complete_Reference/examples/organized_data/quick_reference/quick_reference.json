@@ -1,0 +1,162 @@
+{
+  "generated_date": "2025-08-11T11:11:06.421895",
+  "excel_overview": {
+    "total_files": 22,
+    "total_size_mb": 7.050978660583496,
+    "file_categories": {
+      "KANGAROO": [
+        "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx"
+      ],
+      "VALO360": [
+        "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "VALO360_TestFlow_20250218_ER2.xlsx",
+        "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "VALO360_TestFlow_20250307_POE.xlsx",
+        "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "VALO360_TestFlow_20250326_Final.xlsx",
+        "VALO360_TestFlow_20250326_IMU.xlsx",
+        "VALO360_TestFlow_20250407_Function.xlsx"
+      ],
+      "Centimani": [
+        "Centimani INI file setting(20210506).xlsx",
+        "Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+        "Centimani Script User Guide(202230104).xlsx"
+      ],
+      "Test_Items": [
+        "Test Item Code V2.00_20241106.xlsx",
+        "Test Item Code V2.04_20250310.xlsx"
+      ],
+      "Other": [
+        "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx"
+      ]
+    },
+    "keywords_summary": [
+      [
+        "test",
+        20
+      ],
+      [
+        "function",
+        19
+      ],
+      [
+        "setting",
+        17
+      ],
+      [
+        "parameter",
+        17
+      ],
+      [
+        "check",
+        14
+      ],
+      [
+        "valo360",
+        10
+      ],
+      [
+        "kangaroo",
+        7
+      ],
+      [
+        "pega",
+        4
+      ],
+      [
+        "flow",
+        3
+      ],
+      [
+        "command",
+        3
+      ],
+      [
+        "fw",
+        3
+      ],
+      [
+        "cellular",
+        3
+      ],
+      [
+        "wifi",
+        3
+      ],
+      [
+        "nokia",
+        2
+      ],
+      [
+        "usb",
+        1
+      ],
+      [
+        "calibration",
+        1
+      ],
+      [
+        "verification",
+        1
+      ],
+      [
+        "config",
+        1
+      ],
+      [
+        "download",
+        1
+      ]
+    ]
+  },
+  "ini_overview": {
+    "total_files": 0,
+    "total_settings": 0,
+    "common_sections": []
+  },
+  "test_flow_categories": {
+    "KANGAROO": {
+      "Mainboard": [
+        "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx"
+      ],
+      "OQC": [
+        "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx"
+      ],
+      "Cellular": [
+        "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx"
+      ],
+      "WIFI_BT": [],
+      "OTA": [],
+      "MultiDUT": [
+        "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx"
+      ]
+    },
+    "VALO360": {
+      "ER2": [
+        "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "VALO360_TestFlow_20250218_ER2.xlsx",
+        "VALO360_TestFlow_20250318_MB_ER2.xlsx"
+      ],
+      "POE": [
+        "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "VALO360_TestFlow_20250307_POE.xlsx"
+      ],
+      "IMU": [
+        "VALO360_TestFlow_20250326_IMU.xlsx"
+      ],
+      "Function": [
+        "VALO360_TestFlow_20250407_Function.xlsx"
+      ],
+      "DMIC": []
+    }
+  },
+  "command_reference": []
+}

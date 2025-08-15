@@ -1,0 +1,11 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,008:Open  Commnad Line,014:flash_firmware_checkDMpor,018:Check Login,019:Login Linux_root,020:Login Linux_PW,021:Check BOOT Status,023:Check PCIE MODE
+UL,,,,,,NA,NA,NA,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA,NA,NA,NA
+'324,PASS,PASS,2025-08-12_15-07-46,278,512314,0,@SUCCESS,@MU310 login:,@Password,@root,@~#,@MU310

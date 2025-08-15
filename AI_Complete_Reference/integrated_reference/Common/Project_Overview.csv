@@ -1,0 +1,4 @@
+﻿專案名稱,專案代碼,主要功能,測試類型,檔案數量,主要工作表
+VALO360,VALO360,網路設備測試,功能測試、性能測試、驗證測試,多個,Station、TestItem、Parameter、Threshold、Validation、Result
+KANGAROO,KANGAROO,行動裝置測試,功能測試、性能測試、校準測試,9個主要流程,Properties、Instrument、Switch、DUTs、測試流程工作表
+通用,COMMON,腳本生成工具,腳本生成、模板管理,1個,GUI介面、腳本生成器

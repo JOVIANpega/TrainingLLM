@@ -1,0 +1,9 @@
+﻿Sheet,Row Type,Name,Value
+Properties,Sample_1,Version,2504191200312
+Properties,Sample_2,Creator,Nancy
+
+Sheet,Row Type,Load,DUT Name,Station,Parameter,SFIS_DeviceID,"ScanBarcode( {Name,Lengh,Pattern} )","Connection1 (Type,Name,ConnectString)","Connection2 (Type,Name,ConnectString)","Connection3 (Type,Name,ConnectString)","Connection4(Type,Name,ConnectString)","Connection5(Type,Name,ConnectString)","Connection6(Type,Name,ConnectString)","Connection7(Type,Name,ConnectString)","Connection8(Type,Name,ConnectString)","Connection9(Type,Name,ConnectString)","Connection10(Type,Name,ConnectString)"
+DUTs,Sample_1,*$(LOAD_1),Kangaroo$WIFI&5GOTA,"WIFI&5GOTA,0","*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",*$(DEVID_1),"{ISN,,}","""Uart"",""UART"",""*$(DUT_UR1_1),115200,8,One,None,None,10000,5000""","""APP"",""CmdConsole"","".\cmd.exe,1,60000,""","""Uart"",""UART2"",""*$(DUT_UR2_1),115200,8,One,None,None,10000,5000""","""APP"",""CmdConsole1"","".\cmd.exe,1,5000,""",,,,,,
+DUTs,Sample_2,*$(LOAD_2),Kangaroo$WIFI&5GOTA,"WIFI&5GOTA,0","*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",*$(DEVID_2),"{ISN,,}","""Uart"",""UART"",""*$(DUT_UR1_2),115200,8,One,None,None,10000,5000""","""APP"",""CmdConsole"","".\cmd.exe,1,60000,""","""Uart"",""UART2"",""*$(DUT_UR2_2),115200,8,One,None,None,10000,5000""","""APP"",""CmdConsole1"","".\cmd.exe,1,5000,""",,,,,,
+DUTs,Sample_3,*$(LOAD_1),Kangaroo$PathLoss,"PathLoss,1","*$(IQ_ANT_Loss),*$(IQ_Module_Loss),*$(IQ_VSA_Loss),*$(IQ_VSG_Loss)",*$(DEVID_1),"{ISN,1,[0-9A-F]}","""Uart"",""UART"",""*$(DUT_UR1_1),115200,8,One,None,None,10000,5000""","""Uart"",""UART2"",""*$(DUT_UR2_1),115200,8,One,None,None,10000,5000""","""APP"",""CmdConsole"","".\cmd.exe,1,200000,""","""APP"",""CmdConsole1"","".\cmd.exe,1,5000,""",,,,,,
+

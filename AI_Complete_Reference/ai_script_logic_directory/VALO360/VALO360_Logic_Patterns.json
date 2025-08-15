@@ -1,0 +1,155 @@
+{
+  "project_name": "VALO360",
+  "description": "VALO360專案邏輯模式參考",
+  "analysis_date": "2025-08-12T00:12:00.135946",
+  "logic_patterns": {
+    "VALO360_ER2 OQC Function Check List_20250418.xlsx": {
+      "conditional_logic": [
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ]
+    },
+    "VALO360_TestFlow_20250307_POE.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250218_ER2.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250218_POE_LoopOK.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250407_Function.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250326_IMU.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250326_Final.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_TestFlow_20250318_MB_ER2.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx": {
+      "conditional_logic": [
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ]
+    }
+  },
+  "flow_structures": {
+    "VALO360_ER2 OQC Function Check List_20250418.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": true,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250307_POE.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250218_ER2.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250218_POE_LoopOK.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250407_Function.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250326_IMU.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250326_Final.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_TestFlow_20250318_MB_ER2.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": true,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    }
+  },
+  "control_structures": {},
+  "error_handling_patterns": {}
+}

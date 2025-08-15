@@ -1,0 +1,874 @@
+{
+  "file_info": {
+    "file_name": "Zebra_20190725_TestFlow0801.XLSX",
+    "analysis_date": "2025-08-11T21:32:32.687467",
+    "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\Zebra_20190725_TestFlow0801.XLSX",
+    "script_type": "ZEBRA_SCRIPT",
+    "project_name": "ZEBRA",
+    "total_sheets": 6,
+    "total_rows": 274,
+    "total_columns": 66
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "Properties",
+      "Instrument",
+      "Switch",
+      "DUTs",
+      "L10A_FA5",
+      "ET5X_FA5"
+    ],
+    "sheet_analyses": {
+      "Properties": {
+        "sheet_name": "Properties",
+        "sheet_type": "properties",
+        "total_rows": 3,
+        "total_columns": 2,
+        "column_names": [
+          "Name",
+          "Value"
+        ],
+        "column_types": {
+          "Name": "object",
+          "Value": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Name": "Version",
+              "Value": "1907261337258"
+            },
+            {
+              "Name": "Creator",
+              "Value": "jovian_li"
+            },
+            {
+              "Name": "FailCount",
+              "Value": 0
+            }
+          ],
+          "non_null_counts": {
+            "Name": 3,
+            "Value": 3
+          },
+          "unique_counts": {
+            "Name": 3,
+            "Value": 3
+          }
+        }
+      },
+      "Instrument": {
+        "sheet_name": "Instrument",
+        "sheet_type": "instrument",
+        "total_rows": 4,
+        "total_columns": 9,
+        "column_names": [
+          "Mount",
+          "Name",
+          "Sub",
+          "ControlDLL",
+          "Settings",
+          "Functions",
+          "Version",
+          "Switch",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "object",
+          "Sub": "float64",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Functions": "object",
+          "Version": "object",
+          "Switch": "float64",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": "ET5X_FA5",
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": "ET5X_FA5",
+              "Name": "switch_C",
+              "Sub": NaN,
+              "ControlDLL": "USBCSwitchLibary.dll",
+              "Settings": NaN,
+              "Functions": "switch",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "usb switch"
+            },
+            {
+              "Mount": "L10A_FA5",
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": "L10A_FA5",
+              "Name": "PS2005-1",
+              "Sub": 1.0,
+              "ControlDLL": "PSS2005.dll",
+              "Settings": "GPIB,GPIB0::8::INSTR",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "Version": "1.0.0.1",
+              "Switch": NaN,
+              "Desc": "DC Power 2005"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 4,
+            "Name": 4,
+            "Sub": 1,
+            "ControlDLL": 4,
+            "Settings": 3,
+            "Functions": 4,
+            "Version": 4,
+            "Switch": 0,
+            "Desc": 4
+          },
+          "unique_counts": {
+            "Mount": 2,
+            "Name": 3,
+            "ControlDLL": 3,
+            "Settings": 2,
+            "Functions": 3,
+            "Version": 2,
+            "Desc": 3
+          }
+        }
+      },
+      "Switch": {
+        "sheet_name": "Switch",
+        "sheet_type": "switch",
+        "total_rows": 1,
+        "total_columns": 7,
+        "column_names": [
+          "Mount",
+          "Name",
+          "ControlDLL",
+          "Settings",
+          "Version",
+          "Loss",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "float64",
+          "ControlDLL": "float64",
+          "Settings": "float64",
+          "Version": "float64",
+          "Loss": "float64",
+          "Desc": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": "ET5X_FA5",
+              "Name": NaN,
+              "ControlDLL": NaN,
+              "Settings": NaN,
+              "Version": NaN,
+              "Loss": NaN,
+              "Desc": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 1,
+            "Name": 0,
+            "ControlDLL": 0,
+            "Settings": 0,
+            "Version": 0,
+            "Loss": 0,
+            "Desc": 0
+          },
+          "unique_counts": {
+            "Mount": 1
+          }
+        }
+      },
+      "DUTs": {
+        "sheet_name": "DUTs",
+        "sheet_type": "duts",
+        "total_rows": 2,
+        "total_columns": 16,
+        "column_names": [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)",
+          "Connection5(Type,Name,ConnectString)",
+          "Connection6(Type,Name,ConnectString)",
+          "Connection7(Type,Name,ConnectString)",
+          "Connection8(Type,Name,ConnectString)",
+          "Connection9(Type,Name,ConnectString)",
+          "Connection10(Type,Name,ConnectString)"
+        ],
+        "column_types": {
+          "Load": "object",
+          "DUT Name": "object",
+          "Station": "object",
+          "Parameter": "float64",
+          "SFIS_DeviceID": "object",
+          "ScanBarcode( {Name,Lengh,Pattern} )": "float64",
+          "Connection1 (Type,Name,ConnectString)": "object",
+          "Connection2 (Type,Name,ConnectString)": "object",
+          "Connection3 (Type,Name,ConnectString)": "float64",
+          "Connection4(Type,Name,ConnectString)": "float64",
+          "Connection5(Type,Name,ConnectString)": "float64",
+          "Connection6(Type,Name,ConnectString)": "float64",
+          "Connection7(Type,Name,ConnectString)": "float64",
+          "Connection8(Type,Name,ConnectString)": "float64",
+          "Connection9(Type,Name,ConnectString)": "float64",
+          "Connection10(Type,Name,ConnectString)": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Parameter"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Load": "*$(Load_1)",
+              "DUT Name": "ET5X$ET5X_FA5",
+              "Station": "ET5X_FA5,*$(RUN_LOOP1)",
+              "Parameter": NaN,
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "Connection2 (Type,Name,ConnectString)": "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(Load_1)",
+              "DUT Name": "L10A$L10A_FA5",
+              "Station": "L10A_FA5,*$(RUN_LOOP1)",
+              "Parameter": NaN,
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "Connection2 (Type,Name,ConnectString)": "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Load": 2,
+            "DUT Name": 2,
+            "Station": 2,
+            "Parameter": 0,
+            "SFIS_DeviceID": 2,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 0,
+            "Connection1 (Type,Name,ConnectString)": 2,
+            "Connection2 (Type,Name,ConnectString)": 2,
+            "Connection3 (Type,Name,ConnectString)": 0,
+            "Connection4(Type,Name,ConnectString)": 0,
+            "Connection5(Type,Name,ConnectString)": 0,
+            "Connection6(Type,Name,ConnectString)": 0,
+            "Connection7(Type,Name,ConnectString)": 0,
+            "Connection8(Type,Name,ConnectString)": 0,
+            "Connection9(Type,Name,ConnectString)": 0,
+            "Connection10(Type,Name,ConnectString)": 0
+          },
+          "unique_counts": {
+            "Load": 1,
+            "DUT Name": 2,
+            "Station": 2,
+            "SFIS_DeviceID": 1,
+            "Connection1 (Type,Name,ConnectString)": 1,
+            "Connection2 (Type,Name,ConnectString)": 1
+          }
+        }
+      },
+      "L10A_FA5": {
+        "sheet_name": "L10A_FA5",
+        "sheet_type": "unknown",
+        "total_rows": 125,
+        "total_columns": 16,
+        "column_names": [
+          "Index_105",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID"
+        ],
+        "column_types": {
+          "Index_105": "int64",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "object",
+          "Switch": "object",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "2:0",
+            "8",
+            "2:7"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_105": 1,
+              "Phase": 1.0,
+              "Title": "0,2303 Voltage 7.8V ON",
+              "Marco": NaN,
+              "Instrument": "MVolt",
+              "Switch": "B2302",
+              "Send": ":ObtainDevice",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ObtainDevice",
+              "TestID": "B7PL025"
+            },
+            {
+              "Index_105": 2,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "SET  2302 7.8V",
+              "TestID": "NBBY004"
+            },
+            {
+              "Index_105": 3,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ReleaseDevice",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ReleaseDevice",
+              "TestID": "B7PL025"
+            },
+            {
+              "Index_105": 4,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ObtainSubDevice,\"PS2005-1\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ObtainSubDevice",
+              "TestID": "B7PL025"
+            },
+            {
+              "Index_105": 5,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":sDev.SetON,\"19,3.4,ON\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PSS 2005 DC ON",
+              "TestID": "NBBY004"
+            }
+          ],
+          "non_null_counts": {
+            "Index_105": 125,
+            "Phase": 19,
+            "Title": 19,
+            "Marco": 0,
+            "Instrument": 8,
+            "Switch": 8,
+            "Send": 125,
+            "Reply": 123,
+            "EndPrompt": 0,
+            "Ref": 22,
+            "Validation": 13,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 125,
+            "Description": 125,
+            "TestID": 125
+          },
+          "unique_counts": {
+            "Title": 18,
+            "Instrument": 1,
+            "Switch": 1,
+            "Send": 84,
+            "Reply": 4,
+            "Ref": 21,
+            "Validation": 13,
+            "ExecMode": 5,
+            "Description": 78,
+            "TestID": 15
+          }
+        }
+      },
+      "ET5X_FA5": {
+        "sheet_name": "ET5X_FA5",
+        "sheet_type": "unknown",
+        "total_rows": 139,
+        "total_columns": 16,
+        "column_names": [
+          "Index_44",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID"
+        ],
+        "column_types": {
+          "Index_44": "int64",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "object",
+          "Switch": "object",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "2:0",
+            "8",
+            "2:7",
+            "3",
+            "4:2,11",
+            "4:20,20"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_44": 1,
+              "Phase": 1.0,
+              "Title": "0,SWITCH_set_0_DUT",
+              "Marco": NaN,
+              "Instrument": "switch",
+              "Switch": "switch_C",
+              "Send": ":ObtainDevice",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ObtainDevice",
+              "TestID": "B7PL025"
+            },
+            {
+              "Index_44": 2,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Dev.switch,\"0\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "SWITCH_set_0_DUT",
+              "TestID": "NBBY004"
+            },
+            {
+              "Index_44": 3,
+              "Phase": 2.0,
+              "Title": "0,2303 Voltage 4V ON",
+              "Marco": NaN,
+              "Instrument": "MVolt",
+              "Switch": "B2302",
+              "Send": ":ObtainDevice",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ObtainDevice",
+              "TestID": "B7PL025"
+            },
+            {
+              "Index_44": 4,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Dev.Send,\"*RST\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "SET  *RST",
+              "TestID": "NBBY004"
+            },
+            {
+              "Index_44": 5,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Dev.Send,\":VOLT 4;:CURR 3;:OUTP ON;\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "SET  2302 4V",
+              "TestID": "NBBY004"
+            }
+          ],
+          "non_null_counts": {
+            "Index_44": 139,
+            "Phase": 30,
+            "Title": 30,
+            "Marco": 0,
+            "Instrument": 14,
+            "Switch": 14,
+            "Send": 139,
+            "Reply": 137,
+            "EndPrompt": 0,
+            "Ref": 19,
+            "Validation": 12,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 139,
+            "Description": 139,
+            "TestID": 139
+          },
+          "unique_counts": {
+            "Title": 28,
+            "Instrument": 2,
+            "Switch": 2,
+            "Send": 89,
+            "Reply": 10,
+            "Ref": 17,
+            "Validation": 11,
+            "ExecMode": 8,
+            "Description": 74,
+            "TestID": 19
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "配置管理功能",
+    "多設備測試支援",
+    "基本功能測試",
+    "ZEBRA專案專用",
+    "儀器參數配置"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      97.0
+    ],
+    "test_sequence": [
+      "初始化配置",
+      "設備連接測試",
+      "功能測試執行",
+      "結果驗證",
+      "報告生成"
+    ],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "中等",
+    "test_coverage": "功能測試",
+    "script_organization": "配置分離設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "ZEBRA",
+    "script_type": "ZEBRA_SCRIPT",
+    "special_capabilities": [],
+    "best_practices": [],
+    "learning_focus": []
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "ZEBRA專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援ZEBRA專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為ZEBRA專案腳本模板",
+      "學習ZEBRA專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

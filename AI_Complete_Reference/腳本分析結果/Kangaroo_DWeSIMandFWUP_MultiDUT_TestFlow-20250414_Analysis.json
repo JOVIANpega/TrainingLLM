@@ -1,0 +1,720 @@
+{
+  "file_info": {
+    "file_name": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+    "analysis_date": "2025-08-11T21:32:27.100131",
+    "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+    "script_type": "KANGAROO_SCRIPT",
+    "project_name": "KANGAROO",
+    "total_sheets": 5,
+    "total_rows": 167,
+    "total_columns": 51
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "Properties",
+      "Switch",
+      "Instrument",
+      "DUTs",
+      "eSIM_DW_FW_UP_OFFLINE"
+    ],
+    "sheet_analyses": {
+      "Properties": {
+        "sheet_name": "Properties",
+        "sheet_type": "properties",
+        "total_rows": 3,
+        "total_columns": 2,
+        "column_names": [
+          "Name",
+          "Value"
+        ],
+        "column_types": {
+          "Name": "object",
+          "Value": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Name": "Version",
+              "Value": "2504141449461"
+            },
+            {
+              "Name": "Creator",
+              "Value": "kevintai"
+            },
+            {
+              "Name": "FailCount",
+              "Value": 0
+            }
+          ],
+          "non_null_counts": {
+            "Name": 3,
+            "Value": 3
+          },
+          "unique_counts": {
+            "Name": 3,
+            "Value": 3
+          }
+        }
+      },
+      "Switch": {
+        "sheet_name": "Switch",
+        "sheet_type": "switch",
+        "total_rows": 1,
+        "total_columns": 7,
+        "column_names": [
+          "Mount",
+          "Name",
+          "ControlDLL",
+          "Settings",
+          "Version",
+          "Loss",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "float64",
+          "Name": "object",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Version": "object",
+          "Loss": "int64",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "RFSwitch3001",
+              "ControlDLL": "RFSwitch3001.dll",
+              "Settings": "GPIB,GPIB0::1::INSTR,1,1",
+              "Version": "1.0.0.0",
+              "Loss": 0,
+              "Desc": "RF Switch 1 to 4"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 0,
+            "Name": 1,
+            "ControlDLL": 1,
+            "Settings": 1,
+            "Version": 1,
+            "Loss": 1,
+            "Desc": 1
+          },
+          "unique_counts": {
+            "Name": 1,
+            "ControlDLL": 1,
+            "Settings": 1,
+            "Version": 1,
+            "Desc": 1
+          }
+        }
+      },
+      "Instrument": {
+        "sheet_name": "Instrument",
+        "sheet_type": "instrument",
+        "total_rows": 44,
+        "total_columns": 9,
+        "column_names": [
+          "Mount",
+          "Name",
+          "Sub",
+          "ControlDLL",
+          "Settings",
+          "Functions",
+          "Version",
+          "Switch",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "float64",
+          "Name": "object",
+          "Sub": "float64",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Functions": "object",
+          "Version": "object",
+          "Switch": "object",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "IPOWER2401",
+              "Sub": NaN,
+              "ControlDLL": "iPower2401.dll",
+              "Settings": "192.168.201.11,192.168.201.3,9999,1",
+              "Functions": "POWERSWITCH",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Power Switch 2401 "
+            },
+            {
+              "Mount": NaN,
+              "Name": "OSP120",
+              "Sub": NaN,
+              "ControlDLL": "NFT.dll",
+              "Settings": "192.168.48.147,1000,6",
+              "Functions": "NFT",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "NFT analyser OSP120"
+            },
+            {
+              "Mount": NaN,
+              "Name": "FeasaLED",
+              "Sub": 1.0,
+              "ControlDLL": "LED_analyser.dll",
+              "Settings": "*$(LED_AZ),04",
+              "Functions": "LED_Test",
+              "Version": "2.1.0.1",
+              "Switch": NaN,
+              "Desc": "LED analyser FeasaLED"
+            },
+            {
+              "Mount": NaN,
+              "Name": "iPowerPro800",
+              "Sub": NaN,
+              "ControlDLL": "iPowerPro800.dll",
+              "Settings": "*$(PCUART_P),1",
+              "Functions": "POWERSWITCH",
+              "Version": "1.0.1.0",
+              "Switch": NaN,
+              "Desc": "Power Switch Pro800"
+            },
+            {
+              "Mount": NaN,
+              "Name": "Transmitter1",
+              "Sub": 1.0,
+              "ControlDLL": "VirtualTransmitter.dll",
+              "Settings": "Transmitter1,192.168.1.11,2323",
+              "Functions": "TCP_Transfer",
+              "Version": "1.0.0.2",
+              "Switch": NaN,
+              "Desc": "Virtual Transmitter"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 0,
+            "Name": 44,
+            "Sub": 2,
+            "ControlDLL": 44,
+            "Settings": 43,
+            "Functions": 44,
+            "Version": 44,
+            "Switch": 1,
+            "Desc": 44
+          },
+          "unique_counts": {
+            "Name": 42,
+            "ControlDLL": 29,
+            "Settings": 41,
+            "Functions": 27,
+            "Version": 9,
+            "Switch": 1,
+            "Desc": 29
+          }
+        }
+      },
+      "DUTs": {
+        "sheet_name": "DUTs",
+        "sheet_type": "duts",
+        "total_rows": 3,
+        "total_columns": 16,
+        "column_names": [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)",
+          "Connection5(Type,Name,ConnectString)",
+          "Connection6(Type,Name,ConnectString)",
+          "Connection7(Type,Name,ConnectString)",
+          "Connection8(Type,Name,ConnectString)",
+          "Connection9(Type,Name,ConnectString)",
+          "Connection10(Type,Name,ConnectString)"
+        ],
+        "column_types": {
+          "Load": "object",
+          "DUT Name": "object",
+          "Station": "object",
+          "Parameter": "object",
+          "SFIS_DeviceID": "object",
+          "ScanBarcode( {Name,Lengh,Pattern} )": "float64",
+          "Connection1 (Type,Name,ConnectString)": "object",
+          "Connection2 (Type,Name,ConnectString)": "float64",
+          "Connection3 (Type,Name,ConnectString)": "float64",
+          "Connection4(Type,Name,ConnectString)": "float64",
+          "Connection5(Type,Name,ConnectString)": "float64",
+          "Connection6(Type,Name,ConnectString)": "float64",
+          "Connection7(Type,Name,ConnectString)": "float64",
+          "Connection8(Type,Name,ConnectString)": "float64",
+          "Connection9(Type,Name,ConnectString)": "float64",
+          "Connection10(Type,Name,ConnectString)": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Parameter"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Load": "*$(LOAD_1)",
+              "DUT Name": "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "Station": "eSIM_DW_FW_UP_OFFLINE,0",
+              "Parameter": "*$(PortID_1),*$(ATPortNUM_1)",
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "Connection2 (Type,Name,ConnectString)": NaN,
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(LOAD_2)",
+              "DUT Name": "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "Station": "eSIM_DW_FW_UP_OFFLINE,0",
+              "Parameter": "*$(PortID_2),*$(ATPortNUM_2)",
+              "SFIS_DeviceID": "*$(DEVID_2)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "Connection2 (Type,Name,ConnectString)": NaN,
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(LOAD_3)",
+              "DUT Name": "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "Station": "eSIM_DW_FW_UP_OFFLINE,0",
+              "Parameter": "*$(PortID_3),*$(ATPortNUM_3)",
+              "SFIS_DeviceID": "*$(DEVID_3)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "Connection2 (Type,Name,ConnectString)": NaN,
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Load": 3,
+            "DUT Name": 3,
+            "Station": 3,
+            "Parameter": 3,
+            "SFIS_DeviceID": 3,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 0,
+            "Connection1 (Type,Name,ConnectString)": 3,
+            "Connection2 (Type,Name,ConnectString)": 0,
+            "Connection3 (Type,Name,ConnectString)": 0,
+            "Connection4(Type,Name,ConnectString)": 0,
+            "Connection5(Type,Name,ConnectString)": 0,
+            "Connection6(Type,Name,ConnectString)": 0,
+            "Connection7(Type,Name,ConnectString)": 0,
+            "Connection8(Type,Name,ConnectString)": 0,
+            "Connection9(Type,Name,ConnectString)": 0,
+            "Connection10(Type,Name,ConnectString)": 0
+          },
+          "unique_counts": {
+            "Load": 3,
+            "DUT Name": 1,
+            "Station": 1,
+            "Parameter": 3,
+            "SFIS_DeviceID": 3,
+            "Connection1 (Type,Name,ConnectString)": 1
+          }
+        }
+      },
+      "eSIM_DW_FW_UP_OFFLINE": {
+        "sheet_name": "eSIM_DW_FW_UP_OFFLINE",
+        "sheet_type": "unknown",
+        "total_rows": 116,
+        "total_columns": 17,
+        "column_names": [
+          "Index_116",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_116": "object",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "float64",
+          "Switch": "float64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "object",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            97.0,
+            99.0
+          ],
+          "execution_modes": [
+            "1",
+            "6",
+            "0",
+            "2,1",
+            "2:1",
+            "2:0",
+            "3",
+            "8",
+            "4:4,1",
+            "4:4,3",
+            "4:9,6",
+            "7:3,3000",
+            "4:12,15",
+            "2,0",
+            "2,2",
+            "2,4",
+            "2,6",
+            "2,9",
+            "4:19,13",
+            "2:17",
+            "2:2",
+            "2:4",
+            "5",
+            "4:7,1",
+            "9"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_116": "000",
+              "Phase": 0.0,
+              "Title": "0,Get_Path",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.GetPath",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "$cPath",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PC#-#PRG_GET_EXEPATH",
+              "TestID": "NUOP013",
+              "Unnamed: 16": 0.0
+            },
+            {
+              "Index_116": "001",
+              "Phase": NaN,
+              "Title": "*$(Auto_PWR_ON),Set Power ON",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+              "Reply": "@Command pass",
+              "EndPrompt": NaN,
+              "Ref": "power_status",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": 10000.0,
+              "ExecMode": "6",
+              "Description": "PC#-#Set Power off@#$",
+              "TestID": "B7PL011",
+              "Unnamed: 16": 0.0
+            },
+            {
+              "Index_116": "002",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Delay,\"1000\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "6",
+              "Description": "PC#-#Wait time@#$",
+              "TestID": "B7PL025",
+              "Unnamed: 16": 1.0
+            },
+            {
+              "Index_116": "003",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 1 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+              "Reply": "@Command pass",
+              "EndPrompt": NaN,
+              "Ref": "power_status",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": 10000.0,
+              "ExecMode": "1",
+              "Description": "PC#-#Set Power on@#$",
+              "TestID": "B7PL011",
+              "Unnamed: 16": 2.0
+            },
+            {
+              "Index_116": "004",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Delay,\"1000\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Wait time@#$",
+              "TestID": "B7PL025",
+              "Unnamed: 16": 3.0
+            }
+          ],
+          "non_null_counts": {
+            "Index_116": 116,
+            "Phase": 17,
+            "Title": 22,
+            "Marco": 0,
+            "Instrument": 0,
+            "Switch": 0,
+            "Send": 116,
+            "Reply": 112,
+            "EndPrompt": 6,
+            "Ref": 36,
+            "Validation": 15,
+            "Prompt": 0,
+            "Waiting": 15,
+            "ExecMode": 116,
+            "Description": 116,
+            "TestID": 116,
+            "Unnamed: 16": 99
+          },
+          "unique_counts": {
+            "Index_116": 116,
+            "Title": 21,
+            "Send": 68,
+            "Reply": 26,
+            "EndPrompt": 1,
+            "Ref": 25,
+            "Validation": 15,
+            "ExecMode": 25,
+            "Description": 68,
+            "TestID": 29
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "配置管理功能",
+    "多樣化測試支援",
+    "多設備測試支援",
+    "儀器參數配置",
+    "KANGAROO專案專用"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      97.0,
+      99.0
+    ],
+    "test_sequence": [
+      "初始化配置",
+      "設備連接測試",
+      "功能測試執行",
+      "結果驗證",
+      "報告生成"
+    ],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "中等",
+    "test_coverage": "功能測試",
+    "script_organization": "配置分離設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "KANGAROO",
+    "script_type": "KANGAROO_SCRIPT",
+    "special_capabilities": [
+      "多DUT測試支援",
+      "WiFi/BT校準測試",
+      "FW升級測試",
+      "OQC檢查流程"
+    ],
+    "best_practices": [
+      "模組化腳本設計",
+      "配置與執行分離",
+      "標準化測試流程"
+    ],
+    "learning_focus": [
+      "複雜測試流程管理",
+      "多設備協調測試",
+      "射頻測試最佳實踐"
+    ]
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "KANGAROO專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援KANGAROO專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為KANGAROO專案腳本模板",
+      "學習KANGAROO專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

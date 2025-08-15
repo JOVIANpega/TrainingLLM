@@ -1,0 +1,93 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,003:connect UART,010:PRG_GET_EXEPATH,011:Open  Commnad Line,013:flash_firmware_checkDMpor,017:Check Login,018:Login Linux_root,019:Login Linux_PW,020:Check BOOT Status
+UL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+'888,PASS,PASS,2025-07-28_16-41-34,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_16-46-52,237,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_16-51-11,255,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-14-50,261,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-19-12,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-23-46,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-28-19,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-32-40,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-36-59,256,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-41-32,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-45-53,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-50-11,256,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-54-32,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_18-58-53,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-03-16,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-07-35,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-11-57,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-16-17,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-20-40,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-25-00,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-29-22,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-33-44,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-38-06,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-42-28,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-46-51,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-51-11,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-55-32,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_19-59-53,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-04-14,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-08-35,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-12-54,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-17-15,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-21-37,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-26-00,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-30-33,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-35-07,270,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-39-28,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-43-50,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-48-12,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-52-32,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_20-56-53,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-01-14,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-05-32,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-09-53,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-13-53,237,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-17-52,237,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-22-24,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-26-45,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-31-07,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-35-29,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-39-31,238,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-43-51,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-48-11,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-52-33,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_21-56-55,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-01-16,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-05-46,268,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-10-06,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-14-28,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-18-49,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-23-11,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-27-43,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-32-06,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-36-05,236,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-40-25,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-44-47,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-49-08,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-53-30,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_22-57-53,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-02-14,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-06-36,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-10-59,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-15-19,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-19-40,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-24-01,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-28-21,257,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-32-20,237,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-36-43,259,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-41-03,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-45-04,238,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-49-25,258,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-53-56,268,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#
+'LoopRunning,PASS,PASS,2025-07-28_23-58-27,269,512314,0,0,0,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#

@@ -1,0 +1,9 @@
+﻿Sheet,Row Type,Name,Value
+Properties,Sample_1,Version,2504141449461
+Properties,Sample_2,Creator,kevintai
+
+Sheet,Row Type,Load,DUT Name,Station,Parameter,SFIS_DeviceID,"ScanBarcode( {Name,Lengh,Pattern} )","Connection1 (Type,Name,ConnectString)","Connection2 (Type,Name,ConnectString)","Connection3 (Type,Name,ConnectString)","Connection4(Type,Name,ConnectString)","Connection5(Type,Name,ConnectString)","Connection6(Type,Name,ConnectString)","Connection7(Type,Name,ConnectString)","Connection8(Type,Name,ConnectString)","Connection9(Type,Name,ConnectString)","Connection10(Type,Name,ConnectString)"
+DUTs,Sample_1,*$(LOAD_1),Kangaroo$eSIM_DW_FW_UP_OFFLINE,"eSIM_DW_FW_UP_OFFLINE,0","*$(PortID_1),*$(ATPortNUM_1)",*$(DEVID_1),,"""DLL:esim_db_access.dll"",""db"",""*$(ServerURL)""",,,,,,,,,
+DUTs,Sample_2,*$(LOAD_2),Kangaroo$eSIM_DW_FW_UP_OFFLINE,"eSIM_DW_FW_UP_OFFLINE,0","*$(PortID_2),*$(ATPortNUM_2)",*$(DEVID_2),,"""DLL:esim_db_access.dll"",""db"",""*$(ServerURL)""",,,,,,,,,
+DUTs,Sample_3,*$(LOAD_3),Kangaroo$eSIM_DW_FW_UP_OFFLINE,"eSIM_DW_FW_UP_OFFLINE,0","*$(PortID_3),*$(ATPortNUM_3)",*$(DEVID_3),,"""DLL:esim_db_access.dll"",""db"",""*$(ServerURL)""",,,,,,,,,
+

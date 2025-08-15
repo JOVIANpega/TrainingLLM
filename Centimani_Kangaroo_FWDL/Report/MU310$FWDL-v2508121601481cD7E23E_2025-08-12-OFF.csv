@@ -1,0 +1,12 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,020:Open  Commnad Line,022:flash_firmware_checkDMpor,35:End of Firmware Update Process,038:Check Login,039:Login Linux_root,040:Login Linux_PW,041:Check BOOT Status,043:Check PCIE MODE
+UL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA,NA,NA,NA,NA
+'222,PASS,PASS,2025-08-12_18-55-54,109,512314,0,@DM PORT found,0,@MU310 login:,@Password,@root,@~#,@MU310
+'666,FAIL,IPIP048-036:Check BOOT Status :Send Command to DUT Fail.,2025-08-12_18-56-36,13,512314,0,@DM PORT found,0

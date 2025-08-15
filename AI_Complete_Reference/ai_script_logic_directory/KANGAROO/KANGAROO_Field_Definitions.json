@@ -1,0 +1,4810 @@
+{
+  "project_name": "KANGAROO",
+  "description": "KANGAROO專案欄位定義參考",
+  "analysis_date": "2025-08-12T00:11:29.728459",
+  "field_categories": {
+    "all_fields": [
+      "Connection1 (Type,Name,ConnectString)",
+      "Connection10(Type,Name,ConnectString)",
+      "Connection2 (Type,Name,ConnectString)",
+      "Connection3 (Type,Name,ConnectString)",
+      "Connection4(Type,Name,ConnectString)",
+      "Connection5(Type,Name,ConnectString)",
+      "Connection6(Type,Name,ConnectString)",
+      "Connection7(Type,Name,ConnectString)",
+      "Connection8(Type,Name,ConnectString)",
+      "Connection9(Type,Name,ConnectString)",
+      "ControlDLL",
+      "DUT Name",
+      "Desc",
+      "Describe",
+      "Description",
+      "EndPrompt",
+      "ExecMode",
+      "Functions",
+      "Index_1",
+      "Index_105",
+      "Index_116",
+      "Index_253",
+      "Index_259",
+      "Index_260",
+      "Index_371",
+      "Index_407",
+      "Index_49",
+      "Index_5",
+      "Index_50",
+      "Index_615",
+      "Instrument",
+      "Load",
+      "Loss",
+      "Marco",
+      "Mount",
+      "Name",
+      "Parameter",
+      "Phase",
+      "Prompt",
+      "Ref",
+      "Release Date",
+      "Reply",
+      "SFIS_DeviceID",
+      "ScanBarcode( {Name,Lengh,Pattern} )",
+      "Send",
+      "Settings",
+      "Station",
+      "Sub",
+      "Switch",
+      "TestID",
+      "Title",
+      "V1.83",
+      "Validation",
+      "Value",
+      "Version",
+      "Waiting",
+      "和碩聯合科技(股)公司 PEGATRON CORP."
+    ],
+    "other_fields": [
+      "Connection1 (Type,Name,ConnectString)",
+      "Connection10(Type,Name,ConnectString)",
+      "Connection2 (Type,Name,ConnectString)",
+      "Connection3 (Type,Name,ConnectString)",
+      "Connection4(Type,Name,ConnectString)",
+      "Connection5(Type,Name,ConnectString)",
+      "Connection6(Type,Name,ConnectString)",
+      "Connection7(Type,Name,ConnectString)",
+      "Connection8(Type,Name,ConnectString)",
+      "Connection9(Type,Name,ConnectString)",
+      "ControlDLL",
+      "DUT Name",
+      "Desc",
+      "Describe",
+      "Description",
+      "EndPrompt",
+      "Functions",
+      "Index_1",
+      "Index_105",
+      "Index_116",
+      "Index_253",
+      "Index_259",
+      "Index_260",
+      "Index_371",
+      "Index_407",
+      "Index_49",
+      "Index_5",
+      "Index_50",
+      "Index_615",
+      "Instrument",
+      "Load",
+      "Loss",
+      "Marco",
+      "Mount",
+      "Name",
+      "Parameter",
+      "Prompt",
+      "Ref",
+      "Release Date",
+      "SFIS_DeviceID",
+      "ScanBarcode( {Name,Lengh,Pattern} )",
+      "Settings",
+      "Station",
+      "Sub",
+      "Switch",
+      "TestID",
+      "Title",
+      "V1.83",
+      "Value",
+      "Version",
+      "Waiting",
+      "和碩聯合科技(股)公司 PEGATRON CORP."
+    ],
+    "phase_fields": [
+      "Phase"
+    ],
+    "action_fields": [
+      "Send"
+    ],
+    "response_fields": [
+      "Reply"
+    ],
+    "validation_fields": [
+      "Validation"
+    ],
+    "execution_fields": [
+      "ExecMode"
+    ]
+  },
+  "field_patterns": {},
+  "field_examples": {
+    "Name": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "2504191200312"
+          ],
+          [
+            "Creator",
+            "Nancy"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Value": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "2504191200312"
+          ],
+          [
+            "Creator",
+            "Nancy"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "2504071414261"
+          ],
+          [
+            "Creator",
+            "ricky1_lee"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "2504101752108"
+          ],
+          [
+            "Creator",
+            "ricky1_lee"
+          ]
+        ]
+      }
+    ],
+    "Mount": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "Sub": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "ControlDLL": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "Settings": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "Functions": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "Version": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Switch": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Desc": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "IPOWER2401",
+            "",
+            "iPower2401.dll",
+            "192.168.201.11,192.168.201.3,9999,1",
+            "POWERSWITCH",
+            "1.0.0.0",
+            "",
+            "Power Switch 2401 "
+          ],
+          [
+            "",
+            "OSP120",
+            "",
+            "NFT.dll",
+            "192.168.48.147,1000,6",
+            "NFT",
+            "1.0.0.0",
+            "",
+            "NFT analyser OSP120"
+          ]
+        ]
+      }
+    ],
+    "Loss": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "",
+            "RFSwitch3001",
+            "RFSwitch3001.dll",
+            "GPIB,GPIB0::1::INSTR,1,1",
+            "1.0.0.0",
+            "0",
+            "RF Switch 1 to 4"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Load": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "DUT Name": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Station": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Parameter": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "SFIS_DeviceID": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "ScanBarcode( {Name,Lengh,Pattern} )": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection1 (Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection2 (Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection3 (Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection4(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection5(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection6(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection7(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection8(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection9(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection10(Type,Name,ConnectString)": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+            "*$(DEVID_1)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$WIFI&5GOTA",
+            "WIFI&5GOTA,0",
+            "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+            "*$(DEVID_2)",
+            "{ISN,,}",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+            "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+            "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_1),*$(DUTIP_1),1",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "Kangaroo$MB FUNCTION",
+            "MB FUNCTION,0",
+            "*$(PCIP_2),*$(DUTIP_2),2",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+            "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+            "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(LOAD_1)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+            "*$(DEVID_1)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "*$(LOAD_2)",
+            "KANGAROO$FWDL",
+            "FWDL,1",
+            "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+            "*$(DEVID_2)",
+            "{ISN,15,[0-9A-F]};",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_615": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Phase": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Title": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Marco": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Instrument": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Send": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Reply": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "EndPrompt": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Ref": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Validation": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Prompt": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Waiting": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "ExecMode": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Description": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "TestID": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_5": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "和碩聯合科技(股)公司 PEGATRON CORP.": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "七碼定義Definition",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CVP RD3 SW2 Product Error Code definition as below：",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "七碼定義Definition",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CVP RD3 SW2 Product Error Code definition as below：",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "V1.83": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Test Item All",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Test Item All",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Release Date": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Describe": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_253": [
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_105": [
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "FWDL",
+        "examples": [
+          [
+            "000",
+            "0",
+            "*$(AUTOPowerON),Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 1 >/proc/power/output{9}\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ],
+          [
+            "001",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "sheet": "FWDL",
+        "examples": [
+          [
+            "000",
+            "0",
+            "*$(AUTOPowerON),Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 1 >/proc/power/output{9}\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ],
+          [
+            "001",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_371": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC_TPE",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Index_407": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check_TPE",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Index_260": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "WIFI&BT CAL&VERIF",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"loader.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "WIFI&BT CAL&VERIF",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"loader.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_259": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "Cellular Verification",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "065",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Connect,\"UART_fix\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "Cellular Verification",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "065",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Connect,\"UART_fix\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_50": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "5G_PathLoss",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "5G_PathLoss",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_1": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT0_TX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT3_TX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT0_RX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      }
+    ],
+    "Index_49": [
+      {
+        "file": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "sheet": "AIR Leakage",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "sheet": "AIR Leakage",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_116": [
+      {
+        "file": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "sheet": "eSIM_DW_FW_UP_OFFLINE",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get_Path",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "001",
+            "",
+            "*$(Auto_PWR_ON),Set Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "sheet": "eSIM_DW_FW_UP_OFFLINE",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get_Path",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "001",
+            "",
+            "*$(Auto_PWR_ON),Set Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ]
+        ]
+      }
+    ]
+  }
+}

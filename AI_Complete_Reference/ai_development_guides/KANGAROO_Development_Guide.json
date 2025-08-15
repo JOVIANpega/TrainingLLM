@@ -1,0 +1,177 @@
+{
+  "project_name": "KANGAROO",
+  "description": "KANGAROO專案AI腳本開發指南",
+  "created_date": "2025-08-12T00:15:23.862745",
+  "field_overview": {
+    "total_fields": 57,
+    "field_categories": {
+      "all_fields": [
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Describe",
+        "Description",
+        "EndPrompt",
+        "ExecMode",
+        "Functions",
+        "Index_1",
+        "Index_105",
+        "Index_116",
+        "Index_253",
+        "Index_259",
+        "Index_260",
+        "Index_371",
+        "Index_407",
+        "Index_49",
+        "Index_5",
+        "Index_50",
+        "Index_615",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "Parameter",
+        "Phase",
+        "Prompt",
+        "Ref",
+        "Release Date",
+        "Reply",
+        "SFIS_DeviceID",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Send",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "TestID",
+        "Title",
+        "V1.83",
+        "Validation",
+        "Value",
+        "Version",
+        "Waiting",
+        "和碩聯合科技(股)公司 PEGATRON CORP."
+      ],
+      "other_fields": [
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Describe",
+        "Description",
+        "EndPrompt",
+        "Functions",
+        "Index_1",
+        "Index_105",
+        "Index_116",
+        "Index_253",
+        "Index_259",
+        "Index_260",
+        "Index_371",
+        "Index_407",
+        "Index_49",
+        "Index_5",
+        "Index_50",
+        "Index_615",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "Parameter",
+        "Prompt",
+        "Ref",
+        "Release Date",
+        "SFIS_DeviceID",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "TestID",
+        "Title",
+        "V1.83",
+        "Value",
+        "Version",
+        "Waiting",
+        "和碩聯合科技(股)公司 PEGATRON CORP."
+      ],
+      "phase_fields": [
+        "Phase"
+      ],
+      "action_fields": [
+        "Send"
+      ],
+      "response_fields": [
+        "Reply"
+      ],
+      "validation_fields": [
+        "Validation"
+      ],
+      "execution_fields": [
+        "ExecMode"
+      ]
+    },
+    "key_fields": [
+      "ExecMode",
+      "Phase",
+      "Validation",
+      "Send"
+    ]
+  },
+  "logic_overview": {
+    "total_files": 10,
+    "complexity_distribution": {
+      "simple": 1,
+      "medium": 9,
+      "complex": 0
+    },
+    "common_patterns": [
+      "階段式測試流程"
+    ]
+  },
+  "development_tips": [
+    "Kangaroo專案使用標準的階段式測試結構",
+    "重視儀器參數配置和設備連接管理",
+    "支援多設備測試和並行執行",
+    "參考KANGAROO專案的現有腳本結構",
+    "保持與專案標準的一致性",
+    "使用專案特定的欄位命名規範"
+  ],
+  "common_issues": [
+    "欄位命名不一致導致維護困難",
+    "缺少適當的錯誤處理機制",
+    "測試流程邏輯過於複雜",
+    "缺少必要的驗證步驟",
+    "儀器參數配置不完整"
+  ],
+  "optimization_suggestions": [
+    "標準化欄位命名規範",
+    "簡化複雜的測試流程",
+    "增加錯誤處理和恢復機制",
+    "優化測試執行順序",
+    "實作並行測試執行"
+  ]
+}

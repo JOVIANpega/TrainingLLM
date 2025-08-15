@@ -1,0 +1,8 @@
+﻿Sheet,Row Type,Name,Value
+Properties,Sample_1,Version,2504101752108
+Properties,Sample_2,Creator,ricky1_lee
+
+Sheet,Row Type,Load,DUT Name,Station,Parameter,SFIS_DeviceID,"ScanBarcode( {Name,Lengh,Pattern} )","Connection1 (Type,Name,ConnectString)","Connection2 (Type,Name,ConnectString)","Connection3 (Type,Name,ConnectString)","Connection4(Type,Name,ConnectString)","Connection5(Type,Name,ConnectString)","Connection6(Type,Name,ConnectString)","Connection7(Type,Name,ConnectString)","Connection8(Type,Name,ConnectString)","Connection9(Type,Name,ConnectString)","Connection10(Type,Name,ConnectString)"
+DUTs,Sample_1,*$(LOAD_1),KANGAROO$FWDL,"FWDL,1","*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",*$(DEVID_1),"{ISN,15,[0-9A-F]};",,,,,,,,,,
+DUTs,Sample_2,*$(LOAD_2),KANGAROO$FWDL,"FWDL,1","*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",*$(DEVID_2),"{ISN,15,[0-9A-F]};",,,,,,,,,,
+

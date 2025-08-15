@@ -1,0 +1,12 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,005:Pop window,009:Open UART,010:Check Boot,006:Check PCIE MODE
+UL,,,,,,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA
+'555,PASS,PASS,2025-07-29_15-07-34,3,512314,@OK,0,@root,@MU310
+'333,PASS,PASS,2025-07-29_15-07-56,3,512314,@OK,0,@root,@MU310

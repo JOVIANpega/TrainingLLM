@@ -1,0 +1,1105 @@
+{
+  "metadata": {
+    "title": "Centimani Test Item Code - ERROR CODE 速查表",
+    "version": "V2.04",
+    "date": "20250310",
+    "description": "KANGAROO 專案測試項目代碼和錯誤代碼速查表",
+    "total_sheets": 4,
+    "format": "AI-friendly structured data"
+  },
+  "quick_reference": {
+    "total_error_codes": 111,
+    "total_test_items": 30404,
+    "available_sheets": [
+      "七碼定義Definition",
+      "Test Item All",
+      "Version History",
+      "工作表1"
+    ]
+  },
+  "error_codes": {
+    "七碼定義Definition": [
+      {
+        "code": 1,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 2,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 3,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 4,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 5,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 6,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 7,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 9,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 10,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      },
+      {
+        "code": 11,
+        "row_data": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+          "Unnamed: 1": 2,
+          "Unnamed: 2": 3,
+          "Unnamed: 3": 4,
+          "Unnamed: 4": 5,
+          "Unnamed: 5": 6,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": "-",
+          "Unnamed: 8": 9,
+          "Unnamed: 9": 10,
+          "Unnamed: 10": 11
+        },
+        "sheet": "七碼定義Definition"
+      }
+    ],
+    "Version History": [
+      {
+        "code": 20170223,
+        "row_data": {
+          "Version": "V1.0",
+          "Release Date": 20170223,
+          "Describe": "First Release"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170308,
+        "row_data": {
+          "Version": "V1.1",
+          "Release Date": 20170308,
+          "Describe": "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170418,
+        "row_data": {
+          "Version": "V1.2",
+          "Release Date": 20170418,
+          "Describe": "1.Insert BRPW013~14 for voltage test item\n2.Add FWUR017 for UART Loop Back Fail\n3.Add BRPW022 for Measure_1.125V\n4.Add BRPW023 for Measure_1.26V\n5.Add BRPW024 for Voltage test point over the criteria\n6.Format Adjust"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170424,
+        "row_data": {
+          "Version": "V1.3",
+          "Release Date": 20170424,
+          "Describe": "1.Format Adjust"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170426,
+        "row_data": {
+          "Version": "V1.4",
+          "Release Date": 20170426,
+          "Describe": "1.Modify version Information\n2.Added new error code as below\nIOET148~IOET152"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170428,
+        "row_data": {
+          "Version": "V1.5",
+          "Release Date": 20170428,
+          "Describe": "1.Added Note column for record applicant\n2.Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170704,
+        "row_data": {
+          "Version": "V1.6",
+          "Release Date": 20170704,
+          "Describe": "1.Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170710,
+        "row_data": {
+          "Version": "V1.7",
+          "Release Date": 20170710,
+          "Describe": "1.Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170718,
+        "row_data": {
+          "Version": "V1.8",
+          "Release Date": 20170718,
+          "Describe": "Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170727,
+        "row_data": {
+          "Version": "V1.9",
+          "Release Date": 20170727,
+          "Describe": "Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20170905,
+        "row_data": {
+          "Version": "V1.10",
+          "Release Date": 20170905,
+          "Describe": "Added new item as blue markers "
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20171102,
+        "row_data": {
+          "Version": "V1.11",
+          "Release Date": 20171102,
+          "Describe": "1.Added new item as blue markers\n2.CMRX023;CMRX024;CMRX025 修正中文描述"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20180330,
+        "row_data": {
+          "Version": "V1.12",
+          "Release Date": 20180330,
+          "Describe": "1.Added new item as blue markers(Internal Error Code)"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20180522,
+        "row_data": {
+          "Version": "V1.13",
+          "Release Date": 20180522,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181017,
+        "row_data": {
+          "Version": "V1.14",
+          "Release Date": 20181017,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181029,
+        "row_data": {
+          "Version": "V1.15",
+          "Release Date": 20181029,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181031,
+        "row_data": {
+          "Version": "V1.16",
+          "Release Date": 20181031,
+          "Describe": "1.Added new Product Type(NB) for TY Factory\n2.Change ROW 1472 error code( the same error code)"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181114,
+        "row_data": {
+          "Version": "V1.17",
+          "Release Date": 20181114,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181203,
+        "row_data": {
+          "Version": "V1.18",
+          "Release Date": 20181203,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181220,
+        "row_data": {
+          "Version": "V1.19",
+          "Release Date": 20181220,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20181226,
+        "row_data": {
+          "Version": "V1.20",
+          "Release Date": 20181226,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190110,
+        "row_data": {
+          "Version": "V1.21",
+          "Release Date": 20190110,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190122,
+        "row_data": {
+          "Version": "V1.22",
+          "Release Date": 20190122,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190320,
+        "row_data": {
+          "Version": "V1.23",
+          "Release Date": 20190320,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190419,
+        "row_data": {
+          "Version": "V1.24",
+          "Release Date": 20190419,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190624,
+        "row_data": {
+          "Version": "V1.25",
+          "Release Date": 20190624,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20190821,
+        "row_data": {
+          "Version": "V1.26",
+          "Release Date": 20190821,
+          "Describe": "1.Added special error code for Arlo Optical as red markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200103,
+        "row_data": {
+          "Version": "V1.27",
+          "Release Date": 20200103,
+          "Describe": "1.Corrected wrong description as red word\n2.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200103,
+        "row_data": {
+          "Version": "V1.28",
+          "Release Date": 20200103,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200108,
+        "row_data": {
+          "Version": "V1.29",
+          "Release Date": 20200108,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200522,
+        "row_data": {
+          "Version": "V1.30",
+          "Release Date": 20200522,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200525,
+        "row_data": {
+          "Version": "V1.31",
+          "Release Date": 20200525,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200529,
+        "row_data": {
+          "Version": "V1.32",
+          "Release Date": 20200529,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20200603,
+        "row_data": {
+          "Version": "V1.33",
+          "Release Date": 20200603,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20201003,
+        "row_data": {
+          "Version": "V1.34",
+          "Release Date": 20201003,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20201121,
+        "row_data": {
+          "Version": "V1.35",
+          "Release Date": 20201121,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20201224,
+        "row_data": {
+          "Version": "V1.36",
+          "Release Date": 20201224,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210308,
+        "row_data": {
+          "Version": "V1.37",
+          "Release Date": 20210308,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210621,
+        "row_data": {
+          "Version": "V1.38",
+          "Release Date": 20210621,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210709,
+        "row_data": {
+          "Version": "V1.39",
+          "Release Date": 20210709,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210818,
+        "row_data": {
+          "Version": "V1.40",
+          "Release Date": 20210818,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210818,
+        "row_data": {
+          "Version": "V1.41",
+          "Release Date": 20210818,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20210910,
+        "row_data": {
+          "Version": "V1.42",
+          "Release Date": 20210910,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20211019,
+        "row_data": {
+          "Version": "V1.43",
+          "Release Date": 20211019,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20211227,
+        "row_data": {
+          "Version": "V1.44",
+          "Release Date": 20211227,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220303,
+        "row_data": {
+          "Version": "V1.45",
+          "Release Date": 20220303,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220401,
+        "row_data": {
+          "Version": "V1.46",
+          "Release Date": 20220401,
+          "Describe": "1.Added new item as blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220607,
+        "row_data": {
+          "Version": "V1.47",
+          "Release Date": 20220607,
+          "Describe": "1.Add ipcam-als item code"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220620,
+        "row_data": {
+          "Version": "V1.48",
+          "Release Date": 20220620,
+          "Describe": "1. Added ipcam-postf test code\n2. Added vsb3918 test code (Acoustic-- AudioAcoustic)"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220701,
+        "row_data": {
+          "Version": "V1.49",
+          "Release Date": 20220701,
+          "Describe": "1. Added H4 POST RGB test item code"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220713,
+        "row_data": {
+          "Version": "V1.50",
+          "Release Date": 20220713,
+          "Describe": "1. Added TOF item code"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220906,
+        "row_data": {
+          "Version": "V1.51",
+          "Release Date": 20220906,
+          "Describe": "1. Added ALS,RGB,LBS Test item code"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20220926,
+        "row_data": {
+          "Version": "V1.52",
+          "Release Date": 20220926,
+          "Describe": "1. Changed Alula sfis error code Rev1.49\n2. Added test item as blue markers (benson1.50)"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20221004,
+        "row_data": {
+          "Version": "V1.53",
+          "Release Date": 20221004,
+          "Describe": "1. Added new item as gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20221018,
+        "row_data": {
+          "Version": "V1.54",
+          "Release Date": 20221018,
+          "Describe": "1. Added nura items as gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20221128,
+        "row_data": {
+          "Version": "V1.55",
+          "Release Date": 20221128,
+          "Describe": "1. Added new items as gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20221209,
+        "row_data": {
+          "Version": "V1.57",
+          "Release Date": 20221209,
+          "Describe": "1. Added Error Code  as gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230118,
+        "row_data": {
+          "Version": "V1.58",
+          "Release Date": 20230118,
+          "Describe": "1.Added Error Code as green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230131,
+        "row_data": {
+          "Version": "V1.59",
+          "Release Date": 20230131,
+          "Describe": "1.Added Error Code as green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230202,
+        "row_data": {
+          "Version": "V1.60",
+          "Release Date": 20230202,
+          "Describe": "1. Added Error Code as orange markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230207,
+        "row_data": {
+          "Version": "V1.61",
+          "Release Date": 20230207,
+          "Describe": "1.Added Error Code as purple markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230216,
+        "row_data": {
+          "Version": "V1.62",
+          "Release Date": 20230216,
+          "Describe": "1. Added Error Code as Yelow markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230217,
+        "row_data": {
+          "Version": "V1.63",
+          "Release Date": 20230217,
+          "Describe": "1. Added Error Code  as Orange markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230217,
+        "row_data": {
+          "Version": "V1.64",
+          "Release Date": 20230217,
+          "Describe": "1. Added Error Code  as Orange markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230224,
+        "row_data": {
+          "Version": "V1.65",
+          "Release Date": 20230224,
+          "Describe": "1. Added Error Code  as Chocolate markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230302,
+        "row_data": {
+          "Version": "V1.66",
+          "Release Date": 20230302,
+          "Describe": "1. Added Error Code  as Blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230308,
+        "row_data": {
+          "Version": "V1.67",
+          "Release Date": 20230308,
+          "Describe": "1. Added Error Code  as dark green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230309,
+        "row_data": {
+          "Version": "V1.68",
+          "Release Date": 20230309,
+          "Describe": "1. Added Error Code as Blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230310,
+        "row_data": {
+          "Version": "V1.69",
+          "Release Date": 20230310,
+          "Describe": "1. Added Error Code  as Gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230315,
+        "row_data": {
+          "Version": "V1.70",
+          "Release Date": 20230315,
+          "Describe": "1. Added Error Code  as Pink markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230316,
+        "row_data": {
+          "Version": "V1.71",
+          "Release Date": 20230316,
+          "Describe": "1. Added Error Code as Blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230329,
+        "row_data": {
+          "Version": "V1.72",
+          "Release Date": 20230329,
+          "Describe": "1. Added Error Code  as Green markers\n2. Changed Error Code as gray markers 1.72"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230410,
+        "row_data": {
+          "Version": "V1.73",
+          "Release Date": 20230410,
+          "Describe": "1. Added Error Code  as Gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230426,
+        "row_data": {
+          "Version": "V1.74",
+          "Release Date": 20230426,
+          "Describe": "1. Added Error Code  as Orange markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230504,
+        "row_data": {
+          "Version": "V1.75",
+          "Release Date": 20230504,
+          "Describe": "1. Added Error Code  as Blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230515,
+        "row_data": {
+          "Version": "V1.76",
+          "Release Date": 20230515,
+          "Describe": "1. Added Error Code  as Green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230526,
+        "row_data": {
+          "Version": "V1.77",
+          "Release Date": 20230526,
+          "Describe": "1. Added Error Code  as Blue markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230608,
+        "row_data": {
+          "Version": "V1.78",
+          "Release Date": 20230608,
+          "Describe": "1. Added Error Code  as green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230707,
+        "row_data": {
+          "Version": "V1.79",
+          "Release Date": 20230707,
+          "Describe": "1. Added Error Code  as orange markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230802,
+        "row_data": {
+          "Version": "V1.80",
+          "Release Date": 20230802,
+          "Describe": "1. Added Error Code  as green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230802,
+        "row_data": {
+          "Version": "V1.81",
+          "Release Date": 20230802,
+          "Describe": "1. Added Error Code for alula as red markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20230913,
+        "row_data": {
+          "Version": "V1.82",
+          "Release Date": 20230913,
+          "Describe": "1. Added Error Code for alula as red markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20231027,
+        "row_data": {
+          "Version": "V1.83",
+          "Release Date": 20231027,
+          "Describe": "1. Added Error Code for alula as green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20231103,
+        "row_data": {
+          "Version": "V1.84",
+          "Release Date": 20231103,
+          "Describe": "1. Added Error Code for alula as yelow markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20231116,
+        "row_data": {
+          "Version": "V1.85",
+          "Release Date": 20231116,
+          "Describe": "1. Added Error Code for NURA4k as PURPLE markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20231128,
+        "row_data": {
+          "Version": "V1.86",
+          "Release Date": 20231128,
+          "Describe": "1. Added Error Code for Alula as Gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20231209,
+        "row_data": {
+          "Version": "V1.87",
+          "Release Date": 20231209,
+          "Describe": "1. Added Error Code for Alula as Green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240126,
+        "row_data": {
+          "Version": "V1.88",
+          "Release Date": 20240126,
+          "Describe": "1. Added Error Code for Rapotr as Gray markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240327,
+        "row_data": {
+          "Version": "V1.89",
+          "Release Date": 20240327,
+          "Describe": "1. Added Error Code for Rapotr3 as Green markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240417,
+        "row_data": {
+          "Version": "V1.90",
+          "Release Date": 20240417,
+          "Describe": "1. Added Error Code for Rapotr2 as Purple markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240529,
+        "row_data": {
+          "Version": "V1.91",
+          "Release Date": 20240529,
+          "Describe": "1. Added Error Code for Rapotr3 as PINK markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240711,
+        "row_data": {
+          "Version": "V1.92",
+          "Release Date": 20240711,
+          "Describe": "1. Added Error Code for kangaroo"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240715,
+        "row_data": {
+          "Version": "V1.93",
+          "Release Date": 20240715,
+          "Describe": "1. Added Error Code for Hal as Gray Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240715,
+        "row_data": {
+          "Version": "V1.94",
+          "Release Date": 20240715,
+          "Describe": "1. Added Error Code for garoo as green Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240608,
+        "row_data": {
+          "Version": "V1.95",
+          "Release Date": 20240608,
+          "Describe": "1. Added Error Code for oradeo as purple Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240830,
+        "row_data": {
+          "Version": "V1.96",
+          "Release Date": 20240830,
+          "Describe": "1. Added Error Code for HALOW as BLUE Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240906,
+        "row_data": {
+          "Version": "V1.97",
+          "Release Date": 20240906,
+          "Describe": "1. Added Error Code for HALOW as Gray Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20240910,
+        "row_data": {
+          "Version": "V1.98",
+          "Release Date": 20240910,
+          "Describe": "1. Added Error Code for HALOW as Blue Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20241015,
+        "row_data": {
+          "Version": "V1.99",
+          "Release Date": 20241015,
+          "Describe": "1. Added Error Code as Green Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20241106,
+        "row_data": {
+          "Version": "V2.00",
+          "Release Date": 20241106,
+          "Describe": "1. Added Error Code as Green Markers"
+        },
+        "sheet": "Version History"
+      },
+      {
+        "code": 20241114,
+        "row_data": {
+          "Version": "V2.01",
+          "Release Date": 20241114,
+          "Describe": "1. Added Error Code as blue Markers"
+        },
+        "sheet": "Version History"
+      }
+    ]
+  }
+}

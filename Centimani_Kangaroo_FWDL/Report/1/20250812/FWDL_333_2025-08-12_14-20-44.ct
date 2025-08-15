@@ -1,0 +1,8 @@
+X999,333,MU310$FWDL,512314,75,FAIL,"NBOT035-014:flash_firmware_checkDMpor":Reply doesn't Match @SUCCESS
+@STEP003@DUT IDLE,OTFX093-003:DUT IDLE,110,PASS,-9999.999999,-9999.999999
+@STEP005@DUT IDLE,OTFX093-005:DUT IDLE,114,PASS,-9999.999999,-9999.999999
+@STEP006@Check ADB and DM PORT,OTFX082-008:Open  Commnad Line,54,0,-9999.999999,-9999.999999
+,OTFX082-009:Enable Iperf Server,5,@,-9999.999999,-9999.999999
+@STEP007@DUT IDLE,OTFX093-007:DUT IDLE,112,PASS,-9999.999999,-9999.999999
+@STEP008@DO burn in Fimrware,OTFX082-013:Enable Iperf Server,3,@,-9999.999999,-9999.999999
+,NBOT035-014:flash_firmware_checkDMpor,70012,cmd /c "Tools\FW_IMAGE\BurnIN_firmware_checkDM_AT_port_Q611GT.bat"|===============================================|   MU310 ???瑕神撌亙 v1.0 / MU310 Firmware Flashing Tool v1.0|===============================================|=== 甇仿? 1: 瑼Ｘ ADB ?????ste,-9999.999999,-9999.999999

@@ -1,0 +1,192 @@
+{
+  "project_name": "VALO360",
+  "description": "VALO360專案AI腳本開發指南",
+  "created_date": "2025-08-12T00:15:23.864838",
+  "field_overview": {
+    "total_fields": 62,
+    "field_categories": {
+      "all_fields": [
+        "1.       Video stream on PC (VLC)",
+        "2025/4/17 added",
+        "5G",
+        "5G w/o battery",
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Description",
+        "EndPrompt",
+        "ExecMode",
+        "Functions",
+        "Index_126",
+        "Index_149",
+        "Index_181",
+        "Index_24",
+        "Index_34",
+        "Index_41",
+        "Index_47",
+        "Index_65",
+        "Index_93",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "PASS/FAIL Judgement",
+        "Parameter",
+        "Phase",
+        "Prompt",
+        "Ref",
+        "Remark",
+        "Reply",
+        "SFIS_DeviceID",
+        "SKU",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Send",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "Test Method",
+        "TestID",
+        "Title",
+        "Validation",
+        "Value",
+        "Version",
+        "Waiting",
+        "WebUI 僅能透過 Ethernet 連線",
+        "Wi-Fi",
+        "使用 Firefox 瀏覽器，登入 VALO360 後",
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ],
+      "other_fields": [
+        "1.       Video stream on PC (VLC)",
+        "2025/4/17 added",
+        "5G",
+        "5G w/o battery",
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Description",
+        "EndPrompt",
+        "Functions",
+        "Index_126",
+        "Index_149",
+        "Index_181",
+        "Index_24",
+        "Index_34",
+        "Index_41",
+        "Index_47",
+        "Index_65",
+        "Index_93",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "Parameter",
+        "Prompt",
+        "Ref",
+        "Remark",
+        "SFIS_DeviceID",
+        "SKU",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "Test Method",
+        "TestID",
+        "Title",
+        "Value",
+        "Version",
+        "Waiting",
+        "WebUI 僅能透過 Ethernet 連線",
+        "Wi-Fi",
+        "使用 Firefox 瀏覽器，登入 VALO360 後"
+      ],
+      "error_fields": [
+        "PASS/FAIL Judgement"
+      ],
+      "control_fields": [
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ],
+      "phase_fields": [
+        "Phase"
+      ],
+      "action_fields": [
+        "Send"
+      ],
+      "response_fields": [
+        "Reply"
+      ],
+      "validation_fields": [
+        "Validation"
+      ],
+      "execution_fields": [
+        "ExecMode"
+      ]
+    },
+    "key_fields": [
+      "ExecMode",
+      "Phase",
+      "Validation",
+      "Send"
+    ]
+  },
+  "logic_overview": {
+    "total_files": 10,
+    "complexity_distribution": {
+      "simple": 0,
+      "medium": 10,
+      "complex": 0
+    },
+    "common_patterns": [
+      "階段式測試流程",
+      "條件邏輯控制"
+    ]
+  },
+  "development_tips": [
+    "VALO360專案專注於功能測試驗證",
+    "使用標準化的測試項目代碼",
+    "支援多種測試模式和配置",
+    "參考VALO360專案的現有腳本結構",
+    "保持與專案標準的一致性",
+    "使用專案特定的欄位命名規範"
+  ],
+  "common_issues": [
+    "欄位命名不一致導致維護困難",
+    "缺少適當的錯誤處理機制",
+    "測試流程邏輯過於複雜",
+    "缺少必要的驗證步驟",
+    "儀器參數配置不完整"
+  ],
+  "optimization_suggestions": [
+    "標準化欄位命名規範",
+    "簡化複雜的測試流程",
+    "增加錯誤處理和恢復機制",
+    "優化測試執行順序",
+    "實作並行測試執行"
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "title": "AI腳本邏輯結構指南",
+  "description": "基於實際腳本分析的邏輯結構模式和設計原則",
+  "created_date": "2025-08-12T00:15:23.859388",
+  "structure_patterns": {
+    "KANGAROO_Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Kangaroo_MP_AIR_TestFlow_20250326C.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "KANGAROO_Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_ER2 OQC Function Check List_20250418.xlsx": {
+      "conditional_logic": [
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ]
+    },
+    "VALO360_VALO360_TestFlow_20250307_POE.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250218_ER2.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250218_POE_LoopOK.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250407_Function.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250326_IMU.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250326_Final.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_TestFlow_20250318_MB_ER2.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "VALO360_VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx": {
+      "conditional_logic": [
+        "透過瀏覽器，在 WebUI中設置 WiFi"
+      ]
+    },
+    "RAPTOR_Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "RAPTOR_Raptor_ALL_TestFlow_20230223_ALL.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Kilimanjaro_Kilimanjaro_LED_20201116_TestFlow.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "ZEBRA_Zebra_20190417_TestFlow.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "ZEBRA_wifi_TestFlow.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "ZEBRA_Zebra_20190725_TestFlow0801.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    }
+  },
+  "design_principles": [
+    "模組化設計：將測試流程分解為可重用的階段",
+    "一致性原則：保持欄位命名和結構的一致性",
+    "可讀性優先：使用清楚的欄位名稱和結構",
+    "錯誤處理：實作適當的錯誤處理和恢復機制",
+    "可維護性：設計易於維護和擴展的結構",
+    "效能考量：優化測試流程以減少執行時間",
+    "可擴展性：設計支援未來功能擴展的結構"
+  ],
+  "implementation_examples": {
+    "phase_based_structure": {
+      "description": "階段式測試結構",
+      "fields": [
+        "Phase",
+        "Send",
+        "Reply",
+        "Validation",
+        "ExecMode"
+      ],
+      "usage": "適用於需要按順序執行的測試流程"
+    },
+    "conditional_testing": {
+      "description": "條件式測試結構",
+      "fields": [
+        "Condition",
+        "Phase",
+        "Send",
+        "Validation"
+      ],
+      "usage": "適用於需要根據條件選擇執行路徑的測試"
+    },
+    "error_handling": {
+      "description": "錯誤處理結構",
+      "fields": [
+        "Phase",
+        "Send",
+        "Validation",
+        "Error",
+        "Retry"
+      ],
+      "usage": "適用於需要處理測試失敗和重試的場景"
+    }
+  },
+  "complexity_analysis": {
+    "KANGAROO_Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Test Item Code V2.04_20250310.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "simple"
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Kangaroo_MP_AIR_TestFlow_20250326C.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "KANGAROO_Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_ER2 OQC Function Check List_20250418.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": true,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250307_POE.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250218_ER2.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250218_POE_LoopOK.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250407_Function.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250326_IMU.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250326_Final.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_TestFlow_20250318_MB_ER2.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "VALO360_VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx": {
+      "has_phase_based_flow": false,
+      "has_conditional_logic": true,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "RAPTOR_Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "RAPTOR_Raptor_ALL_TestFlow_20230223_ALL.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Kilimanjaro_Kilimanjaro_LED_20201116_TestFlow.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "ZEBRA_Zebra_20190417_TestFlow.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "ZEBRA_wifi_TestFlow.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "ZEBRA_Zebra_20190725_TestFlow0801.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    }
+  }
+}

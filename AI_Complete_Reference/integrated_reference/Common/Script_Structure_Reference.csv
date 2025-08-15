@@ -1,0 +1,4 @@
+﻿腳本類型,主要工作表,標準欄位,說明
+VALO360 腳本,Station、TestItem、Parameter、Threshold、Validation、Result,測試項目、參數值、閾值、驗證規則、預期結果,標準化的測試腳本結構
+KANGAROO 腳本,Properties、Instrument、Switch、DUTs、測試流程工作表,屬性設定、儀器配置、開關設定、設備配置、測試步驟,流程化的測試腳本結構
+通用腳本,GUI介面、腳本生成器,需求輸入、模板選擇、腳本輸出,腳本生成工具

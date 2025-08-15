@@ -1,0 +1,826 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-11T11:49:19.013549",
+    "total_versions": 29,
+    "total_files": 49
+  },
+  "version_info": {
+    "20210506": [
+      {
+        "path": "Centimani INI file setting(20210506).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani INI file setting(20210506).xlsx",
+        "size": 22974,
+        "modified": "2024-04-25 16:05:00",
+        "versions": [
+          "20210506",
+          "202105"
+        ]
+      }
+    ],
+    "202105": [
+      {
+        "path": "Centimani INI file setting(20210506).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani INI file setting(20210506).xlsx",
+        "size": 22974,
+        "modified": "2024-04-25 16:05:00",
+        "versions": [
+          "20210506",
+          "202105"
+        ]
+      }
+    ],
+    "20230104": [
+      {
+        "path": "Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+        "size": 209255,
+        "modified": "2024-06-25 16:41:28",
+        "versions": [
+          "20230104",
+          "202301"
+        ]
+      }
+    ],
+    "202301": [
+      {
+        "path": "Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+        "size": 209255,
+        "modified": "2024-06-25 16:41:28",
+        "versions": [
+          "20230104",
+          "202301"
+        ]
+      }
+    ],
+    "20223010": [
+      {
+        "path": "Centimani Script User Guide(202230104).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani Script User Guide(202230104).xlsx",
+        "size": 37274,
+        "modified": "2024-04-25 16:05:00",
+        "versions": [
+          "20223010",
+          "202230"
+        ]
+      }
+    ],
+    "202230": [
+      {
+        "path": "Centimani Script User Guide(202230104).xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Centimani Script User Guide(202230104).xlsx",
+        "size": 37274,
+        "modified": "2024-04-25 16:05:00",
+        "versions": [
+          "20223010",
+          "202230"
+        ]
+      }
+    ],
+    "2.00": [
+      {
+        "path": "Test Item Code V2.00_20241106.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Test Item Code V2.00_20241106.xlsx",
+        "size": 368912,
+        "modified": "2025-08-11 10:31:49",
+        "versions": [
+          "2.00",
+          "20241106",
+          "202411"
+        ]
+      }
+    ],
+    "20241106": [
+      {
+        "path": "Test Item Code V2.00_20241106.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Test Item Code V2.00_20241106.xlsx",
+        "size": 368912,
+        "modified": "2025-08-11 10:31:49",
+        "versions": [
+          "2.00",
+          "20241106",
+          "202411"
+        ]
+      }
+    ],
+    "202411": [
+      {
+        "path": "Test Item Code V2.00_20241106.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\Test Item Code V2.00_20241106.xlsx",
+        "size": 368912,
+        "modified": "2025-08-11 10:31:49",
+        "versions": [
+          "2.00",
+          "20241106",
+          "202411"
+        ]
+      }
+    ],
+    "20250414": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "size": 35553,
+        "modified": "2025-04-29 15:24:00",
+        "versions": [
+          "20250414",
+          "202504"
+        ]
+      }
+    ],
+    "202504": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "size": 35553,
+        "modified": "2025-04-29 15:24:00",
+        "versions": [
+          "20250414",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "size": 235161,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250415",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "size": 212869,
+        "modified": "2025-04-15 10:27:14",
+        "versions": [
+          "20250415",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "size": 120316,
+        "modified": "2025-04-21 17:13:04",
+        "versions": [
+          "20250421",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "size": 132887,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250419",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "size": 270227,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250410",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "size": 3036102,
+        "modified": "2025-04-22 16:48:49",
+        "versions": [
+          "20250412",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "size": 1563088,
+        "modified": "2025-04-18 10:46:00",
+        "versions": [
+          "20250418",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+        "size": 157331,
+        "modified": "2025-04-10 17:25:02",
+        "versions": [
+          "20250407",
+          "202504"
+        ]
+      }
+    ],
+    "20250326": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "size": 38438,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+        "size": 67981,
+        "modified": "2025-03-27 16:17:44",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+        "size": 47553,
+        "modified": "2025-04-10 10:38:40",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      }
+    ],
+    "202503": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "size": 38438,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "size": 393226,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "2.04",
+          "20250310",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "size": 132266,
+        "modified": "2025-03-07 10:28:18",
+        "versions": [
+          "20250307",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+        "size": 85406,
+        "modified": "2025-03-14 15:30:30",
+        "versions": [
+          "20250307",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "size": 75557,
+        "modified": "2025-03-19 15:22:40",
+        "versions": [
+          "20250318",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+        "size": 67981,
+        "modified": "2025-03-27 16:17:44",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+        "size": 47553,
+        "modified": "2025-04-10 10:38:40",
+        "versions": [
+          "20250326",
+          "202503"
+        ]
+      }
+    ],
+    "20240923": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "size": 264932,
+        "modified": "2024-09-23 16:47:05",
+        "versions": [
+          "20240923",
+          "202409"
+        ]
+      }
+    ],
+    "202409": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "size": 264932,
+        "modified": "2024-09-23 16:47:05",
+        "versions": [
+          "20240923",
+          "202409"
+        ]
+      }
+    ],
+    "20250415": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "size": 235161,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250415",
+          "202504"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "size": 212869,
+        "modified": "2025-04-15 10:27:14",
+        "versions": [
+          "20250415",
+          "202504"
+        ]
+      }
+    ],
+    "20250421": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "size": 120316,
+        "modified": "2025-04-21 17:13:04",
+        "versions": [
+          "20250421",
+          "202504"
+        ]
+      }
+    ],
+    "20250419": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "size": 132887,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250419",
+          "202504"
+        ]
+      }
+    ],
+    "250407": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "size": 64611,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "250407"
+        ]
+      }
+    ],
+    "20250410": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+        "size": 270227,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "20250410",
+          "202504"
+        ]
+      }
+    ],
+    "2.04": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "size": 393226,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "2.04",
+          "20250310",
+          "202503"
+        ]
+      }
+    ],
+    "20250310": [
+      {
+        "path": "scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+        "size": 393226,
+        "modified": "2025-04-21 12:30:00",
+        "versions": [
+          "2.04",
+          "20250310",
+          "202503"
+        ]
+      }
+    ],
+    "20250307": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "size": 132266,
+        "modified": "2025-03-07 10:28:18",
+        "versions": [
+          "20250307",
+          "202503"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+        "size": 85406,
+        "modified": "2025-03-14 15:30:30",
+        "versions": [
+          "20250307",
+          "202503"
+        ]
+      }
+    ],
+    "20250412": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "size": 3036102,
+        "modified": "2025-04-22 16:48:49",
+        "versions": [
+          "20250412",
+          "202504"
+        ]
+      }
+    ],
+    "20250418": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "size": 1563088,
+        "modified": "2025-04-18 10:46:00",
+        "versions": [
+          "20250418",
+          "202504"
+        ]
+      }
+    ],
+    "20250218": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+        "size": 36519,
+        "modified": "2025-02-24 16:08:38",
+        "versions": [
+          "20250218",
+          "202502"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "size": 38252,
+        "modified": "2025-03-07 13:18:24",
+        "versions": [
+          "20250218",
+          "202502"
+        ]
+      }
+    ],
+    "202502": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+        "size": 36519,
+        "modified": "2025-02-24 16:08:38",
+        "versions": [
+          "20250218",
+          "202502"
+        ]
+      },
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "size": 38252,
+        "modified": "2025-03-07 13:18:24",
+        "versions": [
+          "20250218",
+          "202502"
+        ]
+      }
+    ],
+    "20250318": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "size": 75557,
+        "modified": "2025-03-19 15:22:40",
+        "versions": [
+          "20250318",
+          "202503"
+        ]
+      }
+    ],
+    "20250407": [
+      {
+        "path": "scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+        "full_path": "D:\\((Python TOOL\\TrainingLLM\\Centimani DOC\\scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+        "size": 157331,
+        "modified": "2025-04-10 17:25:02",
+        "versions": [
+          "20250407",
+          "202504"
+        ]
+      }
+    ]
+  },
+  "trends": {
+    "20210506": {
+      "file_count": 1,
+      "first_seen": "2024-04-25 16:05:00",
+      "last_modified": "2024-04-25 16:05:00",
+      "total_size": 22974,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202105": {
+      "file_count": 1,
+      "first_seen": "2024-04-25 16:05:00",
+      "last_modified": "2024-04-25 16:05:00",
+      "total_size": 22974,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20230104": {
+      "file_count": 1,
+      "first_seen": "2024-06-25 16:41:28",
+      "last_modified": "2024-06-25 16:41:28",
+      "total_size": 209255,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202301": {
+      "file_count": 1,
+      "first_seen": "2024-06-25 16:41:28",
+      "last_modified": "2024-06-25 16:41:28",
+      "total_size": 209255,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20223010": {
+      "file_count": 1,
+      "first_seen": "2024-04-25 16:05:00",
+      "last_modified": "2024-04-25 16:05:00",
+      "total_size": 37274,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202230": {
+      "file_count": 1,
+      "first_seen": "2024-04-25 16:05:00",
+      "last_modified": "2024-04-25 16:05:00",
+      "total_size": 37274,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "2.00": {
+      "file_count": 1,
+      "first_seen": "2025-08-11 10:31:49",
+      "last_modified": "2025-08-11 10:31:49",
+      "total_size": 368912,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20241106": {
+      "file_count": 1,
+      "first_seen": "2025-08-11 10:31:49",
+      "last_modified": "2025-08-11 10:31:49",
+      "total_size": 368912,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202411": {
+      "file_count": 1,
+      "first_seen": "2025-08-11 10:31:49",
+      "last_modified": "2025-08-11 10:31:49",
+      "total_size": 368912,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250414": {
+      "file_count": 1,
+      "first_seen": "2025-04-29 15:24:00",
+      "last_modified": "2025-04-29 15:24:00",
+      "total_size": 35553,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202504": {
+      "file_count": 9,
+      "first_seen": "2025-04-10 17:25:02",
+      "last_modified": "2025-04-29 15:24:00",
+      "total_size": 5763534,
+      "file_types": [
+        ".xlsx",
+        ".XLSX"
+      ]
+    },
+    "20250326": {
+      "file_count": 3,
+      "first_seen": "2025-03-27 16:17:44",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 153972,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202503": {
+      "file_count": 7,
+      "first_seen": "2025-03-07 10:28:18",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 840427,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20240923": {
+      "file_count": 1,
+      "first_seen": "2024-09-23 16:47:05",
+      "last_modified": "2024-09-23 16:47:05",
+      "total_size": 264932,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202409": {
+      "file_count": 1,
+      "first_seen": "2024-09-23 16:47:05",
+      "last_modified": "2024-09-23 16:47:05",
+      "total_size": 264932,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250415": {
+      "file_count": 2,
+      "first_seen": "2025-04-15 10:27:14",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 448030,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250421": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 17:13:04",
+      "last_modified": "2025-04-21 17:13:04",
+      "total_size": 120316,
+      "file_types": [
+        ".XLSX"
+      ]
+    },
+    "20250419": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 12:30:00",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 132887,
+      "file_types": [
+        ".XLSX"
+      ]
+    },
+    "250407": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 12:30:00",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 64611,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250410": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 12:30:00",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 270227,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "2.04": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 12:30:00",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 393226,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250310": {
+      "file_count": 1,
+      "first_seen": "2025-04-21 12:30:00",
+      "last_modified": "2025-04-21 12:30:00",
+      "total_size": 393226,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250307": {
+      "file_count": 2,
+      "first_seen": "2025-03-07 10:28:18",
+      "last_modified": "2025-03-14 15:30:30",
+      "total_size": 217672,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250412": {
+      "file_count": 1,
+      "first_seen": "2025-04-22 16:48:49",
+      "last_modified": "2025-04-22 16:48:49",
+      "total_size": 3036102,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250418": {
+      "file_count": 1,
+      "first_seen": "2025-04-18 10:46:00",
+      "last_modified": "2025-04-18 10:46:00",
+      "total_size": 1563088,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250218": {
+      "file_count": 2,
+      "first_seen": "2025-02-24 16:08:38",
+      "last_modified": "2025-03-07 13:18:24",
+      "total_size": 74771,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "202502": {
+      "file_count": 2,
+      "first_seen": "2025-02-24 16:08:38",
+      "last_modified": "2025-03-07 13:18:24",
+      "total_size": 74771,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250318": {
+      "file_count": 1,
+      "first_seen": "2025-03-19 15:22:40",
+      "last_modified": "2025-03-19 15:22:40",
+      "total_size": 75557,
+      "file_types": [
+        ".xlsx"
+      ]
+    },
+    "20250407": {
+      "file_count": 1,
+      "first_seen": "2025-04-10 17:25:02",
+      "last_modified": "2025-04-10 17:25:02",
+      "total_size": 157331,
+      "file_types": [
+        ".xlsx"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5746 @@
+{
+  "project_name": "KANGAROO",
+  "description": "Kangaroo專案腳本邏輯參考",
+  "analysis_date": "2025-08-12T00:11:20.556349",
+  "total_files": 20,
+  "logic_overview": {
+    "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX": {
+      "file_name": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504191200312"
+            ],
+            [
+              "Creator",
+              "Nancy"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 48,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_AZ),*$(LED_Light)",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "IPRO800",
+              "",
+              "iPowerPro800.dll",
+              "COM2,1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 4,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$WIFI&5GOTA",
+              "WIFI&5GOTA,0",
+              "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_FR1_1),*$(IQ_WIFIGPS_1),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_1)",
+              "*$(DEVID_1)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+            ],
+            [
+              "*$(LOAD_2)",
+              "Kangaroo$WIFI&5GOTA",
+              "WIFI&5GOTA,0",
+              "*$(PCIP_2),2,*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(IQ_Module_2),*$(IQ_FR1_2),*$(IQ_WIFIGPS_2),*$(ReplacePath),*$(IQGPSPath),*$(Sw_SN_2)",
+              "*$(DEVID_2)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+            ],
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$PathLoss",
+              "PathLoss,1",
+              "*$(IQ_ANT_Loss),*$(IQ_Module_Loss),*$(IQ_VSA_Loss),*$(IQ_VSG_Loss)",
+              "*$(DEVID_1)",
+              "{ISN,1,[0-9A-F]}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,200000,\"",
+              "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+            ]
+          ]
+        },
+        {
+          "name": "WIFI&5GOTA",
+          "max_row": 1260,
+          "max_column": 256,
+          "headers": [
+            "Index_615",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,GetLabel",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "LoopRunning",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN"
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$gLabel_CBNG_ISN"
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN:SubString,\"16\",\"14\":Trim;\n$LabIMEI:SubString,\"0\",\"15\":Trim;"
+            ]
+          ]
+        },
+        {
+          "name": "PathLoss",
+          "max_row": 8,
+          "max_column": 17,
+          "headers": [
+            "Index_5",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "200",
+              "0",
+              "0,ScanLabel",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "201",
+              "",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "202",
+              "1",
+              "0,PathLoss",
+              "",
+              "GPRF",
+              "IQGPRF-{1}",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "203",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Pathloss,\"$IQ.IQ,IQ,DoCableLoss,{0},{2},{3}\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Test Item Code V2.04_20250310.xlsx": {
+      "file_name": "Test Item Code V2.04_20250310.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+      "total_sheets": 4,
+      "sheets": [
+        {
+          "name": "七碼定義Definition",
+          "max_row": 67,
+          "max_column": 13,
+          "headers": [
+            "和碩聯合科技(股)公司 PEGATRON CORP.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [],
+              "response_fields": [],
+              "validation_fields": [],
+              "execution_fields": []
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "CVP RD3 SW2 Product Error Code definition as below：",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "站位序號",
+              "測項序列號"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0~9,A~Z",
+              "0~9,A~Z"
+            ]
+          ]
+        },
+        {
+          "name": "Test Item All",
+          "max_row": 5359,
+          "max_column": 11,
+          "headers": [
+            "V1.83",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [],
+              "response_fields": [],
+              "validation_fields": [],
+              "execution_fields": []
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Main Function",
+              "Interface",
+              "Interenal Error Code",
+              "Description",
+              "中文",
+              "Version",
+              "Error Code",
+              "Note",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Version History",
+          "max_row": 102,
+          "max_column": 4,
+          "headers": [
+            "Version",
+            "Release Date",
+            "Describe",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [],
+              "response_fields": [],
+              "validation_fields": [],
+              "execution_fields": []
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "V1.0",
+              "20170223",
+              "First Release",
+              ""
+            ],
+            [
+              "V1.1",
+              "20170308",
+              "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+              ""
+            ],
+            [
+              "V1.2",
+              "20170418",
+              "1.Insert BRPW013~14 for voltage test item\n2.Add FWUR017 for UART Loop Back Fail\n3.Add BRPW022 for Measure_1.125V\n4.Add BRPW023 for Measure_1.26V\n5.Add BRPW024 for Voltage test point over the criteria\n6.Format Adjust",
+              ""
+            ],
+            [
+              "V1.3",
+              "20170424",
+              "1.Format Adjust",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "工作表1",
+          "max_row": 1,
+          "max_column": 3,
+          "headers": [
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [],
+              "response_fields": [],
+              "validation_fields": [],
+              "execution_fields": []
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": []
+        }
+      ],
+      "field_patterns": {
+        "test_flow": {
+          "phase_fields": [],
+          "action_fields": [],
+          "response_fields": [],
+          "validation_fields": [],
+          "execution_fields": []
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {}
+    },
+    "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx": {
+      "file_name": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "total_sheets": 5,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504071414261"
+            ],
+            [
+              "Creator",
+              "ricky1_lee"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 47,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_AZ),*$(LED_Light)",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "IPRO800",
+              "",
+              "iPowerPro800.dll",
+              "COM2,1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 3,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$MB FUNCTION",
+              "MB FUNCTION,0",
+              "*$(PCIP_1),*$(DUTIP_1),1",
+              "*$(DEVID_1)",
+              "{ISN,15,[0-9A-F]};",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+              "\"SSH\",\"SSH1\",\"*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000\"",
+              "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000\"",
+              ""
+            ],
+            [
+              "*$(LOAD_2)",
+              "Kangaroo$MB FUNCTION",
+              "MB FUNCTION,0",
+              "*$(PCIP_2),*$(DUTIP_2),2",
+              "*$(DEVID_2)",
+              "{ISN,15,[0-9A-F]};",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+              "\"SSH\",\"SSH1\",\"*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000\"",
+              "\"Uart\",\"UARTF\",\"*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000\"",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "MB FUNCTION",
+          "max_row": 1040,
+          "max_column": 256,
+          "headers": [
+            "Index_253",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "1",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Connect,\"UART\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Connect,\"UARTF\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx": {
+      "file_name": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "total_sheets": 5,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504101752108"
+            ],
+            [
+              "Creator",
+              "ricky1_lee"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 42,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "1",
+              "LED_analyser.dll",
+              "*$(LED_AZ),04",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "iPowerPro800",
+              "",
+              "iPowerPro800.dll",
+              "*$(PCUART_P),1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 6,
+          "max_column": 22,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "KANGAROO$FWDL",
+              "FWDL,1",
+              "*$(FW_Tool_Path1),*$(downloadPortID_1),*$(PortID_1),*$(DMPortNUM_1),*$(NAFWPATH_1),*$(EUFWPATH_1),*$(CBNG_NAFWPATH_1),*$(CBNG_FR2FWPATH_1),*$(ATPortNUM_1),4",
+              "*$(DEVID_1)",
+              "{ISN,15,[0-9A-F]};",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "*$(LOAD_2)",
+              "KANGAROO$FWDL",
+              "FWDL,1",
+              "*$(FW_Tool_Path2),*$(downloadPortID_2),*$(PortID_2),*$(DMPortNUM_2),*$(NAFWPATH_2),*$(EUFWPATH_2),*$(CBNG_NAFWPATH_2),*$(CBNG_FR2FWPATH_2),*$(ATPortNUM_2),3",
+              "*$(DEVID_2)",
+              "{ISN,15,[0-9A-F]};",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "FWDL",
+          "max_row": 129,
+          "max_column": 16382,
+          "headers": [
+            "Index_105",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "*$(AUTOPowerON),Power ON",
+              "",
+              "",
+              "",
+              ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 1 >/proc/power/output{9}\\\"\",\"ON\",\"5000\"",
+              "@Command pass",
+              "",
+              "power_status"
+            ],
+            [
+              "001",
+              "1",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "2",
+              "2,Check_MO",
+              "",
+              "",
+              "",
+              ":SfEnabled",
+              "1",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "file_name": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504151027141"
+            ],
+            [
+              "Creator",
+              "ricky1_lee"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 40,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED-1",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_1),*$(LEDHIG_1),*$(LEDCH_1)",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "FeasaLED-2",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_2),*$(LEDHIG_2),*$(LEDCH_2)",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 3,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$OQC",
+              "OQC,0",
+              "*$(PCIP_1),1,*$(DUTIP_1)",
+              "*$(DEVID_1)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\"cmd.exe,1,240000,\"",
+              "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+            ],
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$OQC_TPE",
+              "OQC_TPE,0",
+              "*$(PCIP_1),1,*$(DUTIP_1)",
+              "*$(DEVID_1)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\"cmd.exe,1,240000,\"",
+              "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+            ]
+          ]
+        },
+        {
+          "name": "OQC",
+          "max_row": 1159,
+          "max_column": 256,
+          "headers": [
+            "Index_371",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,GetLabel",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "LoopRunning",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN"
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$gLabel_CBNG_ISN"
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN:SubString,\"16\",\"14\":Trim;\n$LabIMEI:SubString,\"0\",\"15\":Trim;"
+            ]
+          ]
+        },
+        {
+          "name": "OQC_TPE",
+          "max_row": 1159,
+          "max_column": 256,
+          "headers": [
+            "Index_371",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "100",
+              "0",
+              "0,GetLabel",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "LoopRunning",
+              "",
+              ""
+            ],
+            [
+              "101",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN"
+            ],
+            [
+              "102",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$gLabel_CBNG_ISN"
+            ],
+            [
+              "103",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN:SubString,\"16\",\"14\":Trim;\n$LabIMEI:SubString,\"0\",\"15\":Trim;"
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx": {
+      "file_name": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504150943394"
+            ],
+            [
+              "Creator",
+              "ricky1_lee"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 41,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "Final Check",
+              "FeasaLED-1",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_1),*$(LEDHIG_1),*$(LEDCH_1)",
+              "LED_Test",
+              "2.1.0.5",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "Final Check",
+              "FeasaLED-2",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_2),*$(LEDHIG_2),*$(LEDCH_2)",
+              "LED_Test",
+              "2.1.0.5",
+              "",
+              "LED analyser FeasaLED"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 5,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "KANGAROO$Final Check",
+              "Final Check,0",
+              "*$(PCIP_1),1,*$(DUTIP_1),*$(CAPT_RANGE_1),*$(EXPOSURE_1),*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(ConfigPath_1)",
+              "*$(DEVID_1)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole_1\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1_1),9600,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_2)",
+              "KANGAROO$Final Check",
+              "Final Check,0",
+              "*$(PCIP_2),2,*$(DUTIP_2),*$(CAPT_RANGE_2),*$(EXPOSURE_2),*$(PortID_2),*$(PortAT_2),*$(PortDM_2),*$(ConfigPath_2)",
+              "*$(DEVID_2)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_2),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole_2\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1_2),9600,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_3)",
+              "KANGAROO$Final Check",
+              "Final Check,0",
+              "*$(PCIP_3),3,*$(DUTIP_3),*$(CAPT_RANGE_3),*$(EXPOSURE_3),*$(PortID_3),*$(PortAT_3),*$(PortDM_3),*$(ConfigPath_3)",
+              "*$(DEVID_3)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_3),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_3),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole_3\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1_3),9600,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_1)",
+              "KANGAROO$Final Check_TPE",
+              "Final Check_TPE,0",
+              "*$(PCIP_1),1,*$(DUTIP_1),*$(CAPT_RANGE_1),*$(EXPOSURE_1),*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(ConfigPath_1)",
+              "*$(DEVID_1)",
+              "{ISN,,}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1_1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2_1),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole_1\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1_1),9600,8,One,None,None,10000,5000\""
+            ]
+          ]
+        },
+        {
+          "name": "Final Check",
+          "max_row": 1196,
+          "max_column": 256,
+          "headers": [
+            "Index_407",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,GetLabel",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "LoopRunning",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN"
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$gLabel_CBNG_ISN"
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN:SubString,\"16\",\"14\":Trim;\n$LabIMEI:SubString,\"0\",\"15\":Trim;"
+            ]
+          ]
+        },
+        {
+          "name": "Final Check_TPE",
+          "max_row": 1196,
+          "max_column": 256,
+          "headers": [
+            "Index_407",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "100",
+              "0",
+              "0,GetLabel",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "LoopRunning",
+              "",
+              ""
+            ],
+            [
+              "101",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN"
+            ],
+            [
+              "102",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$gLabel_CBNG_ISN"
+            ],
+            [
+              "103",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":GetVal,\"$ISN\"",
+              "",
+              "",
+              "$ISN:SubString,\"16\",\"14\":Trim;\n$LabIMEI:SubString,\"0\",\"15\":Trim;"
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX": {
+      "file_name": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504211712563"
+            ],
+            [
+              "Creator",
+              "ricky1_lee"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 45,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_AZ),*$(LED_Light)",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "IPRO800",
+              "",
+              "iPowerPro800.dll",
+              "COM2,1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 3,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$WIFI&BT CAL&VERIF",
+              "WIFI&BT CAL&VERIF,0",
+              "*$(PCIP_1),1,*$(PortID_1),*$(PortAT_1),*$(PortDM_1),*$(IQ_Module_1),*$(IQ_WIFI_Port_1),*$(IQ_GPS_Port_1),*$(ReplacePath_1),*$(IQGPSPath_1),*$(IQWIFIPath_1)",
+              "*$(DEVID_1)",
+              "",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,200000,\"",
+              "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+            ],
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$PathLoss",
+              "PathLoss,1",
+              "*$(IQ_ANT_Loss),*$(IQ_Module_Loss),*$(IQ_VSA_Loss),*$(IQ_VSG_Loss)",
+              "*$(DEVID_1)",
+              "{ISN,1,[0-9A-F]}",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"UART2\",\"*$(DUT_UR2),115200,8,One,None,None,10000,5000\"",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,200000,\"",
+              "\"APP\",\"CmdConsole1\",\".\\cmd.exe,1,5000,\""
+            ]
+          ]
+        },
+        {
+          "name": "WIFI&BT CAL&VERIF",
+          "max_row": 1053,
+          "max_column": 16383,
+          "headers": [
+            "Index_260",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CONNECT_DUT,40",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"loader.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.GetPath",
+              "0",
+              "",
+              "$cPath"
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.GenDT,\"yyyyMMdd_hhmmss\"",
+              "0",
+              "",
+              "$cDateTime"
+            ]
+          ]
+        },
+        {
+          "name": "PathLoss",
+          "max_row": 8,
+          "max_column": 17,
+          "headers": [
+            "Index_5",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "200",
+              "0",
+              "0,ScanLabel",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "201",
+              "",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "202",
+              "1",
+              "0,PathLoss",
+              "",
+              "GPRF",
+              "IQGPRF-{1}",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "203",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Pathloss,\"$IQ.IQ,IQ,DoCableLoss,{0},{2},{3}\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx": {
+      "file_name": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "total_sheets": 12,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2409231544340"
+            ],
+            [
+              "Creator",
+              "Nancy"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 45,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "1",
+              "LED_analyser.dll",
+              "*$(LED_AZ),04",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "iPowerPro800",
+              "",
+              "iPowerPro800.dll",
+              "*$(PCUART_P),1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 148,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$Cellular Verification",
+              "Cellular Verification,0",
+              "*$(IQ_PORT)",
+              "*$(DEVID_1)",
+              "",
+              "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+              "\"Uart\",\"UART_fix\",\"*$(FX_UR1),9600,8,One,None,None,2000,2000\"",
+              "",
+              ""
+            ],
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$5G_PathLoss",
+              "5G_PathLoss,1",
+              "*$(IQ_PORT)",
+              "*$(DEVID_1)",
+              "{  ISN,1,[0-9A-F]  }",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Cellular Verification",
+          "max_row": 114,
+          "max_column": 256,
+          "headers": [
+            "Index_259",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CONNECT_DUT,40",
+              "",
+              "",
+              "",
+              ":Utility.GetPath",
+              "0",
+              "",
+              "$cPath"
+            ],
+            [
+              "065",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Connect,\"UART_fix\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "066",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Delay,\"500\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "067",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UART_fix@TA 1 03\\r",
+              "TA 1 03 PASS,END",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "5G_PathLoss",
+          "max_row": 51,
+          "max_column": 22,
+          "headers": [
+            "Index_50",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "100",
+              "0",
+              "0,ScanLabel",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "101",
+              "",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "102",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.GetPath",
+              "0",
+              "",
+              "$cPath"
+            ],
+            [
+              "103",
+              "1",
+              "0,Backup_CSV",
+              "",
+              "",
+              "",
+              ":Utility.CMD,\"*(cPath)\\py\\MoveCSV\\MoveCSV.exe\",\"*$(IQ5GPath)\\TestFlows\\Kangaroo\\NR5G_Conductive\",\"ON\",\"-1\",\"0\"",
+              "@File_Move_Success",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "ANT0_TX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "4:4,7",
+              "DUT#-#{1}_LCH_ANT0_TX_Test@#$"
+            ]
+          ]
+        },
+        {
+          "name": "ANT3_TX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "4:4,7",
+              "DUT#-#{1}_LCH_ANT3_TX_Test@#$"
+            ]
+          ]
+        },
+        {
+          "name": "ANT0_RX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "0",
+              "DUT#-#{1}_LCH_ANT0_RX_LevTest@#$"
+            ]
+          ]
+        },
+        {
+          "name": "ANT1_RX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "0",
+              "DUT#-#{1}_LCH_ANT1_RX_LevTest@#$"
+            ]
+          ]
+        },
+        {
+          "name": "ANT2_RX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "0",
+              "DUT#-#{1}_LCH_ANT2_RX_LevTest@#$"
+            ]
+          ]
+        },
+        {
+          "name": "ANT3_RX",
+          "max_row": 888,
+          "max_column": 12,
+          "headers": [
+            "Index_1",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "00",
+              ":SetVal,\"Parse_Count\",\"{2}\"",
+              "0",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Set_InitParse_Count@#$"
+            ],
+            [
+              "01",
+              ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "0",
+              "",
+              "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Parse_TestLog_Column@#$"
+            ],
+            [
+              "02",
+              ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "0",
+              "",
+              "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "",
+              "",
+              "",
+              "0",
+              "PC#-#Spilt_TestItem@#$"
+            ],
+            [
+              "03",
+              ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "0",
+              "",
+              "",
+              "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "",
+              "",
+              "0",
+              "DUT#-#{1}_LCH_ANT3_RX_LevTest@#$"
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx": {
+      "file_name": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "total_sheets": 5,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2503261413046"
+            ],
+            [
+              "Creator",
+              "kevintai"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 20,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 301,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "FCT,FCT-M8",
+              "FeasaLED",
+              "",
+              "LED_analyser.dll",
+              "*$(LED_AZ),01",
+              "LED_Test",
+              "1.0.0.0",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "IPRO800",
+              "",
+              "iPowerPro800.dll",
+              "COM2,1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 163,
+          "max_column": 22,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "KANGAROO$AIR Leakage",
+              "AIR Leakage,1",
+              "",
+              "*$(DEVID_1)",
+              "{  ISN,*$(ISN_LEN),[0-9A-F]  }",
+              "\"Uart\",\"UART\",\"*$(PCUART_1),9600,8,One,None,None,10000,5000\"",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "AIR Leakage",
+          "max_row": 51,
+          "max_column": 256,
+          "headers": [
+            "Index_49",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "000",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowImageConfirmBox,\"PUT_DUT_FOR_AIR.JPG\",\"OK\"",
+              "OK",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":CloseMessage",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx": {
+      "file_name": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "total_sheets": 5,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2504141449461"
+            ],
+            [
+              "Creator",
+              "kevintai"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 45,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "1",
+              "LED_analyser.dll",
+              "*$(LED_AZ),04",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "iPowerPro800",
+              "",
+              "iPowerPro800.dll",
+              "*$(PCUART_P),1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 4,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_1)",
+              "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "eSIM_DW_FW_UP_OFFLINE,0",
+              "*$(PortID_1),*$(ATPortNUM_1)",
+              "*$(DEVID_1)",
+              "",
+              "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "",
+              "",
+              ""
+            ],
+            [
+              "*$(LOAD_2)",
+              "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "eSIM_DW_FW_UP_OFFLINE,0",
+              "*$(PortID_2),*$(ATPortNUM_2)",
+              "*$(DEVID_2)",
+              "",
+              "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "",
+              "",
+              ""
+            ],
+            [
+              "*$(LOAD_3)",
+              "Kangaroo$eSIM_DW_FW_UP_OFFLINE",
+              "eSIM_DW_FW_UP_OFFLINE,0",
+              "*$(PortID_3),*$(ATPortNUM_3)",
+              "*$(DEVID_3)",
+              "",
+              "\"DLL:esim_db_access.dll\",\"db\",\"*$(ServerURL)\"",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "eSIM_DW_FW_UP_OFFLINE",
+          "max_row": 124,
+          "max_column": 256,
+          "headers": [
+            "Index_116",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,Get_Path",
+              "",
+              "",
+              "",
+              ":Utility.GetPath",
+              "0",
+              "",
+              "$cPath"
+            ],
+            [
+              "001",
+              "",
+              "*$(Auto_PWR_ON),Set Power ON",
+              "",
+              "",
+              "",
+              ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+              "@Command pass",
+              "",
+              "power_status"
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Delay,\"1000\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 1 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+              "@Command pass",
+              "",
+              "power_status"
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    }
+  },
+  "common_patterns": {},
+  "best_practices": []
+}

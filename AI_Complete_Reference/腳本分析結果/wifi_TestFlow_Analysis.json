@@ -1,0 +1,650 @@
+{
+  "file_info": {
+    "file_name": "wifi_TestFlow.XLSX",
+    "analysis_date": "2025-08-11T21:32:32.531152",
+    "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\wifi_TestFlow.XLSX",
+    "script_type": "GENERIC_SCRIPT",
+    "project_name": "UNKNOWN",
+    "total_sheets": 5,
+    "total_rows": 119,
+    "total_columns": 51
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "Properties",
+      "Instrument",
+      "Switch",
+      "DUTs",
+      "WifiCalibration"
+    ],
+    "sheet_analyses": {
+      "Properties": {
+        "sheet_name": "Properties",
+        "sheet_type": "properties",
+        "total_rows": 3,
+        "total_columns": 2,
+        "column_names": [
+          "Name",
+          "Value"
+        ],
+        "column_types": {
+          "Name": "object",
+          "Value": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Name": "Version",
+              "Value": "2009211835393"
+            },
+            {
+              "Name": "Creator",
+              "Value": "jovian_li"
+            },
+            {
+              "Name": "FailCount",
+              "Value": 0
+            }
+          ],
+          "non_null_counts": {
+            "Name": 3,
+            "Value": 3
+          },
+          "unique_counts": {
+            "Name": 3,
+            "Value": 3
+          }
+        }
+      },
+      "Instrument": {
+        "sheet_name": "Instrument",
+        "sheet_type": "instrument",
+        "total_rows": 8,
+        "total_columns": 9,
+        "column_names": [
+          "Mount",
+          "Name",
+          "Sub",
+          "ControlDLL",
+          "Settings",
+          "Functions",
+          "Version",
+          "Switch",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "object",
+          "Sub": "float64",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Functions": "object",
+          "Version": "object",
+          "Switch": "float64",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": NaN,
+              "Name": "switch_C",
+              "Sub": NaN,
+              "ControlDLL": "USBCSwitchLibary.dll",
+              "Settings": NaN,
+              "Functions": "switch",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "usb switch"
+            },
+            {
+              "Mount": NaN,
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": NaN,
+              "Name": "PS2005-1",
+              "Sub": 1.0,
+              "ControlDLL": "PSS2005.dll",
+              "Settings": "GPIB,GPIB0::8::INSTR",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "Version": "1.0.0.1",
+              "Switch": NaN,
+              "Desc": "DC Power 2005"
+            },
+            {
+              "Mount": "WifiCalibration",
+              "Name": "Transmitter1",
+              "Sub": NaN,
+              "ControlDLL": "VirtualTransmitter.dll",
+              "Settings": "Transmitter1,*$(PCIP_1),23",
+              "Functions": "TCP_Transfer",
+              "Version": "1.0.0.2",
+              "Switch": NaN,
+              "Desc": "Virtual Transmitter"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 4,
+            "Name": 8,
+            "Sub": 1,
+            "ControlDLL": 8,
+            "Settings": 7,
+            "Functions": 8,
+            "Version": 8,
+            "Switch": 0,
+            "Desc": 8
+          },
+          "unique_counts": {
+            "Mount": 1,
+            "Name": 7,
+            "ControlDLL": 4,
+            "Settings": 6,
+            "Functions": 4,
+            "Version": 3,
+            "Desc": 4
+          }
+        }
+      },
+      "Switch": {
+        "sheet_name": "Switch",
+        "sheet_type": "switch",
+        "total_rows": 1,
+        "total_columns": 7,
+        "column_names": [
+          "Mount",
+          "Name",
+          "ControlDLL",
+          "Settings",
+          "Version",
+          "Loss",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "float64",
+          "ControlDLL": "float64",
+          "Settings": "float64",
+          "Version": "float64",
+          "Loss": "float64",
+          "Desc": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": "RF",
+              "Name": NaN,
+              "ControlDLL": NaN,
+              "Settings": NaN,
+              "Version": NaN,
+              "Loss": NaN,
+              "Desc": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 1,
+            "Name": 0,
+            "ControlDLL": 0,
+            "Settings": 0,
+            "Version": 0,
+            "Loss": 0,
+            "Desc": 0
+          },
+          "unique_counts": {
+            "Mount": 1
+          }
+        }
+      },
+      "DUTs": {
+        "sheet_name": "DUTs",
+        "sheet_type": "duts",
+        "total_rows": 1,
+        "total_columns": 16,
+        "column_names": [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)",
+          "Connection5(Type,Name,ConnectString)",
+          "Connection6(Type,Name,ConnectString)",
+          "Connection7(Type,Name,ConnectString)",
+          "Connection8(Type,Name,ConnectString)",
+          "Connection9(Type,Name,ConnectString)",
+          "Connection10(Type,Name,ConnectString)"
+        ],
+        "column_types": {
+          "Load": "object",
+          "DUT Name": "object",
+          "Station": "object",
+          "Parameter": "object",
+          "SFIS_DeviceID": "object",
+          "ScanBarcode( {Name,Lengh,Pattern} )": "float64",
+          "Connection1 (Type,Name,ConnectString)": "object",
+          "Connection2 (Type,Name,ConnectString)": "object",
+          "Connection3 (Type,Name,ConnectString)": "object",
+          "Connection4(Type,Name,ConnectString)": "object",
+          "Connection5(Type,Name,ConnectString)": "object",
+          "Connection6(Type,Name,ConnectString)": "float64",
+          "Connection7(Type,Name,ConnectString)": "float64",
+          "Connection8(Type,Name,ConnectString)": "float64",
+          "Connection9(Type,Name,ConnectString)": "float64",
+          "Connection10(Type,Name,ConnectString)": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Parameter"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Load": "*$(Load_1)",
+              "DUT Name": "SKU02$WifiCalibration",
+              "Station": "WifiCalibration,*$(RUN_LOOP1)",
+              "Parameter": "*$(PCIP_1),1",
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+              "Connection2 (Type,Name,ConnectString)": "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+              "Connection3 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+              "Connection4(Type,Name,ConnectString)": "\"DLL:FanProject.dll\",\"FanDLL\",\"1\"",
+              "Connection5(Type,Name,ConnectString)": "\"APP\",\"CmdConsole2\",\"cmd.exe,1,80000,\"",
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Load": 1,
+            "DUT Name": 1,
+            "Station": 1,
+            "Parameter": 1,
+            "SFIS_DeviceID": 1,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 0,
+            "Connection1 (Type,Name,ConnectString)": 1,
+            "Connection2 (Type,Name,ConnectString)": 1,
+            "Connection3 (Type,Name,ConnectString)": 1,
+            "Connection4(Type,Name,ConnectString)": 1,
+            "Connection5(Type,Name,ConnectString)": 1,
+            "Connection6(Type,Name,ConnectString)": 0,
+            "Connection7(Type,Name,ConnectString)": 0,
+            "Connection8(Type,Name,ConnectString)": 0,
+            "Connection9(Type,Name,ConnectString)": 0,
+            "Connection10(Type,Name,ConnectString)": 0
+          },
+          "unique_counts": {
+            "Load": 1,
+            "DUT Name": 1,
+            "Station": 1,
+            "Parameter": 1,
+            "SFIS_DeviceID": 1,
+            "Connection1 (Type,Name,ConnectString)": 1,
+            "Connection2 (Type,Name,ConnectString)": 1,
+            "Connection3 (Type,Name,ConnectString)": 1,
+            "Connection4(Type,Name,ConnectString)": 1,
+            "Connection5(Type,Name,ConnectString)": 1
+          }
+        }
+      },
+      "WifiCalibration": {
+        "sheet_name": "WifiCalibration",
+        "sheet_type": "unknown",
+        "total_rows": 106,
+        "total_columns": 17,
+        "column_names": [
+          "Index_46",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_46": "int64",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "object",
+          "Switch": "object",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "2:1",
+            "9",
+            "8",
+            "6",
+            "2:0",
+            "2:2",
+            "4:25:22",
+            "2:3"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_46": 1,
+              "Phase": 0.0,
+              "Title": "0,Delete last Log",
+              "Marco": NaN,
+              "Instrument": "TCP_Transfer",
+              "Switch": "Transmitter{1}",
+              "Send": ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete last Log",
+              "TestID": "OTFX092",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_46": 2,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete calData_00037f910107.bin",
+              "TestID": "OTFX092",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_46": 3,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_*$(Wifimac).bin\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete calData_(Wifimac.bin",
+              "TestID": "OTFX092",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_46": 4,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\bdwlan.bin\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete bdwlan.bin",
+              "TestID": "OTFX092",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_46": 5,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Serial_MAC.txt\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete Serial_MAC.txt",
+              "TestID": "OTFX074",
+              "Unnamed: 16": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_46": 106,
+            "Phase": 15,
+            "Title": 15,
+            "Marco": 0,
+            "Instrument": 7,
+            "Switch": 7,
+            "Send": 106,
+            "Reply": 82,
+            "EndPrompt": 0,
+            "Ref": 23,
+            "Validation": 17,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 106,
+            "Description": 106,
+            "TestID": 106,
+            "Unnamed: 16": 1
+          },
+          "unique_counts": {
+            "Title": 15,
+            "Instrument": 2,
+            "Switch": 2,
+            "Send": 70,
+            "Reply": 12,
+            "Ref": 20,
+            "Validation": 16,
+            "ExecMode": 10,
+            "Description": 53,
+            "TestID": 24
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "儀器參數配置",
+    "多設備測試支援",
+    "配置管理功能"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      97.0
+    ],
+    "test_sequence": [
+      "初始化配置",
+      "設備連接測試",
+      "功能測試執行",
+      "結果驗證",
+      "報告生成"
+    ],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "中等",
+    "test_coverage": "功能測試",
+    "script_organization": "配置分離設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "UNKNOWN",
+    "script_type": "GENERIC_SCRIPT",
+    "special_capabilities": [],
+    "best_practices": [],
+    "learning_focus": []
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "UNKNOWN專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援UNKNOWN專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為UNKNOWN專案腳本模板",
+      "學習UNKNOWN專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

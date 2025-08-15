@@ -1,0 +1,21 @@
+{
+  "title": "AI腳本開發指南總索引",
+  "description": "AI腳本開發的完整參考指南集合",
+  "created_date": "2025-08-12T00:15:23.873192",
+  "guides": {
+    "field_usage": "AI_Field_Usage_Guide.json",
+    "logic_structure": "AI_Logic_Structure_Guide.json"
+  },
+  "project_guides": {
+    "KANGAROO": "KANGAROO_Development_Guide.json",
+    "VALO360": "VALO360_Development_Guide.json",
+    "RAPTOR": "RAPTOR_Development_Guide.json",
+    "Kilimanjaro": "Kilimanjaro_Development_Guide.json",
+    "ZEBRA": "ZEBRA_Development_Guide.json"
+  },
+  "usage_instructions": {
+    "purpose": "為AI腳本開發提供完整的參考指南",
+    "structure": "包含通用指南和專案特定指南",
+    "recommendation": "建議先閱讀通用指南，再參考專案特定指南"
+  }
+}

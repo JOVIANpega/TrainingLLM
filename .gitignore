@@ -1,0 +1,43 @@
+# 忽略大檔案
+*.bin
+*.iso
+*.img
+*.tar.gz
+*.zip
+
+# 忽略韌體檔案
+Centimani_Kangaroo_FWDL/Tools/FW_IMAGE/*.bin
+
+# 忽略日誌檔案
+*.log
+
+# 忽略暫存檔案
+*.tmp
+*.temp
+
+# 忽略系統檔案
+.DS_Store
+Thumbs.db
+
+# 忽略 Python 暫存檔案
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# 忽略 IDE 檔案
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 忽略編譯檔案
+*.exe
+*.msi
+dist/
+build/
+*.spec 

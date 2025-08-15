@@ -1,0 +1,483 @@
+{
+  "generated_date": "2025-08-11T11:13:42.574208",
+  "file_statistics": {
+    "total_files": 22,
+    "category_breakdown": {
+      "VALO360": 9,
+      "KANGAROO": 7,
+      "Centimani": 3,
+      "Test_Items": 2,
+      "Other": 1
+    },
+    "platform_summary": {
+      "KANGAROO": {
+        "total_files": 7,
+        "file_types": [
+          "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+          "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+          "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+          "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+          "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+          "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+          "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx"
+        ],
+        "main_categories": [
+          "Mainboard",
+          "OQC",
+          "Cellular",
+          "WIFI_BT",
+          "OTA",
+          "MultiDUT"
+        ]
+      },
+      "VALO360": {
+        "total_files": 9,
+        "file_types": [
+          "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+          "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+          "VALO360_TestFlow_20250218_ER2.xlsx",
+          "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+          "VALO360_TestFlow_20250307_POE.xlsx",
+          "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+          "VALO360_TestFlow_20250326_Final.xlsx",
+          "VALO360_TestFlow_20250326_IMU.xlsx",
+          "VALO360_TestFlow_20250407_Function.xlsx"
+        ],
+        "main_categories": [
+          "ER2",
+          "POE",
+          "IMU",
+          "Function",
+          "DMIC"
+        ]
+      },
+      "Centimani": {
+        "total_files": 3,
+        "file_types": [
+          "Centimani INI file setting(20210506).xlsx",
+          "Centimani instrument parameter -Ver1.65 (20230104).xlsx",
+          "Centimani Script User Guide(202230104).xlsx"
+        ],
+        "main_categories": [
+          "INI_Settings",
+          "Parameters",
+          "Script_Guide"
+        ]
+      }
+    }
+  },
+  "test_flow_overview": {
+    "KANGAROO": {
+      "total_flows": 4,
+      "categories": [
+        "Mainboard",
+        "OQC",
+        "Cellular",
+        "MultiDUT"
+      ],
+      "category_details": {
+        "Mainboard": {
+          "count": 1,
+          "files": [
+            "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx"
+          ]
+        },
+        "OQC": {
+          "count": 1,
+          "files": [
+            "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx"
+          ]
+        },
+        "Cellular": {
+          "count": 1,
+          "files": [
+            "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx"
+          ]
+        },
+        "MultiDUT": {
+          "count": 1,
+          "files": [
+            "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx"
+          ]
+        }
+      }
+    },
+    "VALO360": {
+      "total_flows": 8,
+      "categories": [
+        "ER2",
+        "POE",
+        "IMU",
+        "Function"
+      ],
+      "category_details": {
+        "ER2": {
+          "count": 4,
+          "files": [
+            "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+            "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+            "VALO360_TestFlow_20250218_ER2.xlsx",
+            "VALO360_TestFlow_20250318_MB_ER2.xlsx"
+          ]
+        },
+        "POE": {
+          "count": 2,
+          "files": [
+            "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+            "VALO360_TestFlow_20250307_POE.xlsx"
+          ]
+        },
+        "IMU": {
+          "count": 1,
+          "files": [
+            "VALO360_TestFlow_20250326_IMU.xlsx"
+          ]
+        },
+        "Function": {
+          "count": 1,
+          "files": [
+            "VALO360_TestFlow_20250407_Function.xlsx"
+          ]
+        }
+      }
+    }
+  },
+  "ini_settings_overview": {
+    "total_settings": 140,
+    "files": [
+      "Global.ini",
+      "System.ini"
+    ],
+    "sections": [
+      "Settings",
+      "Scripts",
+      "System",
+      "IpFinder",
+      "iPLAS",
+      "SFIS",
+      "FTP",
+      "MiniCloud",
+      "CSVReport",
+      "Checksum"
+    ],
+    "setting_types": {
+      "Other": 80,
+      "Network": 33,
+      "Feature_Flag": 13,
+      "Communication": 6,
+      "Device_Info": 4,
+      "File_Path": 4
+    },
+    "key_network_settings": [
+      {
+        "file": "Global.ini",
+        "section": "Settings",
+        "key": "PCIP_1",
+        "value": "192.168.11.3",
+        "description": "PC 端 IP 位址"
+      },
+      {
+        "file": "Global.ini",
+        "section": "Settings",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "description": "被測設備 IP 位址"
+      },
+      {
+        "file": "Global.ini",
+        "section": "Scripts",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "description": "被測設備 IP 位址"
+      },
+      {
+        "file": "System.ini",
+        "section": "Settings",
+        "key": "PCIP_1",
+        "value": "192.168.11.3",
+        "description": "PC 端 IP 位址"
+      },
+      {
+        "file": "System.ini",
+        "section": "Settings",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "description": "被測設備 IP 位址"
+      },
+      {
+        "file": "System.ini",
+        "section": "Scripts",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "description": "被測設備 IP 位址"
+      },
+      {
+        "file": "System.ini",
+        "section": "System",
+        "key": "NewFormatScriptFile",
+        "value": "VALO360_TestFlow_20250324_MB_ER.xlsx",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_Enable",
+        "value": "0",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_LocalIP",
+        "value": "192.168.102.111",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_Segment",
+        "value": "192.168.102",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_LastNoStart",
+        "value": "25",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_LastNoEnd",
+        "value": "30",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "IpFinder",
+        "key": "IpFinder_SaveDebugLog",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_Enable",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_DebugMsg",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_ProjectName",
+        "value": "VALO360",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_ScanDirectories",
+        "value": "Log;Report;Record;Debug",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadPassLog",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadFailLog",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadValidInSeconds",
+        "value": "600",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadFileTypes",
+        "value": "log;ini;ct;bmp;csv;wav;ct;txt",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadDebugFile",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_UploadMatchISN",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_Site",
+        "value": "DC",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_EncryptedZip",
+        "value": NaN,
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "iPLAS",
+        "key": "iPLAS_SkipErrorCode",
+        "value": "BSFO14;BSFO75;OTCH013",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "SFIS",
+        "key": "SFIS_LinkIPLAS",
+        "value": "1",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "SFIS",
+        "key": "SFIS_SkipSaveResultOnFail",
+        "value": "0",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "FTP",
+        "key": "FTP_Host",
+        "value": "172.24.255.135",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_Host",
+        "value": "172.22.248.50",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLAS",
+        "value": "0",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLASLogPath",
+        "value": NaN,
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLASProjectName",
+        "value": "VALO360",
+        "description": "一般設定"
+      }
+    ],
+    "key_device_settings": [
+      {
+        "file": "Global.ini",
+        "section": "Scripts",
+        "key": "VALO360_ALL_MODEL",
+        "value": "@69-2E224C20P02||@69-2E224C30P01||@69-2E224C23P02||@N3C2401C||@N3C2401NB||@N3C2401W||@69-2E224624P02",
+        "description": "VALO360 所有支援的型號"
+      },
+      {
+        "file": "System.ini",
+        "section": "Scripts",
+        "key": "VALO360_ALL_MODEL",
+        "value": "@69-2E224C20P02||@69-2E224C30P01||@69-2E224C23P02||@N3C2401C||@N3C2401NB||@N3C2401W||@69-2E224624P02",
+        "description": "VALO360 所有支援的型號"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_ProjectName",
+        "value": "VALO360",
+        "description": "一般設定"
+      },
+      {
+        "file": "System.ini",
+        "section": "MiniCloud",
+        "key": "MiniCloud_ModelName",
+        "value": "VALO360_5G",
+        "description": "一般設定"
+      }
+    ]
+  },
+  "usage_examples": {
+    "finding_test_flows": {
+      "description": "如何找到特定的測試流程檔案",
+      "examples": [
+        "要找 KANGAROO 主機板測試流程，查看 Category=KANGAROO 且包含 \"Mainboard\" 的檔案",
+        "要找 VALO360 ER2 測試流程，查看 Platform=VALO360 且 Category=ER2 的檔案",
+        "要找蜂窩網路驗證流程，查看包含 \"Cellular\" 關鍵字的檔案"
+      ]
+    },
+    "ini_configuration": {
+      "description": "如何配置 INI 檔案",
+      "examples": [
+        "網路設定：修改 [Settings] 區段中的 PCIP_1 和 DUTIP_1",
+        "設備設定：修改 [Scripts] 區段中的 VALO360_ALL_MODEL",
+        "功能開關：修改 [System] 區段中的 Feature_Flag 類型設定"
+      ]
+    },
+    "file_organization": {
+      "description": "檔案組織結構說明",
+      "examples": [
+        "KANGAROO 平台：主機板、OQC、蜂窩網路、WiFi/BT、OTA、多設備測試",
+        "VALO360 平台：ER2、POE、IMU、功能驗證、DMIC 測試",
+        "Centimani 工具：INI 設定、參數、腳本指南"
+      ]
+    }
+  },
+  "best_practices": {
+    "file_management": [
+      "使用統一的命名規範：Platform_TestType_Date_Version.xlsx",
+      "定期更新測試項目代碼檔案",
+      "保持檔案版本的一致性"
+    ],
+    "configuration_management": [
+      "備份原始的 INI 設定檔案",
+      "使用註解說明重要設定的用途",
+      "測試環境和生產環境使用不同的設定檔案"
+    ],
+    "testing_workflow": [
+      "根據設備型號選擇對應的測試流程",
+      "確認測試環境的網路和設備設定",
+      "記錄測試過程中的重要參數和結果"
+    ],
+    "troubleshooting": [
+      "檢查網路連線和 IP 設定",
+      "確認設備埠號和通訊設定",
+      "查看日誌檔案中的錯誤資訊"
+    ]
+  }
+}

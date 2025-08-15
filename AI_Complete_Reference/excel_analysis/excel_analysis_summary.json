@@ -1,0 +1,48 @@
+{
+  "analysis_timestamp": "2025-08-11T19:53:19.666667",
+  "total_projects": 5,
+  "total_files": 52,
+  "project_overview": {
+    "RAPTOR": {
+      "file_count": 4,
+      "main_purpose": "通用測試平台，支援多種測試流程",
+      "complexity": "Medium"
+    },
+    "ZEBRA": {
+      "file_count": 6,
+      "main_purpose": "WiFi 專用測試平台",
+      "complexity": "Medium"
+    },
+    "KANGAROO": {
+      "file_count": 20,
+      "main_purpose": "手機測試平台，包含 WiFi、藍牙、蜂窩網路等測試",
+      "complexity": "High"
+    },
+    "Kilimanjaro": {
+      "file_count": 2,
+      "main_purpose": "LED 測試專用平台",
+      "complexity": "Medium"
+    },
+    "VALO360": {
+      "file_count": 20,
+      "main_purpose": "網路設備測試平台，專注於 POE、DMIC、IMU 等功能測試",
+      "complexity": "Medium"
+    }
+  },
+  "common_patterns": [
+    {
+      "pattern": "file_size_distribution_檔案大小分布",
+      "frequency": 5
+    },
+    {
+      "pattern": "naming_convention_檔案命名模式",
+      "frequency": 1
+    }
+  ],
+  "recommendations": [
+    "建議建立檔案命名規範，便於版本管理",
+    "高複雜度專案建議建立測試流程文檔和標準化模板",
+    "建議定期更新測試項目代碼和參數設定",
+    "建議建立測試結果的標準化格式"
+  ]
+}

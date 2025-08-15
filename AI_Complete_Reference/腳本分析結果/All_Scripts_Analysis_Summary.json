@@ -1,0 +1,1244 @@
+{
+  "analysis_date": "2025-08-11T21:32:20.315817",
+  "total_scripts": 52,
+  "project_statistics": {
+    "KANGAROO": {
+      "count": 20,
+      "total_sheets": 120,
+      "total_rows": 19062,
+      "complexity_levels": {
+        "中等": 18,
+        "複雜": 2
+      },
+      "test_coverages": {
+        "全面功能測試": 10,
+        "功能測試": 8,
+        "基本功能測試": 2
+      }
+    },
+    "VALO360": {
+      "count": 20,
+      "total_sheets": 114,
+      "total_rows": 3518,
+      "complexity_levels": {
+        "中等": 20
+      },
+      "test_coverages": {
+        "功能測試": 14,
+        "基本功能測試": 6
+      }
+    },
+    "RAPTOR": {
+      "count": 4,
+      "total_sheets": 28,
+      "total_rows": 2444,
+      "complexity_levels": {
+        "複雜": 4
+      },
+      "test_coverages": {
+        "全面功能測試": 4
+      }
+    },
+    "Kilimanjaro": {
+      "count": 2,
+      "total_sheets": 18,
+      "total_rows": 1224,
+      "complexity_levels": {
+        "複雜": 2
+      },
+      "test_coverages": {
+        "全面功能測試": 2
+      }
+    },
+    "ZEBRA": {
+      "count": 6,
+      "total_sheets": 34,
+      "total_rows": 1308,
+      "complexity_levels": {
+        "中等": 6
+      },
+      "test_coverages": {
+        "功能測試": 6
+      }
+    }
+  },
+  "analysis_results": [
+    {
+      "filename": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 674,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade_Analysis.md"
+      }
+    },
+    {
+      "filename": "Test Item Code V2.04_20250310.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 4,
+      "total_rows": 5524,
+      "total_columns": 22,
+      "main_features": [
+        "測試執行功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Test Item Code V2.04_20250310_Analysis.json",
+        "markdown": "Test Item Code V2.04_20250310_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 302,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 152,
+      "total_columns": 52,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 787,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 862,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 309,
+      "total_columns": 69,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 12,
+      "total_rows": 663,
+      "total_columns": 141,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow_Analysis.json",
+        "markdown": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 91,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_MP_AIR_TestFlow_20250326C_Analysis.json",
+        "markdown": "Kangaroo_MP_AIR_TestFlow_20250326C_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 167,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414_Analysis.json",
+        "markdown": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 674,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade_Analysis.md"
+      }
+    },
+    {
+      "filename": "Test Item Code V2.04_20250310.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 4,
+      "total_rows": 5524,
+      "total_columns": 22,
+      "main_features": [
+        "測試執行功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Test Item Code V2.04_20250310_Analysis.json",
+        "markdown": "Test Item Code V2.04_20250310_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 302,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 152,
+      "total_columns": 52,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 787,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 862,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 309,
+      "total_columns": 69,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421_Analysis.json",
+        "markdown": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 12,
+      "total_rows": 663,
+      "total_columns": 141,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow_Analysis.json",
+        "markdown": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 91,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_MP_AIR_TestFlow_20250326C_Analysis.json",
+        "markdown": "Kangaroo_MP_AIR_TestFlow_20250326C_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "project": "KANGAROO",
+      "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+      "script_type": "KANGAROO_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 167,
+      "total_columns": 51,
+      "main_features": [
+        "配置管理功能",
+        "多樣化測試支援",
+        "多設備測試支援",
+        "儀器參數配置",
+        "KANGAROO專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414_Analysis.json",
+        "markdown": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 193,
+      "total_columns": 40,
+      "main_features": [
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_ER2 OQC Function Check List_20250418_Analysis.json",
+        "markdown": "VALO360_ER2 OQC Function Check List_20250418_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250307_POE.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 118,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250307_POE_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250307_POE_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250218_ER2.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 68,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250218_ER2_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250218_ER2_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 91,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250218_POE_LoopOK_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250218_POE_LoopOK_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 116,
+      "total_columns": 66,
+      "main_features": [
+        "儀器參數配置",
+        "多設備測試支援",
+        "配置管理功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Nokia_TestFlow_20250307_ER2_DMIC_Analysis.json",
+        "markdown": "Pega_Nokia_TestFlow_20250307_ER2_DMIC_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250407_Function.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 248,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250407_Function_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250407_Function_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250326_IMU.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 98,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250326_IMU_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250326_IMU_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250326_Final.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 121,
+      "total_columns": 67,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250326_Final_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250326_Final_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 218,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250318_MB_ER2_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250318_MB_ER2_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 488,
+      "total_columns": 31,
+      "main_features": [
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_ER2 OQC Function Check List_202504122_for Factory_Analysis.json",
+        "markdown": "VALO360_ER2 OQC Function Check List_202504122_for Factory_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_20250418.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 193,
+      "total_columns": 40,
+      "main_features": [
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_ER2 OQC Function Check List_20250418_Analysis.json",
+        "markdown": "VALO360_ER2 OQC Function Check List_20250418_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250307_POE.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250307_POE.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 118,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250307_POE_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250307_POE_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250218_ER2.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_ER2.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 68,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250218_ER2_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250218_ER2_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 91,
+      "total_columns": 50,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250218_POE_LoopOK_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250218_POE_LoopOK_Analysis.md"
+      }
+    },
+    {
+      "filename": "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 116,
+      "total_columns": 66,
+      "main_features": [
+        "儀器參數配置",
+        "多設備測試支援",
+        "配置管理功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Pega_Nokia_TestFlow_20250307_ER2_DMIC_Analysis.json",
+        "markdown": "Pega_Nokia_TestFlow_20250307_ER2_DMIC_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250407_Function.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250407_Function.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 248,
+      "total_columns": 68,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250407_Function_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250407_Function_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250326_IMU.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_IMU.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 98,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "基本功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250326_IMU_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250326_IMU_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250326_Final.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250326_Final.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 121,
+      "total_columns": 67,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250326_Final_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250326_Final_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_TestFlow_20250318_MB_ER2.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 218,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_TestFlow_20250318_MB_ER2_Analysis.json",
+        "markdown": "VALO360_TestFlow_20250318_MB_ER2_Analysis.md"
+      }
+    },
+    {
+      "filename": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+      "project": "VALO360",
+      "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+      "script_type": "VALO360_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 488,
+      "total_columns": 31,
+      "main_features": [
+        "功能導向測試",
+        "VALO360專案專用"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "VALO360_ER2 OQC Function Check List_202504122_for Factory_Analysis.json",
+        "markdown": "VALO360_ER2 OQC Function Check List_202504122_for Factory_Analysis.md"
+      }
+    },
+    {
+      "filename": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+      "project": "RAPTOR",
+      "file_path": "Centimani DOC/scripe_EXCEL\\RAPTOR\\Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+      "script_type": "RAPTOR_SCRIPT",
+      "total_sheets": 7,
+      "total_rows": 635,
+      "total_columns": 85,
+      "main_features": [
+        "配置管理功能",
+        "RAPTOR專案專用",
+        "測試執行功能",
+        "多設備測試支援",
+        "全面測試覆蓋",
+        "儀器參數配置"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL_Analysis.json",
+        "markdown": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL_Analysis.md"
+      }
+    },
+    {
+      "filename": "Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+      "project": "RAPTOR",
+      "file_path": "Centimani DOC/scripe_EXCEL\\RAPTOR\\Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+      "script_type": "RAPTOR_SCRIPT",
+      "total_sheets": 7,
+      "total_rows": 587,
+      "total_columns": 85,
+      "main_features": [
+        "配置管理功能",
+        "RAPTOR專案專用",
+        "測試執行功能",
+        "多設備測試支援",
+        "全面測試覆蓋",
+        "儀器參數配置"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Raptor_ALL_TestFlow_20230223_ALL_Analysis.json",
+        "markdown": "Raptor_ALL_TestFlow_20230223_ALL_Analysis.md"
+      }
+    },
+    {
+      "filename": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+      "project": "RAPTOR",
+      "file_path": "Centimani DOC/scripe_EXCEL\\RAPTOR\\Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+      "script_type": "RAPTOR_SCRIPT",
+      "total_sheets": 7,
+      "total_rows": 635,
+      "total_columns": 85,
+      "main_features": [
+        "配置管理功能",
+        "RAPTOR專案專用",
+        "測試執行功能",
+        "多設備測試支援",
+        "全面測試覆蓋",
+        "儀器參數配置"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL_Analysis.json",
+        "markdown": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL_Analysis.md"
+      }
+    },
+    {
+      "filename": "Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+      "project": "RAPTOR",
+      "file_path": "Centimani DOC/scripe_EXCEL\\RAPTOR\\Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+      "script_type": "RAPTOR_SCRIPT",
+      "total_sheets": 7,
+      "total_rows": 587,
+      "total_columns": 85,
+      "main_features": [
+        "配置管理功能",
+        "RAPTOR專案專用",
+        "測試執行功能",
+        "多設備測試支援",
+        "全面測試覆蓋",
+        "儀器參數配置"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Raptor_ALL_TestFlow_20230223_ALL_Analysis.json",
+        "markdown": "Raptor_ALL_TestFlow_20230223_ALL_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "project": "Kilimanjaro",
+      "file_path": "Centimani DOC/scripe_EXCEL\\Kilimanjaro\\Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "script_type": "KILIMANJARO_SCRIPT",
+      "total_sheets": 9,
+      "total_rows": 612,
+      "total_columns": 118,
+      "main_features": [
+        "KILIMANJARO專案專用",
+        "配置管理功能",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "專注性測試"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Kilimanjaro_LED_20201116_TestFlow_Analysis.json",
+        "markdown": "Kilimanjaro_LED_20201116_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "project": "Kilimanjaro",
+      "file_path": "Centimani DOC/scripe_EXCEL\\Kilimanjaro\\Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "script_type": "KILIMANJARO_SCRIPT",
+      "total_sheets": 9,
+      "total_rows": 612,
+      "total_columns": 118,
+      "main_features": [
+        "KILIMANJARO專案專用",
+        "配置管理功能",
+        "測試執行功能",
+        "多設備測試支援",
+        "儀器參數配置",
+        "專注性測試"
+      ],
+      "complexity_level": "複雜",
+      "test_coverage": "全面功能測試",
+      "analysis_files": {
+        "json": "Kilimanjaro_LED_20201116_TestFlow_Analysis.json",
+        "markdown": "Kilimanjaro_LED_20201116_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Zebra_20190417_TestFlow.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\Zebra_20190417_TestFlow.XLSX",
+      "script_type": "ZEBRA_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 261,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "基本功能測試",
+        "ZEBRA專案專用",
+        "儀器參數配置"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Zebra_20190417_TestFlow_Analysis.json",
+        "markdown": "Zebra_20190417_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "wifi_TestFlow.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\wifi_TestFlow.XLSX",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 119,
+      "total_columns": 51,
+      "main_features": [
+        "儀器參數配置",
+        "多設備測試支援",
+        "配置管理功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "wifi_TestFlow_Analysis.json",
+        "markdown": "wifi_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Zebra_20190725_TestFlow0801.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\Zebra_20190725_TestFlow0801.XLSX",
+      "script_type": "ZEBRA_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 274,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "基本功能測試",
+        "ZEBRA專案專用",
+        "儀器參數配置"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Zebra_20190725_TestFlow0801_Analysis.json",
+        "markdown": "Zebra_20190725_TestFlow0801_Analysis.md"
+      }
+    },
+    {
+      "filename": "Zebra_20190417_TestFlow.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\Zebra_20190417_TestFlow.XLSX",
+      "script_type": "ZEBRA_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 261,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "基本功能測試",
+        "ZEBRA專案專用",
+        "儀器參數配置"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Zebra_20190417_TestFlow_Analysis.json",
+        "markdown": "Zebra_20190417_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "wifi_TestFlow.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\wifi_TestFlow.XLSX",
+      "script_type": "GENERIC_SCRIPT",
+      "total_sheets": 5,
+      "total_rows": 119,
+      "total_columns": 51,
+      "main_features": [
+        "儀器參數配置",
+        "多設備測試支援",
+        "配置管理功能"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "wifi_TestFlow_Analysis.json",
+        "markdown": "wifi_TestFlow_Analysis.md"
+      }
+    },
+    {
+      "filename": "Zebra_20190725_TestFlow0801.XLSX",
+      "project": "ZEBRA",
+      "file_path": "Centimani DOC/scripe_EXCEL\\ZEBRA\\Zebra_20190725_TestFlow0801.XLSX",
+      "script_type": "ZEBRA_SCRIPT",
+      "total_sheets": 6,
+      "total_rows": 274,
+      "total_columns": 66,
+      "main_features": [
+        "配置管理功能",
+        "多設備測試支援",
+        "基本功能測試",
+        "ZEBRA專案專用",
+        "儀器參數配置"
+      ],
+      "complexity_level": "中等",
+      "test_coverage": "功能測試",
+      "analysis_files": {
+        "json": "Zebra_20190725_TestFlow0801_Analysis.json",
+        "markdown": "Zebra_20190725_TestFlow0801_Analysis.md"
+      }
+    }
+  ],
+  "summary_report": {
+    "total_scripts_analyzed": 52,
+    "total_scripts_failed": 0,
+    "total_scripts_error": 0,
+    "project_overview": {
+      "KANGAROO": {
+        "script_count": 20,
+        "total_sheets": 120,
+        "total_rows": 19062,
+        "avg_sheets_per_script": 6.0,
+        "avg_rows_per_script": 953.1
+      },
+      "VALO360": {
+        "script_count": 20,
+        "total_sheets": 114,
+        "total_rows": 3518,
+        "avg_sheets_per_script": 5.7,
+        "avg_rows_per_script": 175.9
+      },
+      "RAPTOR": {
+        "script_count": 4,
+        "total_sheets": 28,
+        "total_rows": 2444,
+        "avg_sheets_per_script": 7.0,
+        "avg_rows_per_script": 611.0
+      },
+      "Kilimanjaro": {
+        "script_count": 2,
+        "total_sheets": 18,
+        "total_rows": 1224,
+        "avg_sheets_per_script": 9.0,
+        "avg_rows_per_script": 612.0
+      },
+      "ZEBRA": {
+        "script_count": 6,
+        "total_sheets": 34,
+        "total_rows": 1308,
+        "avg_sheets_per_script": 5.67,
+        "avg_rows_per_script": 218.0
+      }
+    },
+    "complexity_distribution": {
+      "中等": 44,
+      "複雜": 8
+    },
+    "test_coverage_distribution": {
+      "全面功能測試": 16,
+      "功能測試": 28,
+      "基本功能測試": 8
+    }
+  }
+}

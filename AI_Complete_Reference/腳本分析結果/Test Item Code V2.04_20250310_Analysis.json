@@ -1,0 +1,406 @@
+{
+  "file_info": {
+    "file_name": "Test Item Code V2.04_20250310.xlsx",
+    "analysis_date": "2025-08-11T21:32:24.805181",
+    "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Test Item Code V2.04_20250310.xlsx",
+    "script_type": "GENERIC_SCRIPT",
+    "project_name": "UNKNOWN",
+    "total_sheets": 4,
+    "total_rows": 5524,
+    "total_columns": 22
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "七碼定義Definition",
+      "Test Item All",
+      "Version History",
+      "工作表1"
+    ],
+    "sheet_analyses": {
+      "七碼定義Definition": {
+        "sheet_name": "七碼定義Definition",
+        "sheet_type": "unknown",
+        "total_rows": 65,
+        "total_columns": 11,
+        "column_names": [
+          "和碩聯合科技(股)公司 PEGATRON CORP. ",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9",
+          "Unnamed: 10"
+        ],
+        "column_types": {
+          "和碩聯合科技(股)公司 PEGATRON CORP. ": "object",
+          "Unnamed: 1": "object",
+          "Unnamed: 2": "object",
+          "Unnamed: 3": "object",
+          "Unnamed: 4": "float64",
+          "Unnamed: 5": "object",
+          "Unnamed: 6": "object",
+          "Unnamed: 7": "object",
+          "Unnamed: 8": "object",
+          "Unnamed: 9": "object",
+          "Unnamed: 10": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "和碩聯合科技(股)公司 PEGATRON CORP. ": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "和碩聯合科技(股)公司 PEGATRON CORP. ": "CVP RD3 SW2 Product Error Code definition as below：",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "和碩聯合科技(股)公司 PEGATRON CORP. ": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": "站位序號",
+              "Unnamed: 9": "測項序列號",
+              "Unnamed: 10": NaN
+            },
+            {
+              "和碩聯合科技(股)公司 PEGATRON CORP. ": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": "0~9,A~Z",
+              "Unnamed: 9": "0~9,A~Z",
+              "Unnamed: 10": NaN
+            },
+            {
+              "和碩聯合科技(股)公司 PEGATRON CORP. ": 1,
+              "Unnamed: 1": 2,
+              "Unnamed: 2": 3,
+              "Unnamed: 3": 4,
+              "Unnamed: 4": 5.0,
+              "Unnamed: 5": 6,
+              "Unnamed: 6": 7,
+              "Unnamed: 7": "-",
+              "Unnamed: 8": 9,
+              "Unnamed: 9": 10,
+              "Unnamed: 10": 11
+            }
+          ],
+          "non_null_counts": {
+            "和碩聯合科技(股)公司 PEGATRON CORP. ": 2,
+            "Unnamed: 1": 6,
+            "Unnamed: 2": 31,
+            "Unnamed: 3": 2,
+            "Unnamed: 4": 1,
+            "Unnamed: 5": 30,
+            "Unnamed: 6": 6,
+            "Unnamed: 7": 1,
+            "Unnamed: 8": 14,
+            "Unnamed: 9": 3,
+            "Unnamed: 10": 2
+          },
+          "unique_counts": {
+            "和碩聯合科技(股)公司 PEGATRON CORP. ": 2,
+            "Unnamed: 1": 6,
+            "Unnamed: 2": 27,
+            "Unnamed: 3": 2,
+            "Unnamed: 5": 27,
+            "Unnamed: 6": 6,
+            "Unnamed: 7": 1,
+            "Unnamed: 8": 9,
+            "Unnamed: 9": 3,
+            "Unnamed: 10": 2
+          }
+        }
+      },
+      "Test Item All": {
+        "sheet_name": "Test Item All",
+        "sheet_type": "test",
+        "total_rows": 5358,
+        "total_columns": 8,
+        "column_names": [
+          "V1.83",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7"
+        ],
+        "column_types": {
+          "V1.83": "object",
+          "Unnamed: 1": "object",
+          "Unnamed: 2": "object",
+          "Unnamed: 3": "object",
+          "Unnamed: 4": "object",
+          "Unnamed: 5": "object",
+          "Unnamed: 6": "object",
+          "Unnamed: 7": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "測試執行工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "V1.83": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN
+            },
+            {
+              "V1.83": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN
+            },
+            {
+              "V1.83": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN
+            },
+            {
+              "V1.83": "Main Function",
+              "Unnamed: 1": "Interface",
+              "Unnamed: 2": "Interenal Error Code",
+              "Unnamed: 3": "Description",
+              "Unnamed: 4": "中文",
+              "Unnamed: 5": "Version",
+              "Unnamed: 6": "Error Code",
+              "Unnamed: 7": "Note"
+            },
+            {
+              "V1.83": "AFM",
+              "Unnamed: 1": "AFM",
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN
+            }
+          ],
+          "non_null_counts": {
+            "V1.83": 44,
+            "Unnamed: 1": 151,
+            "Unnamed: 2": 5205,
+            "Unnamed: 3": 5205,
+            "Unnamed: 4": 5205,
+            "Unnamed: 5": 5205,
+            "Unnamed: 6": 5205,
+            "Unnamed: 7": 3894
+          },
+          "unique_counts": {
+            "V1.83": 44,
+            "Unnamed: 1": 137,
+            "Unnamed: 2": 5205,
+            "Unnamed: 3": 5162,
+            "Unnamed: 4": 5155,
+            "Unnamed: 5": 106,
+            "Unnamed: 6": 4662,
+            "Unnamed: 7": 123
+          }
+        }
+      },
+      "Version History": {
+        "sheet_name": "Version History",
+        "sheet_type": "unknown",
+        "total_rows": 101,
+        "total_columns": 3,
+        "column_names": [
+          "Version",
+          "Release Date",
+          "Describe"
+        ],
+        "column_types": {
+          "Version": "object",
+          "Release Date": "int64",
+          "Describe": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Version": "V1.0",
+              "Release Date": 20170223,
+              "Describe": "First Release"
+            },
+            {
+              "Version": "V1.1",
+              "Release Date": 20170308,
+              "Describe": "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item"
+            },
+            {
+              "Version": "V1.2",
+              "Release Date": 20170418,
+              "Describe": "1.Insert BRPW013~14 for voltage test item\n2.Add FWUR017 for UART Loop Back Fail\n3.Add BRPW022 for Measure_1.125V\n4.Add BRPW023 for Measure_1.26V\n5.Add BRPW024 for Voltage test point over the criteria\n6.Format Adjust"
+            },
+            {
+              "Version": "V1.3",
+              "Release Date": 20170424,
+              "Describe": "1.Format Adjust"
+            },
+            {
+              "Version": "V1.4",
+              "Release Date": 20170426,
+              "Describe": "1.Modify version Information\n2.Added new error code as below\nIOET148~IOET152"
+            }
+          ],
+          "non_null_counts": {
+            "Version": 101,
+            "Release Date": 101,
+            "Describe": 101
+          },
+          "unique_counts": {
+            "Version": 101,
+            "Describe": 58
+          }
+        }
+      },
+      "工作表1": {
+        "sheet_name": "工作表1",
+        "sheet_type": "unknown",
+        "total_rows": 0,
+        "total_columns": 0,
+        "column_names": [],
+        "column_types": {},
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "non_null_counts": {},
+          "unique_counts": {}
+        }
+      }
+    }
+  },
+  "main_features": [
+    "測試執行功能"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [],
+    "test_sequence": [],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "中等",
+    "test_coverage": "全面功能測試",
+    "script_organization": "模組化設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "UNKNOWN",
+    "script_type": "GENERIC_SCRIPT",
+    "special_capabilities": [],
+    "best_practices": [],
+    "learning_focus": []
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "UNKNOWN專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援UNKNOWN專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為UNKNOWN專案腳本模板",
+      "學習UNKNOWN專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

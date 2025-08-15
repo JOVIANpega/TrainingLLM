@@ -1,0 +1,1132 @@
+{
+  "file_info": {
+    "file_name": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+    "analysis_date": "2025-08-11T21:32:30.836478",
+    "file_path": "Centimani DOC/scripe_EXCEL\\RAPTOR\\Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+    "script_type": "RAPTOR_SCRIPT",
+    "project_name": "RAPTOR",
+    "total_sheets": 7,
+    "total_rows": 635,
+    "total_columns": 85
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "Properties",
+      "Instrument",
+      "Switch",
+      "DUTs",
+      "Download",
+      "Board Test",
+      "Wifi Test"
+    ],
+    "sheet_analyses": {
+      "Properties": {
+        "sheet_name": "Properties",
+        "sheet_type": "properties",
+        "total_rows": 3,
+        "total_columns": 2,
+        "column_names": [
+          "Name",
+          "Value"
+        ],
+        "column_types": {
+          "Name": "object",
+          "Value": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Name": "Version",
+              "Value": "2302231401384"
+            },
+            {
+              "Name": "Creator",
+              "Value": "chienkuo"
+            },
+            {
+              "Name": "FailCount",
+              "Value": 0
+            }
+          ],
+          "non_null_counts": {
+            "Name": 3,
+            "Value": 3
+          },
+          "unique_counts": {
+            "Name": 3,
+            "Value": 3
+          }
+        }
+      },
+      "Instrument": {
+        "sheet_name": "Instrument",
+        "sheet_type": "instrument",
+        "total_rows": 10,
+        "total_columns": 9,
+        "column_names": [
+          "Mount",
+          "Name",
+          "Sub",
+          "ControlDLL",
+          "Settings",
+          "Functions",
+          "Version",
+          "Switch",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "object",
+          "Sub": "float64",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Functions": "object",
+          "Version": "object",
+          "Switch": "float64",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": NaN,
+              "Name": "switch_C",
+              "Sub": NaN,
+              "ControlDLL": "USBCSwitchLibary.dll",
+              "Settings": NaN,
+              "Functions": "switch",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "usb switch"
+            },
+            {
+              "Mount": NaN,
+              "Name": "B2302",
+              "Sub": NaN,
+              "ControlDLL": "SCPI_Controller.dll",
+              "Settings": "GPIB,*$(B2302_GPIB),3",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Keithley 2302"
+            },
+            {
+              "Mount": NaN,
+              "Name": "PS2005-1",
+              "Sub": 1.0,
+              "ControlDLL": "PSS2005.dll",
+              "Settings": "GPIB,GPIB0::8::INSTR",
+              "Functions": "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "Version": "1.0.0.1",
+              "Switch": NaN,
+              "Desc": "DC Power 2005"
+            },
+            {
+              "Mount": NaN,
+              "Name": "Transmitter1",
+              "Sub": NaN,
+              "ControlDLL": "VirtualTransmitter.dll",
+              "Settings": "Transmitter1,*$(PCIP_1),23",
+              "Functions": "TCP_Transfer",
+              "Version": "1.0.0.2",
+              "Switch": NaN,
+              "Desc": "Virtual Transmitter"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 2,
+            "Name": 10,
+            "Sub": 1,
+            "ControlDLL": 10,
+            "Settings": 9,
+            "Functions": 10,
+            "Version": 10,
+            "Switch": 0,
+            "Desc": 10
+          },
+          "unique_counts": {
+            "Mount": 1,
+            "Name": 9,
+            "ControlDLL": 6,
+            "Settings": 8,
+            "Functions": 6,
+            "Version": 5,
+            "Desc": 6
+          }
+        }
+      },
+      "Switch": {
+        "sheet_name": "Switch",
+        "sheet_type": "switch",
+        "total_rows": 1,
+        "total_columns": 7,
+        "column_names": [
+          "Mount",
+          "Name",
+          "ControlDLL",
+          "Settings",
+          "Version",
+          "Loss",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "object",
+          "Name": "float64",
+          "ControlDLL": "float64",
+          "Settings": "float64",
+          "Version": "float64",
+          "Loss": "float64",
+          "Desc": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": "RF",
+              "Name": NaN,
+              "ControlDLL": NaN,
+              "Settings": NaN,
+              "Version": NaN,
+              "Loss": NaN,
+              "Desc": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 1,
+            "Name": 0,
+            "ControlDLL": 0,
+            "Settings": 0,
+            "Version": 0,
+            "Loss": 0,
+            "Desc": 0
+          },
+          "unique_counts": {
+            "Mount": 1
+          }
+        }
+      },
+      "DUTs": {
+        "sheet_name": "DUTs",
+        "sheet_type": "duts",
+        "total_rows": 3,
+        "total_columns": 16,
+        "column_names": [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)",
+          "Connection5(Type,Name,ConnectString)",
+          "Connection6(Type,Name,ConnectString)",
+          "Connection7(Type,Name,ConnectString)",
+          "Connection8(Type,Name,ConnectString)",
+          "Connection9(Type,Name,ConnectString)",
+          "Connection10(Type,Name,ConnectString)"
+        ],
+        "column_types": {
+          "Load": "object",
+          "DUT Name": "object",
+          "Station": "object",
+          "Parameter": "object",
+          "SFIS_DeviceID": "object",
+          "ScanBarcode( {Name,Lengh,Pattern} )": "object",
+          "Connection1 (Type,Name,ConnectString)": "object",
+          "Connection2 (Type,Name,ConnectString)": "object",
+          "Connection3 (Type,Name,ConnectString)": "object",
+          "Connection4(Type,Name,ConnectString)": "object",
+          "Connection5(Type,Name,ConnectString)": "object",
+          "Connection6(Type,Name,ConnectString)": "object",
+          "Connection7(Type,Name,ConnectString)": "object",
+          "Connection8(Type,Name,ConnectString)": "object",
+          "Connection9(Type,Name,ConnectString)": "float64",
+          "Connection10(Type,Name,ConnectString)": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Parameter"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Load": "*$(Load_1)",
+              "DUT Name": "RaptorV3$Download",
+              "Station": "Download,1",
+              "Parameter": "*$(PCIP_1),1,*$(DEVID_1),*$(PCIP_2),*$(DUTIP_1)",
+              "SFIS_DeviceID": "*$(DW_DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": "{  ISN,13,[a-zA-Z0-9] }",
+              "Connection1 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole\",\"cmd.exe,1,60000,\"",
+              "Connection2 (Type,Name,ConnectString)": "\"DLL:FanProject.dll\",\"FanDLL\",\"1\"",
+              "Connection3 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole2\",\"cmd.exe,1,360000,\"",
+              "Connection4(Type,Name,ConnectString)": "\"APP\",\"CmdConsoleShort\",\"cmd.exe,1,15000,\"",
+              "Connection5(Type,Name,ConnectString)": "\"TCP\",\"LAN\",\"*$(PCIP_2),*$(DUTIP_1),23,3000,10000\"",
+              "Connection6(Type,Name,ConnectString)": "\"DLL:Function0311.dll\",\"Func\",\"function\"",
+              "Connection7(Type,Name,ConnectString)": "\"Uart\",\"UART\",\"*$(PCUART_1),921600,8,One,None,None,10000,5000\"",
+              "Connection8(Type,Name,ConnectString)": "\"TCP\",\"LAN1\",\"*$(PCIP_2),192.168.1.1,23,3000,10000\"",
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(LOAD_1)",
+              "DUT Name": "RaptorV3$Board Test",
+              "Station": "Board Test,1",
+              "Parameter": "*$(PCIP_2),*$(PCIP_3),*$(PCIP_4),*$(DUTDEFAULTIP),1,*$(5GLED_Port),*$(4GLED_Port),*$(WIFILED_Port),*$(LAN1_GreenLED_Port),*$(LAN1_AmberLED_Port),*$(LAN2_GreenLED_Port),*$(LAN2_AmberLED_Port),*$(WAN_GreenLED_Port),*$(WAN_AmberLED_Port)",
+              "SFIS_DeviceID": "*$(MB_DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": "{MBSN,13,[a-zA-Z0-9] }",
+              "Connection1 (Type,Name,ConnectString)": "\"Uart\",\"UART\",\"*$(PCUART_1),921600,8,One,None,None,10000,5000\"",
+              "Connection2 (Type,Name,ConnectString)": "\"DLL:LitePoint_dll.dll\",\"LP\",\",DUT1,1\"",
+              "Connection3 (Type,Name,ConnectString)": "\"UDP\",\"UDP1\",\"*$(PCIP_1),*$(DUTIP_1),2345,60000,10000\"",
+              "Connection4(Type,Name,ConnectString)": "\"APP\",\"CmdConsole\",\"cmd.exe,1,30000,\"",
+              "Connection5(Type,Name,ConnectString)": "\"DLL:FanProject.dll\",\"FanDLL\",\"1\"",
+              "Connection6(Type,Name,ConnectString)": "\"APP\",\"CmdConsoleLong\",\"cmd.exe,1,120000,\"",
+              "Connection7(Type,Name,ConnectString)": "\"TCP\",\"LAN\",\"*$(PCIP_2),192.168.1.1,23,3000,3000\"",
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(Load_1)",
+              "DUT Name": "RaptorV3$Wifi Test",
+              "Station": "Wifi Test,0",
+              "Parameter": "*$(PCIP_1),1,*$(DEVID_1),*$(PCIP_2)",
+              "SFIS_DeviceID": "*$(WIFI_DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole\",\"cmd.exe,1,60000,\"",
+              "Connection2 (Type,Name,ConnectString)": "\"DLL:FanProject.dll\",\"FanDLL\",\"1\"",
+              "Connection3 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole2\",\"cmd.exe,1,360000,\"",
+              "Connection4(Type,Name,ConnectString)": "\"APP\",\"CmdConsoleShort\",\"cmd.exe,1,15000,\"",
+              "Connection5(Type,Name,ConnectString)": "\"TCP\",\"LAN\",\"*$(PCIP_2),192.168.1.1,23,3000,10000\"",
+              "Connection6(Type,Name,ConnectString)": "\"DLL:Function0311.dll\",\"Func\",\"function\"",
+              "Connection7(Type,Name,ConnectString)": "\"APP\",\"CmdConsoleLong\",\"cmd.exe,1,3000,\"",
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Load": 3,
+            "DUT Name": 3,
+            "Station": 3,
+            "Parameter": 3,
+            "SFIS_DeviceID": 3,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 2,
+            "Connection1 (Type,Name,ConnectString)": 3,
+            "Connection2 (Type,Name,ConnectString)": 3,
+            "Connection3 (Type,Name,ConnectString)": 3,
+            "Connection4(Type,Name,ConnectString)": 3,
+            "Connection5(Type,Name,ConnectString)": 3,
+            "Connection6(Type,Name,ConnectString)": 3,
+            "Connection7(Type,Name,ConnectString)": 3,
+            "Connection8(Type,Name,ConnectString)": 1,
+            "Connection9(Type,Name,ConnectString)": 0,
+            "Connection10(Type,Name,ConnectString)": 0
+          },
+          "unique_counts": {
+            "Load": 2,
+            "DUT Name": 3,
+            "Station": 3,
+            "Parameter": 3,
+            "SFIS_DeviceID": 3,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 2,
+            "Connection1 (Type,Name,ConnectString)": 2,
+            "Connection2 (Type,Name,ConnectString)": 2,
+            "Connection3 (Type,Name,ConnectString)": 2,
+            "Connection4(Type,Name,ConnectString)": 2,
+            "Connection5(Type,Name,ConnectString)": 3,
+            "Connection6(Type,Name,ConnectString)": 2,
+            "Connection7(Type,Name,ConnectString)": 3,
+            "Connection8(Type,Name,ConnectString)": 1
+          }
+        }
+      },
+      "Download": {
+        "sheet_name": "Download",
+        "sheet_type": "unknown",
+        "total_rows": 54,
+        "total_columns": 17,
+        "column_names": [
+          "Index_234",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_234": "object",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "float64",
+          "Switch": "float64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "object",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "9",
+            "8",
+            "3",
+            "2:0",
+            "4:1,2",
+            "4:4,2",
+            "4:6,1",
+            "4:10,10",
+            "4:1,7"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_234": "00D",
+              "Phase": 1.0,
+              "Title": "0,CheckRoute",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowISN,\"*(ISN)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Show ISN to UI",
+              "TestID": "CACK088",
+              "Unnamed: 16": 0.0
+            },
+            {
+              "Index_234": "0J3",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":FanDLL.VARTOGLOBAL,\"*$(gModelName)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "$sfeModelName",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Set Model Name",
+              "TestID": "B7PL025",
+              "Unnamed: 16": 7.0
+            },
+            {
+              "Index_234": "00E",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":SfGetVersion,\"*(ISN)\",\"ITEMINFO\",\"4\",\"\",\"\"",
+              "Reply": NaN,
+              "EndPrompt": NaN,
+              "Ref": "$60ISN",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "9",
+              "Description": "SFIS Get  60ISN",
+              "TestID": "OTFX064",
+              "Unnamed: 16": 1.0
+            },
+            {
+              "Index_234": "00F",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":SfGetVersion,\"*(ISN)\",\"ITEMINFO\",\"5\",\"\",\"\"",
+              "Reply": NaN,
+              "EndPrompt": NaN,
+              "Ref": "$69ISN",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "9",
+              "Description": "SFIS Get 69ISN",
+              "TestID": "OTFX064",
+              "Unnamed: 16": 2.0
+            },
+            {
+              "Index_234": "00G",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":FanDLL.CHECK60ISN,\"*(ISN)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "$PEGA60ISN",
+              "Validation": "(PEGA60ISN,%f,1,);",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Get Change 60ISN",
+              "TestID": "OTFX079",
+              "Unnamed: 16": 3.0
+            }
+          ],
+          "non_null_counts": {
+            "Index_234": 54,
+            "Phase": 6,
+            "Title": 6,
+            "Marco": 0,
+            "Instrument": 0,
+            "Switch": 0,
+            "Send": 54,
+            "Reply": 48,
+            "EndPrompt": 0,
+            "Ref": 11,
+            "Validation": 6,
+            "Prompt": 2,
+            "Waiting": 5,
+            "ExecMode": 54,
+            "Description": 54,
+            "TestID": 54,
+            "Unnamed: 16": 51
+          },
+          "unique_counts": {
+            "Index_234": 54,
+            "Title": 6,
+            "Send": 36,
+            "Reply": 5,
+            "Ref": 7,
+            "Validation": 6,
+            "Prompt": 2,
+            "ExecMode": 11,
+            "Description": 36,
+            "TestID": 19
+          }
+        }
+      },
+      "Board Test": {
+        "sheet_name": "Board Test",
+        "sheet_type": "test",
+        "total_rows": 219,
+        "total_columns": 17,
+        "column_names": [
+          "Index_186",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_186": "float64",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "object",
+          "Switch": "object",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "測試執行工作表"
+          ],
+          "test_phases": [
+            -1.0,
+            -2.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "8",
+            "9",
+            "4:8,6",
+            "4:9,9",
+            "2:0",
+            "4:13,12",
+            "4:15,16",
+            "4:6,2",
+            "4:1,8",
+            "4:6,3",
+            "3",
+            "4:1,12",
+            "2:1",
+            "2:4"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_186": NaN,
+              "Phase": -1.0,
+              "Title": "0,EnterTestMode",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowImageMessage,\"Loimage.gif\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Show EnterTest Box",
+              "TestID": "OTFX054",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_186": NaN,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowISN,\"*(AOSSN)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Show ISN to UI",
+              "TestID": "CACK088",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_186": NaN,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowImageMessage,\"Loimage.gif\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Show EnterTest Box",
+              "TestID": "OTFX054",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_186": NaN,
+              "Phase": -2.0,
+              "Title": "0,Popup",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ParseText,\"D:\\ESR\\Centimani_1.1.6.9\\System\\System.ini\",\"MiniCloud_ProjectName\",\"iPLAS_UploadFileTypes\"",
+              "Reply": NaN,
+              "EndPrompt": NaN,
+              "Ref": "gProjectName:rpString,\" \",\"\"\n",
+              "Validation": "(gProjectName,%s,@ESR-SKU01,@ESR-SKU01)",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Check_ProjectName",
+              "TestID": "VSCH002",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_186": NaN,
+              "Phase": 0.0,
+              "Title": "0,Check Route",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowISN,\"*(MBSN)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Show ISN to UI",
+              "TestID": "CACK088",
+              "Unnamed: 16": 6.0
+            }
+          ],
+          "non_null_counts": {
+            "Index_186": 0,
+            "Phase": 24,
+            "Title": 24,
+            "Marco": 0,
+            "Instrument": 3,
+            "Switch": 3,
+            "Send": 219,
+            "Reply": 178,
+            "EndPrompt": 0,
+            "Ref": 83,
+            "Validation": 57,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 219,
+            "Description": 218,
+            "TestID": 219,
+            "Unnamed: 16": 206
+          },
+          "unique_counts": {
+            "Title": 23,
+            "Instrument": 2,
+            "Switch": 2,
+            "Send": 153,
+            "Reply": 8,
+            "Ref": 70,
+            "Validation": 54,
+            "ExecMode": 16,
+            "Description": 144,
+            "TestID": 53
+          }
+        }
+      },
+      "Wifi Test": {
+        "sheet_name": "Wifi Test",
+        "sheet_type": "test",
+        "total_rows": 345,
+        "total_columns": 17,
+        "column_names": [
+          "Index_385",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_385": "object",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "float64",
+          "Switch": "float64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "測試執行工作表"
+          ],
+          "test_phases": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            97.0
+          ],
+          "execution_modes": [
+            "0",
+            "1",
+            "9",
+            "8",
+            "4:2,3",
+            "4:160,1",
+            "4:1,88",
+            "3"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_385": "200",
+              "Phase": 0.0,
+              "Title": "0,Delete last Log",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.DFile,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\Log\\logOutput.txt\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Delete last Log",
+              "TestID": "OTFX092",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_385": "201",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ParseText,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\path_loss.csv\",\"2402\",\"\"",
+              "Reply": NaN,
+              "EndPrompt": NaN,
+              "Ref": "$pathloss",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Path_loss",
+              "TestID": "RFRF001",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_385": "202",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.CMD,\"C:\\Windows\\System32\\arp.exe\",\"-d\",\"off\",\"-1\"",
+              "Reply": NaN,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "ARP",
+              "TestID": "IOCD041",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_385": "203",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Kill exe",
+              "TestID": "IOCD041",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_385": "204",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.KillPro,\"IQrun_Console.exe\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "Kill exe",
+              "TestID": "IOCD041",
+              "Unnamed: 16": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_385": 345,
+            "Phase": 9,
+            "Title": 9,
+            "Marco": 0,
+            "Instrument": 0,
+            "Switch": 0,
+            "Send": 345,
+            "Reply": 96,
+            "EndPrompt": 0,
+            "Ref": 263,
+            "Validation": 247,
+            "Prompt": 0,
+            "Waiting": 2,
+            "ExecMode": 345,
+            "Description": 345,
+            "TestID": 345,
+            "Unnamed: 16": 332
+          },
+          "unique_counts": {
+            "Index_385": 345,
+            "Title": 9,
+            "Send": 227,
+            "Reply": 14,
+            "Ref": 42,
+            "Validation": 38,
+            "ExecMode": 8,
+            "Description": 212,
+            "TestID": 170
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "配置管理功能",
+    "RAPTOR專案專用",
+    "測試執行功能",
+    "多設備測試支援",
+    "全面測試覆蓋",
+    "儀器參數配置"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [
+      -2.0,
+      -1.0,
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      97.0
+    ],
+    "test_sequence": [
+      "初始化配置",
+      "設備連接測試",
+      "功能測試執行",
+      "結果驗證",
+      "報告生成"
+    ],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "複雜",
+    "test_coverage": "全面功能測試",
+    "script_organization": "配置分離設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "RAPTOR",
+    "script_type": "RAPTOR_SCRIPT",
+    "special_capabilities": [],
+    "best_practices": [],
+    "learning_focus": []
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "RAPTOR專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援RAPTOR專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為RAPTOR專案腳本模板",
+      "學習RAPTOR專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

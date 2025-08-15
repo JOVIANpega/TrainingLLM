@@ -1,0 +1,58 @@
+{
+  "title": "AI腳本邏輯分析目錄總索引",
+  "description": "Centimani腳本EXCEL檔案欄位邏輯分析參考目錄",
+  "created_date": "2025-08-12T00:12:20.236585",
+  "project_references": {
+    "KANGAROO": {
+      "description": "Kangaroo專案腳本邏輯參考",
+      "reference_files": [
+        "KANGAROO_Logic_Reference.json",
+        "KANGAROO_Field_Definitions.json",
+        "KANGAROO_Logic_Patterns.json"
+      ],
+      "directory": "AI_Complete_Reference\\ai_script_logic_directory\\KANGAROO"
+    },
+    "VALO360": {
+      "description": "VALO360專案腳本邏輯參考",
+      "reference_files": [
+        "VALO360_Logic_Reference.json",
+        "VALO360_Field_Definitions.json",
+        "VALO360_Logic_Patterns.json"
+      ],
+      "directory": "AI_Complete_Reference\\ai_script_logic_directory\\VALO360"
+    },
+    "RAPTOR": {
+      "description": "Raptor專案腳本邏輯參考",
+      "reference_files": [
+        "RAPTOR_Logic_Reference.json",
+        "RAPTOR_Field_Definitions.json",
+        "RAPTOR_Logic_Patterns.json"
+      ],
+      "directory": "AI_Complete_Reference\\ai_script_logic_directory\\RAPTOR"
+    },
+    "Kilimanjaro": {
+      "description": "Kilimanjaro專案腳本邏輯參考",
+      "reference_files": [
+        "Kilimanjaro_Logic_Reference.json",
+        "Kilimanjaro_Field_Definitions.json",
+        "Kilimanjaro_Logic_Patterns.json"
+      ],
+      "directory": "AI_Complete_Reference\\ai_script_logic_directory\\Kilimanjaro"
+    },
+    "ZEBRA": {
+      "description": "Zebra專案腳本邏輯參考",
+      "reference_files": [
+        "ZEBRA_Logic_Reference.json",
+        "ZEBRA_Field_Definitions.json",
+        "ZEBRA_Logic_Patterns.json"
+      ],
+      "directory": "AI_Complete_Reference\\ai_script_logic_directory\\ZEBRA"
+    }
+  },
+  "quick_access": {},
+  "usage_guide": {
+    "purpose": "為AI開發提供腳本邏輯分析參考",
+    "structure": "按專案分類，避免單一檔案過大",
+    "files": "每個專案包含邏輯參考、欄位定義、邏輯模式三個檔案"
+  }
+}

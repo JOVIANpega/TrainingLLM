@@ -1,0 +1,585 @@
+{
+  "file_info": {
+    "file_name": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+    "analysis_date": "2025-08-11T21:32:29.749314",
+    "file_path": "Centimani DOC/scripe_EXCEL\\VALO360\\VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+    "script_type": "VALO360_SCRIPT",
+    "project_name": "VALO360",
+    "total_sheets": 6,
+    "total_rows": 488,
+    "total_columns": 31
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "OQC",
+      "VLC",
+      "WebUI",
+      "PrivateKey",
+      "WiFi",
+      "5G (Cellular)"
+    ],
+    "sheet_analyses": {
+      "OQC": {
+        "sheet_name": "OQC",
+        "sheet_type": "unknown",
+        "total_rows": 20,
+        "total_columns": 7,
+        "column_names": [
+          "SKU",
+          "5G",
+          "5G w/o battery",
+          "Wi-Fi",
+          "PASS/FAIL Judgement",
+          "Test Method",
+          "Remark"
+        ],
+        "column_types": {
+          "SKU": "object",
+          "5G": "object",
+          "5G w/o battery": "object",
+          "Wi-Fi": "object",
+          "PASS/FAIL Judgement": "float64",
+          "Test Method": "object",
+          "Remark": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Test Method"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "SKU": "Product S/N",
+              "5G": "V",
+              "5G w/o battery": "V",
+              "Wi-Fi": "V",
+              "PASS/FAIL Judgement": NaN,
+              "Test Method": "Visual Inspection\nWebGUI v.s. Product Label",
+              "Remark": "WEYYWWXXXXX"
+            },
+            {
+              "SKU": "SKU Version",
+              "5G": "V",
+              "5G w/o battery": "V",
+              "Wi-Fi": "V",
+              "PASS/FAIL Judgement": NaN,
+              "Test Method": "Visual Inspection\nWebGUI v.s. Giftbox Label",
+              "Remark": "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+            },
+            {
+              "SKU": "SW Version\n(Development & Production)",
+              "5G": "V",
+              "5G w/o battery": "V",
+              "Wi-Fi": "V",
+              "PASS/FAIL Judgement": NaN,
+              "Test Method": "Visual Inspection\nWebGUI v.s. RD's file",
+              "Remark": "PT/SW/PM/PE need to maintain SW version"
+            },
+            {
+              "SKU": "Battery",
+              "5G": "V",
+              "5G w/o battery": "X",
+              "Wi-Fi": "V",
+              "PASS/FAIL Judgement": NaN,
+              "Test Method": "Visual Inspection\nWebGUI v.s. 90 P/N",
+              "Remark": "Refer to PM's BOM table"
+            },
+            {
+              "SKU": "LED",
+              "5G": "V",
+              "5G w/o battery": "V",
+              "Wi-Fi": "V",
+              "PASS/FAIL Judgement": NaN,
+              "Test Method": "Visual Inspection",
+              "Remark": "Orange (boot up)\nGreen (working)\nRed (TBC)"
+            }
+          ],
+          "non_null_counts": {
+            "SKU": 20,
+            "5G": 17,
+            "5G w/o battery": 17,
+            "Wi-Fi": 17,
+            "PASS/FAIL Judgement": 0,
+            "Test Method": 20,
+            "Remark": 9
+          },
+          "unique_counts": {
+            "SKU": 20,
+            "5G": 3,
+            "5G w/o battery": 3,
+            "Wi-Fi": 3,
+            "Test Method": 18,
+            "Remark": 8
+          }
+        }
+      },
+      "VLC": {
+        "sheet_name": "VLC",
+        "sheet_type": "unknown",
+        "total_rows": 43,
+        "total_columns": 4,
+        "column_names": [
+          "1.       Video stream on PC (VLC)",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3"
+        ],
+        "column_types": {
+          "1.       Video stream on PC (VLC)": "object",
+          "Unnamed: 1": "float64",
+          "Unnamed: 2": "float64",
+          "Unnamed: 3": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "1.       Video stream on PC (VLC)": "Open VLC and following the screenshot below to open stream",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN
+            },
+            {
+              "1.       Video stream on PC (VLC)": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN
+            },
+            {
+              "1.       Video stream on PC (VLC)": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN
+            },
+            {
+              "1.       Video stream on PC (VLC)": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN
+            },
+            {
+              "1.       Video stream on PC (VLC)": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN
+            }
+          ],
+          "non_null_counts": {
+            "1.       Video stream on PC (VLC)": 3,
+            "Unnamed: 1": 0,
+            "Unnamed: 2": 0,
+            "Unnamed: 3": 1
+          },
+          "unique_counts": {
+            "1.       Video stream on PC (VLC)": 3,
+            "Unnamed: 3": 1
+          }
+        }
+      },
+      "WebUI": {
+        "sheet_name": "WebUI",
+        "sheet_type": "unknown",
+        "total_rows": 129,
+        "total_columns": 3,
+        "column_names": [
+          "WebUI 僅能透過 Ethernet 連線",
+          "Unnamed: 1",
+          "Unnamed: 2"
+        ],
+        "column_types": {
+          "WebUI 僅能透過 Ethernet 連線": "object",
+          "Unnamed: 1": "object",
+          "Unnamed: 2": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "WebUI 僅能透過 Ethernet 連線": "development & production images 的 Ethernet 為浮動 IP (DHCP)",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "WebUI 僅能透過 Ethernet 連線": "使用 Browser Chome, Firefox, Microsoft Edge… 都可以連線，顯示 WebuUI",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "WebUI 僅能透過 Ethernet 連線": "Browser 連線輸入 => https://<VALO360-IP>:8443",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "WebUI 僅能透過 Ethernet 連線": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": "Username: admin"
+            },
+            {
+              "WebUI 僅能透過 Ethernet 連線": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": "Password: Nokia_360"
+            }
+          ],
+          "non_null_counts": {
+            "WebUI 僅能透過 Ethernet 連線": 4,
+            "Unnamed: 1": 4,
+            "Unnamed: 2": 2
+          },
+          "unique_counts": {
+            "WebUI 僅能透過 Ethernet 連線": 4,
+            "Unnamed: 1": 4,
+            "Unnamed: 2": 2
+          }
+        }
+      },
+      "PrivateKey": {
+        "sheet_name": "PrivateKey",
+        "sheet_type": "unknown",
+        "total_rows": 49,
+        "total_columns": 3,
+        "column_names": [
+          "使用 Firefox 瀏覽器，登入 VALO360 後",
+          "Unnamed: 1",
+          "Unnamed: 2"
+        ],
+        "column_types": {
+          "使用 Firefox 瀏覽器，登入 VALO360 後": "object",
+          "Unnamed: 1": "float64",
+          "Unnamed: 2": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "使用 Firefox 瀏覽器，登入 VALO360 後": "1. 按下 \"進階\" 鈕，會彈出下方的視窗",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "使用 Firefox 瀏覽器，登入 VALO360 後": "2. 按下 \"檢視憑證\" ",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "使用 Firefox 瀏覽器，登入 VALO360 後": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "使用 Firefox 瀏覽器，登入 VALO360 後": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "使用 Firefox 瀏覽器，登入 VALO360 後": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            }
+          ],
+          "non_null_counts": {
+            "使用 Firefox 瀏覽器，登入 VALO360 後": 3,
+            "Unnamed: 1": 0,
+            "Unnamed: 2": 1
+          },
+          "unique_counts": {
+            "使用 Firefox 瀏覽器，登入 VALO360 後": 3,
+            "Unnamed: 2": 1
+          }
+        }
+      },
+      "WiFi": {
+        "sheet_name": "WiFi",
+        "sheet_type": "unknown",
+        "total_rows": 139,
+        "total_columns": 3,
+        "column_names": [
+          "透過瀏覽器，在 WebUI中設置 WiFi",
+          "Unnamed: 1",
+          "Unnamed: 2"
+        ],
+        "column_types": {
+          "透過瀏覽器，在 WebUI中設置 WiFi": "object",
+          "Unnamed: 1": "object",
+          "Unnamed: 2": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "透過瀏覽器，在 WebUI中設置 WiFi": "1. SSID 輸入 WiFi AP 的名稱",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "透過瀏覽器，在 WebUI中設置 WiFi": "2. Password 輸入 WiFi AP 的密碼",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "透過瀏覽器，在 WebUI中設置 WiFi": "3. 按下 Apply 鈕，將設定值寫入 VALO360",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "透過瀏覽器，在 WebUI中設置 WiFi": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            },
+            {
+              "透過瀏覽器，在 WebUI中設置 WiFi": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN
+            }
+          ],
+          "non_null_counts": {
+            "透過瀏覽器，在 WebUI中設置 WiFi": 7,
+            "Unnamed: 1": 1,
+            "Unnamed: 2": 3
+          },
+          "unique_counts": {
+            "透過瀏覽器，在 WebUI中設置 WiFi": 7,
+            "Unnamed: 1": 1,
+            "Unnamed: 2": 3
+          }
+        }
+      },
+      "5G (Cellular)": {
+        "sheet_name": "5G (Cellular)",
+        "sheet_type": "unknown",
+        "total_rows": 108,
+        "total_columns": 11,
+        "column_names": [
+          "2025/4/17 added",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9",
+          "Unnamed: 10"
+        ],
+        "column_types": {
+          "2025/4/17 added": "object",
+          "Unnamed: 1": "float64",
+          "Unnamed: 2": "object",
+          "Unnamed: 3": "object",
+          "Unnamed: 4": "float64",
+          "Unnamed: 5": "object",
+          "Unnamed: 6": "float64",
+          "Unnamed: 7": "float64",
+          "Unnamed: 8": "float64",
+          "Unnamed: 9": "float64",
+          "Unnamed: 10": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "2025/4/17 added": "1. 需有插入 5G or 4G sim card，可設定為不需要輸入 PIN code ",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "2025/4/17 added": "2. 由 webui 開啟 5G ",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "2025/4/17 added": "3. 檢查 Cellular Network Information and Status",
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "2025/4/17 added": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            },
+            {
+              "2025/4/17 added": NaN,
+              "Unnamed: 1": NaN,
+              "Unnamed: 2": NaN,
+              "Unnamed: 3": NaN,
+              "Unnamed: 4": NaN,
+              "Unnamed: 5": NaN,
+              "Unnamed: 6": NaN,
+              "Unnamed: 7": NaN,
+              "Unnamed: 8": NaN,
+              "Unnamed: 9": NaN,
+              "Unnamed: 10": NaN
+            }
+          ],
+          "non_null_counts": {
+            "2025/4/17 added": 3,
+            "Unnamed: 1": 0,
+            "Unnamed: 2": 2,
+            "Unnamed: 3": 1,
+            "Unnamed: 4": 0,
+            "Unnamed: 5": 1,
+            "Unnamed: 6": 0,
+            "Unnamed: 7": 0,
+            "Unnamed: 8": 0,
+            "Unnamed: 9": 0,
+            "Unnamed: 10": 2
+          },
+          "unique_counts": {
+            "2025/4/17 added": 3,
+            "Unnamed: 2": 2,
+            "Unnamed: 3": 1,
+            "Unnamed: 5": 1,
+            "Unnamed: 10": 2
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "功能導向測試",
+    "VALO360專案專用"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [],
+    "test_sequence": [],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "中等",
+    "test_coverage": "功能測試",
+    "script_organization": "模組化設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "VALO360",
+    "script_type": "VALO360_SCRIPT",
+    "special_capabilities": [
+      "功能檢查測試",
+      "IMU測試",
+      "POE測試",
+      "DMIC測試"
+    ],
+    "best_practices": [
+      "功能導向測試設計",
+      "介面測試標準化",
+      "溫度測試流程"
+    ],
+    "learning_focus": [
+      "功能測試設計模式",
+      "介面測試最佳實踐",
+      "環境測試流程"
+    ]
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "VALO360專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援VALO360專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為VALO360專案腳本模板",
+      "學習VALO360專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

@@ -1,0 +1,6929 @@
+{
+  "title": "AI腳本欄位使用指南",
+  "description": "基於實際腳本分析的欄位使用模式和最佳實踐",
+  "created_date": "2025-08-12T00:15:23.837051",
+  "field_categories": {
+    "all_fields": [
+      "1.       Video stream on PC (VLC)",
+      "2025/4/17 added",
+      "5G",
+      "5G w/o battery",
+      "Connection1 (Type,Name,ConnectString)",
+      "Connection10(Type,Name,ConnectString)",
+      "Connection2 (Type,Name,ConnectString)",
+      "Connection3 (Type,Name,ConnectString)",
+      "Connection4(Type,Name,ConnectString)",
+      "Connection5(Type,Name,ConnectString)",
+      "Connection6(Type,Name,ConnectString)",
+      "Connection7(Type,Name,ConnectString)",
+      "Connection8(Type,Name,ConnectString)",
+      "Connection9(Type,Name,ConnectString)",
+      "ControlDLL",
+      "DUT Name",
+      "Desc",
+      "Describe",
+      "Description",
+      "EndPrompt",
+      "ExecMode",
+      "Functions",
+      "Index_1",
+      "Index_105",
+      "Index_116",
+      "Index_126",
+      "Index_149",
+      "Index_181",
+      "Index_186",
+      "Index_234",
+      "Index_24",
+      "Index_253",
+      "Index_259",
+      "Index_260",
+      "Index_34",
+      "Index_35",
+      "Index_371",
+      "Index_385",
+      "Index_407",
+      "Index_41",
+      "Index_44",
+      "Index_46",
+      "Index_47",
+      "Index_49",
+      "Index_5",
+      "Index_50",
+      "Index_615",
+      "Index_65",
+      "Index_93",
+      "Instrument",
+      "Load",
+      "Loss",
+      "Marco",
+      "Mount",
+      "Name",
+      "PASS/FAIL Judgement",
+      "Parameter",
+      "Phase",
+      "Prompt",
+      "Ref",
+      "Release Date",
+      "Remark",
+      "Reply",
+      "SFIS_DeviceID",
+      "SKU",
+      "ScanBarcode( {Name,Lengh,Pattern} )",
+      "Send",
+      "Settings",
+      "Station",
+      "Sub",
+      "Switch",
+      "Test Method",
+      "TestID",
+      "Title",
+      "V1.83",
+      "Validation",
+      "Value",
+      "Version",
+      "Waiting",
+      "WebUI 僅能透過 Ethernet 連線",
+      "Wi-Fi",
+      "使用 Firefox 瀏覽器，登入 VALO360 後",
+      "和碩聯合科技(股)公司 PEGATRON CORP.",
+      "透過瀏覽器，在 WebUI中設置 WiFi"
+    ],
+    "other_fields": [
+      "1.       Video stream on PC (VLC)",
+      "2025/4/17 added",
+      "5G",
+      "5G w/o battery",
+      "Connection1 (Type,Name,ConnectString)",
+      "Connection10(Type,Name,ConnectString)",
+      "Connection2 (Type,Name,ConnectString)",
+      "Connection3 (Type,Name,ConnectString)",
+      "Connection4(Type,Name,ConnectString)",
+      "Connection5(Type,Name,ConnectString)",
+      "Connection6(Type,Name,ConnectString)",
+      "Connection7(Type,Name,ConnectString)",
+      "Connection8(Type,Name,ConnectString)",
+      "Connection9(Type,Name,ConnectString)",
+      "ControlDLL",
+      "DUT Name",
+      "Desc",
+      "Describe",
+      "Description",
+      "EndPrompt",
+      "Functions",
+      "Index_1",
+      "Index_105",
+      "Index_116",
+      "Index_126",
+      "Index_149",
+      "Index_181",
+      "Index_186",
+      "Index_234",
+      "Index_24",
+      "Index_253",
+      "Index_259",
+      "Index_260",
+      "Index_34",
+      "Index_35",
+      "Index_371",
+      "Index_385",
+      "Index_407",
+      "Index_41",
+      "Index_44",
+      "Index_46",
+      "Index_47",
+      "Index_49",
+      "Index_5",
+      "Index_50",
+      "Index_615",
+      "Index_65",
+      "Index_93",
+      "Instrument",
+      "Load",
+      "Loss",
+      "Marco",
+      "Mount",
+      "Name",
+      "Parameter",
+      "Prompt",
+      "Ref",
+      "Release Date",
+      "Remark",
+      "SFIS_DeviceID",
+      "SKU",
+      "ScanBarcode( {Name,Lengh,Pattern} )",
+      "Settings",
+      "Station",
+      "Sub",
+      "Switch",
+      "Test Method",
+      "TestID",
+      "Title",
+      "V1.83",
+      "Value",
+      "Version",
+      "Waiting",
+      "WebUI 僅能透過 Ethernet 連線",
+      "Wi-Fi",
+      "使用 Firefox 瀏覽器，登入 VALO360 後",
+      "和碩聯合科技(股)公司 PEGATRON CORP."
+    ],
+    "phase_fields": [
+      "Phase"
+    ],
+    "action_fields": [
+      "Send"
+    ],
+    "response_fields": [
+      "Reply"
+    ],
+    "validation_fields": [
+      "Validation"
+    ],
+    "execution_fields": [
+      "ExecMode"
+    ],
+    "error_fields": [
+      "PASS/FAIL Judgement"
+    ],
+    "control_fields": [
+      "透過瀏覽器，在 WebUI中設置 WiFi"
+    ]
+  },
+  "common_patterns": {
+    "phase_based_testing": [
+      "Phase"
+    ],
+    "instrument_control": [
+      "Reply",
+      "Send"
+    ],
+    "data_validation": [
+      "Validation"
+    ],
+    "error_handling": [
+      "PASS/FAIL Judgement"
+    ],
+    "conditional_logic": [
+      "透過瀏覽器，在 WebUI中設置 WiFi"
+    ]
+  },
+  "best_practices": [
+    "使用Phase欄位建立清晰的測試階段結構",
+    "為每個測試步驟添加Validation欄位進行結果驗證",
+    "使用ExecMode欄位控制測試執行模式",
+    "實作錯誤處理機制，記錄和處理測試失敗",
+    "使用條件邏輯實現複雜的測試流程控制",
+    "保持欄位命名的一致性，使用清楚描述性的名稱",
+    "為重要欄位添加Description說明",
+    "使用標準化的測試流程結構",
+    "實作適當的錯誤處理和重試機制",
+    "記錄測試執行的詳細日誌"
+  ],
+  "examples": {
+    "Name": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "1905291539147"
+          ],
+          [
+            "Creator",
+            "jovian_li"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Value": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "1905291539147"
+          ],
+          [
+            "Creator",
+            "jovian_li"
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "2009211835393"
+          ],
+          [
+            "Creator",
+            "jovian_li"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "Properties",
+        "examples": [
+          [
+            "Version",
+            "1907261337258"
+          ],
+          [
+            "Creator",
+            "jovian_li"
+          ]
+        ]
+      }
+    ],
+    "Mount": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Sub": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "ControlDLL": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Settings": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Functions": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Version": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Switch": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Desc": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "ET5X_FA5",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Instrument",
+        "examples": [
+          [
+            "",
+            "B2302",
+            "",
+            "SCPI_Controller.dll",
+            "GPIB,*$(B2302_GPIB),3",
+            "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+            "1.0.0.0",
+            "",
+            "Keithley 2302"
+          ],
+          [
+            "",
+            "switch_C",
+            "",
+            "USBCSwitchLibary.dll",
+            "",
+            "switch",
+            "1.0.0.0",
+            "",
+            "usb switch"
+          ]
+        ]
+      }
+    ],
+    "Loss": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "RF",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "Switch",
+        "examples": [
+          [
+            "ET5X_FA5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Load": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "DUT Name": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Station": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Parameter": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "SFIS_DeviceID": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "ScanBarcode( {Name,Lengh,Pattern} )": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection1 (Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection2 (Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection3 (Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection4(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection5(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection6(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection7(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection8(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection9(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Connection10(Type,Name,ConnectString)": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "SKU02$WifiCalibration",
+            "WifiCalibration,*$(RUN_LOOP1)",
+            "*$(PCIP_1),1",
+            "*$(DEVID_1)",
+            "",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+            "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+            "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+            "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "DUTs",
+        "examples": [
+          [
+            "*$(Load_1)",
+            "ET5X$ET5X_FA5",
+            "ET5X_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ],
+          [
+            "*$(Load_1)",
+            "L10A$L10A_FA5",
+            "L10A_FA5,*$(RUN_LOOP1)",
+            "",
+            "*$(DEVID_1)",
+            "",
+            "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+            "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_615": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "WIFI&5GOTA",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Phase": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Title": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Marco": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Instrument": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Send": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Reply": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "EndPrompt": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Ref": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Validation": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Prompt": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Waiting": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "ExecMode": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Description": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "TestID": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_5": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX",
+        "sheet": "PathLoss",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "和碩聯合科技(股)公司 PEGATRON CORP.": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "七碼定義Definition",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CVP RD3 SW2 Product Error Code definition as below：",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "七碼定義Definition",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CVP RD3 SW2 Product Error Code definition as below：",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "V1.83": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Test Item All",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Test Item All",
+        "examples": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Release Date": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Describe": [
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Test Item Code V2.04_20250310.xlsx",
+        "sheet": "Version History",
+        "examples": [
+          [
+            "V1.0",
+            "20170223",
+            "First Release",
+            ""
+          ],
+          [
+            "V1.1",
+            "20170308",
+            "1.Add WIFI RX PER Error Code\n2.Move WIFI TX/RX Item",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_253": [
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx",
+        "sheet": "MB FUNCTION",
+        "examples": [
+          [
+            "000",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_105": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "L10A_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,2303 Voltage 7.8V ON",
+            "",
+            "MVolt",
+            "B2302",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_371": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC_TPE",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Index_407": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check_TPE",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx",
+        "sheet": "Final Check",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,GetLabel",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "LoopRunning",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":GetVal,\"$ISN\"",
+            "",
+            "",
+            "$ISN"
+          ]
+        ]
+      }
+    ],
+    "Index_260": [
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "WIFI&BT CAL&VERIF",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"loader.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX",
+        "sheet": "WIFI&BT CAL&VERIF",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"loader.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.KillPro,\"IQfactRun_Console.exe\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_259": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "Cellular Verification",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "065",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Connect,\"UART_fix\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "Cellular Verification",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CONNECT_DUT,40",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "065",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Connect,\"UART_fix\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_50": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "5G_PathLoss",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "5G_PathLoss",
+        "examples": [
+          [
+            "100",
+            "0",
+            "0,ScanLabel",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_1": [
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT0_TX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT3_TX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+        "sheet": "ANT0_RX",
+        "examples": [
+          [
+            "00",
+            ":SetVal,\"Parse_Count\",\"{2}\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Set_InitParse_Count@#$"
+          ],
+          [
+            "01",
+            ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+            "0",
+            "",
+            "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+            "",
+            "",
+            "",
+            "0",
+            "PC#-#Parse_TestLog_Column@#$"
+          ]
+        ]
+      }
+    ],
+    "Index_49": [
+      {
+        "file": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "sheet": "AIR Leakage",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_MP_AIR_TestFlow_20250326C.xlsx",
+        "sheet": "AIR Leakage",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_116": [
+      {
+        "file": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "sheet": "eSIM_DW_FW_UP_OFFLINE",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get_Path",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "001",
+            "",
+            "*$(Auto_PWR_ON),Set Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ]
+        ]
+      },
+      {
+        "file": "Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx",
+        "sheet": "eSIM_DW_FW_UP_OFFLINE",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get_Path",
+            "",
+            "",
+            "",
+            ":Utility.GetPath",
+            "0",
+            "",
+            "$cPath"
+          ],
+          [
+            "001",
+            "",
+            "*$(Auto_PWR_ON),Set Power ON",
+            "",
+            "",
+            "",
+            ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output1\\\"\",\"ON\",\"5000\"",
+            "@Command pass",
+            "",
+            "power_status"
+          ]
+        ]
+      }
+    ],
+    "SKU": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "5G": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "5G w/o battery": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "Wi-Fi": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "PASS/FAIL Judgement": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "Test Method": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "Remark": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "OQC",
+        "examples": [
+          [
+            "Product S/N",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Product Label",
+            "WEYYWWXXXXX"
+          ],
+          [
+            "SKU Version",
+            "V",
+            "V",
+            "V",
+            "",
+            "Visual Inspection\nWebGUI v.s. Giftbox Label",
+            "Nokia 5G 360 Camera\nNokia 5G 360 Camera extreme temperature\nNokia 360 Camera"
+          ]
+        ]
+      }
+    ],
+    "1.       Video stream on PC (VLC)": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "VLC",
+        "examples": [
+          [
+            "Open VLC and following the screenshot below to open stream"
+          ],
+          [
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "VLC",
+        "examples": [
+          [
+            "Open VLC and following the screenshot below to open stream",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "VLC",
+        "examples": [
+          [
+            "Open VLC and following the screenshot below to open stream"
+          ],
+          [
+            ""
+          ]
+        ]
+      }
+    ],
+    "WebUI 僅能透過 Ethernet 連線": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "WebUI",
+        "examples": [
+          [
+            "development & production images 的 Ethernet 為浮動 IP (DHCP)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "使用 Browser Chome, Firefox, Microsoft Edge… 都可以連線，顯示 WebuUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "WebUI",
+        "examples": [
+          [
+            "development & production images 的 Ethernet 為浮動 IP (DHCP)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "使用 Browser Chome, Firefox, Microsoft Edge… 都可以連線，顯示 WebuUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "WebUI",
+        "examples": [
+          [
+            "development & production images 的 Ethernet 為浮動 IP (DHCP)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "使用 Browser Chome, Firefox, Microsoft Edge… 都可以連線，顯示 WebuUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "使用 Firefox 瀏覽器，登入 VALO360 後": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "PrivateKey",
+        "examples": [
+          [
+            "1. 按下 \"進階\" 鈕，會彈出下方的視窗"
+          ],
+          [
+            "2. 按下 \"檢視憑證\" "
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "PrivateKey",
+        "examples": [
+          [
+            "1. 按下 \"進階\" 鈕，會彈出下方的視窗",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2. 按下 \"檢視憑證\" ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "PrivateKey",
+        "examples": [
+          [
+            "1. 按下 \"進階\" 鈕，會彈出下方的視窗"
+          ],
+          [
+            "2. 按下 \"檢視憑證\" "
+          ]
+        ]
+      }
+    ],
+    "透過瀏覽器，在 WebUI中設置 WiFi": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "WiFi",
+        "examples": [
+          [
+            "1. SSID 輸入 WiFi AP 的名稱"
+          ],
+          [
+            "2. Password 輸入 WiFi AP 的密碼"
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "WiFi",
+        "examples": [
+          [
+            "1. SSID 輸入 WiFi AP 的名稱",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2. Password 輸入 WiFi AP 的密碼",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "WiFi",
+        "examples": [
+          [
+            "1. SSID 輸入 WiFi AP 的名稱"
+          ],
+          [
+            "2. Password 輸入 WiFi AP 的密碼"
+          ]
+        ]
+      }
+    ],
+    "2025/4/17 added": [
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "5G (Cellular)",
+        "examples": [
+          [
+            "1. 需有插入 5G or 4G sim card，可設定為不需要輸入 PIN code ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2. 由 webui 開啟 5G ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx",
+        "sheet": "5G (Cellular)",
+        "examples": [
+          [
+            "1. 需有插入 5G or 4G sim card，可設定為不需要輸入 PIN code ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2. 由 webui 開啟 5G ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_ER2 OQC Function Check List_20250418.xlsx",
+        "sheet": "5G (Cellular)",
+        "examples": [
+          [
+            "1. 需有插入 5G or 4G sim card，可設定為不需要輸入 PIN code ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2. 由 webui 開啟 5G ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_47": [
+      {
+        "file": "VALO360_TestFlow_20250307_POE.xlsx",
+        "sheet": "Power",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250218_POE_LoopOK.xlsx",
+        "sheet": "Power",
+        "examples": [
+          [
+            "200",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250307_POE.xlsx",
+        "sheet": "Power",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_93": [
+      {
+        "file": "VALO360_TestFlow_20250218_ER2.xlsx",
+        "sheet": "IO Board",
+        "examples": [
+          [
+            "101",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "102",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "sheet": "DMIC",
+        "examples": [
+          [
+            "101",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "102",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250407_Function.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get Qcode info FOR PEGA",
+            "",
+            "",
+            "",
+            ":GetVal,\"$QCODE\"",
+            "",
+            "",
+            "$SSN:rpString,\" \",\"\":WithinString,\"(S)\",\"\\;\",\"\":Trim;"
+          ],
+          [
+            "001",
+            "",
+            "0,SFIS ENABLE",
+            "",
+            "",
+            "",
+            ":SfEnabled",
+            "1",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_24": [
+      {
+        "file": "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "800",
+            "1",
+            "0,Show ISN",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(SSN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "801",
+            "2",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Pega_Nokia_TestFlow_20250307_ER2_DMIC.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "800",
+            "1",
+            "0,Show ISN",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(SSN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "801",
+            "2",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_181": [
+      {
+        "file": "VALO360_TestFlow_20250407_Function.xlsx",
+        "sheet": "Funtion",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get Qcode info FOR PEGA",
+            "",
+            "",
+            "",
+            ":GetVal,\"$QCODE\"",
+            "",
+            "",
+            "$SSN:rpString,\" \",\"\":WithinString,\"(S)\",\"\\;\",\"\":Trim;"
+          ],
+          [
+            "001",
+            "",
+            "0,READ ME",
+            "",
+            "",
+            "",
+            ":ShowConfirmBox,\"You need UART，SD CARD，SIM CARD\",\"YES\"",
+            "@YES",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250407_Function.xlsx",
+        "sheet": "Funtion",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get Qcode info FOR PEGA",
+            "",
+            "",
+            "",
+            ":GetVal,\"$QCODE\"",
+            "",
+            "",
+            "$SSN:rpString,\" \",\"\":WithinString,\"(S)\",\"\\;\",\"\":Trim;"
+          ],
+          [
+            "001",
+            "",
+            "0,READ ME",
+            "",
+            "",
+            "",
+            ":ShowConfirmBox,\"You need UART，SD CARD，SIM CARD\",\"YES\"",
+            "@YES",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_34": [
+      {
+        "file": "VALO360_TestFlow_20250326_IMU.xlsx",
+        "sheet": "IMU",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Login",
+            "",
+            "",
+            "",
+            ":Delay,\"1000\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.PING,\"*$(DUTIP_1)\",\"70000\",\"{0}\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250326_IMU.xlsx",
+        "sheet": "IMU",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Login",
+            "",
+            "",
+            "",
+            ":Delay,\"1000\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.PING,\"*$(DUTIP_1)\",\"70000\",\"{0}\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_126": [
+      {
+        "file": "VALO360_TestFlow_20250326_IMU.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Login",
+            "",
+            "",
+            "",
+            ":Delay,\"1000\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.PING,\"*$(DUTIP_1)\",\"70000\",\"{0}\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250326_IMU.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Login",
+            "",
+            "",
+            "",
+            ":Delay,\"1000\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.PING,\"*$(DUTIP_1)\",\"70000\",\"{0}\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_65": [
+      {
+        "file": "VALO360_TestFlow_20250326_Final.xlsx",
+        "sheet": "Final",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get Qcode info FOR PEGA",
+            "",
+            "",
+            "",
+            ":GetVal,\"$QCODE\"",
+            "",
+            "",
+            "$SSN:rpString,\" \",\"\":WithinString,\"(S)\",\"\\;\",\"\":Trim;"
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SetVal,\"$G_VALO360_MODEL\",\"*$(VALO360_MODEL)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250326_Final.xlsx",
+        "sheet": "Final",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,Get Qcode info FOR PEGA",
+            "",
+            "",
+            "",
+            ":GetVal,\"$QCODE\"",
+            "",
+            "",
+            "$SSN:rpString,\" \",\"\":WithinString,\"(S)\",\"\\;\",\"\":Trim;"
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SetVal,\"$G_VALO360_MODEL\",\"*$(VALO360_MODEL)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_41": [
+      {
+        "file": "VALO360_TestFlow_20250326_Final.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "100",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(SSN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250326_Final.xlsx",
+        "sheet": "TEMP",
+        "examples": [
+          [
+            "100",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(SSN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":SfCheckRoute",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_149": [
+      {
+        "file": "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "sheet": "MB",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Disconnect,\"UART\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "VALO360_TestFlow_20250318_MB_ER2.xlsx",
+        "sheet": "MB",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Disconnect,\"UART\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_234": [
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Download",
+        "examples": [
+          [
+            "00D",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "0J3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":FanDLL.VARTOGLOBAL,\"*$(gModelName)\"",
+            "0",
+            "",
+            "$sfeModelName"
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+        "sheet": "Download",
+        "examples": [
+          [
+            "00D",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "0J3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":FanDLL.VARTOGLOBAL,\"*$(gModelName)\"",
+            "0",
+            "",
+            "$sfeModelName"
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Download",
+        "examples": [
+          [
+            "00D",
+            "1",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(ISN)\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "0J3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":FanDLL.VARTOGLOBAL,\"*$(gModelName)\"",
+            "0",
+            "",
+            "$sfeModelName"
+          ]
+        ]
+      }
+    ],
+    "Index_186": [
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Board Test",
+        "examples": [
+          [
+            "",
+            "-1",
+            "0,EnterTestMode",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(AOSSN)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+        "sheet": "Board Test",
+        "examples": [
+          [
+            "100",
+            "-1",
+            "0,EnterTestMode",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(AOSSN)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Board Test",
+        "examples": [
+          [
+            "",
+            "-1",
+            "0,EnterTestMode",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowISN,\"*(AOSSN)\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_385": [
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Wifi Test",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,Delete last Log",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ParseText,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\path_loss.csv\",\"2402\",\"\"",
+            "",
+            "",
+            "$pathloss"
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_20230223_ALL.XLSX",
+        "sheet": "Wifi Test",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,Delete last Log",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ParseText,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\path_loss.csv\",\"2402\",\"\"",
+            "",
+            "",
+            "$pathloss"
+          ]
+        ]
+      },
+      {
+        "file": "Raptor_ALL_TestFlow_Fixcture_20230309_ALL.XLSX",
+        "sheet": "Wifi Test",
+        "examples": [
+          [
+            "200",
+            "0",
+            "0,Delete last Log",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "201",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ParseText,\"D:\\LitePoint\\IQfact_plus\\IQfact+_MTK_7915_4.0.0.19_Lock\\bin\\path_loss.csv\",\"2402\",\"\"",
+            "",
+            "",
+            "$pathloss"
+          ]
+        ]
+      }
+    ],
+    "Index_35": [
+      {
+        "file": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+        "sheet": "LED_golden_Test",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+            "是",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+        "sheet": "LED_golden_Up",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+            "是",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+        "sheet": "LED_golden_Fix",
+        "examples": [
+          [
+            "000",
+            "0",
+            "0,CheckRoute",
+            "",
+            "",
+            "",
+            ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "001",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+            "是",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_44": [
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190725_TestFlow0801.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "Zebra_20190417_TestFlow.XLSX",
+        "sheet": "ET5X_FA5",
+        "examples": [
+          [
+            "001",
+            "1",
+            "0,SWITCH_set_0_DUT",
+            "",
+            "switch",
+            "switch_C",
+            ":ObtainDevice",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Dev.switch,\"0\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "Index_46": [
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "file": "wifi_TestFlow.XLSX",
+        "sheet": "WifiCalibration",
+        "examples": [
+          [
+            "001",
+            "0",
+            "0,Delete last Log",
+            "",
+            "TCP_Transfer",
+            "Transmitter{1}",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+            "0",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  }
+}

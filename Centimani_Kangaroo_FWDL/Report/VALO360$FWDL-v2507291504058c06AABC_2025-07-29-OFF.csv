@@ -1,0 +1,11 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,005:Pop window,007:Open UART,008:Open  Commnad Line,010:flash_firmware_checkDMpor,013:flash_firmware_checkDMpor,017:Check Login,018:Login Linux_root,019:Login Linux_PW,020:Check BOOT Status
+UL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+LL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+AVG,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MIN,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MAX,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+STD,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CpU,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CpL,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cpk,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA
+'345,PASS,PASS,2025-07-29_15-16-11,280,512314,@OK,0,0,@DM PORT found,@SUCCESS,@Kangaroo login:,@Password,@Kangaroo,@~#

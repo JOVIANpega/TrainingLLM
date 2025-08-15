@@ -1,0 +1,8 @@
+﻿測試類型,VALO360 對應,KANGAROO 對應,說明
+功能測試,基本功能測試,MB FUNCTION、OQC、Final Check,驗證設備基本功能是否正常
+性能測試,性能測試,Cellular Verification、WIFI&BT CAL&VERIF,測試設備性能指標
+校準測試,校準測試,WIFI&BT CAL&VERIF、PathLoss,設備參數校準
+下載測試,韌體下載,FWDL、WIFIOTA,韌體更新和下載測試
+驗證測試,驗證測試,Cellular Verification,特定功能驗證
+空氣洩漏測試,空氣洩漏測試,AIR Leakage,密封性測試
+SIM卡測試,SIM卡測試,eSIM_DW_FW_UP_OFFLINE,SIM卡功能測試

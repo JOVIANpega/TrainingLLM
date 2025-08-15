@@ -1,0 +1,8 @@
+﻿Sheet,Row Type,Name,Value
+Properties,Sample_1,Version,2504071414261
+Properties,Sample_2,Creator,ricky1_lee
+
+Sheet,Row Type,Load,DUT Name,Station,Parameter,SFIS_DeviceID,"ScanBarcode( {Name,Lengh,Pattern} )","Connection1 (Type,Name,ConnectString)","Connection2 (Type,Name,ConnectString)","Connection3 (Type,Name,ConnectString)","Connection4(Type,Name,ConnectString)","Connection5(Type,Name,ConnectString)","Connection6(Type,Name,ConnectString)","Connection7(Type,Name,ConnectString)","Connection8(Type,Name,ConnectString)","Connection9(Type,Name,ConnectString)","Connection10(Type,Name,ConnectString)"
+DUTs,Sample_1,*$(LOAD_1),Kangaroo$MB FUNCTION,"MB FUNCTION,0","*$(PCIP_1),*$(DUTIP_1),1",*$(DEVID_1),"{ISN,15,[0-9A-F]};","""Uart"",""UART"",""*$(DUT_UR1_1),115200,8,One,None,None,10000,5000""","""SSH"",""SSH1"",""*$(PCIP_1),*$(DUTIP_1),22,root,oelinux123,5000,1000""","""Uart"",""UARTF"",""*$(PCUART_fixture_1),9600,8,One,None,None,10000,5000""",,,,,,,
+DUTs,Sample_2,*$(LOAD_2),Kangaroo$MB FUNCTION,"MB FUNCTION,0","*$(PCIP_2),*$(DUTIP_2),2",*$(DEVID_2),"{ISN,15,[0-9A-F]};","""Uart"",""UART"",""*$(DUT_UR1_2),115200,8,One,None,None,10000,5000""","""SSH"",""SSH1"",""*$(PCIP_2),*$(DUTIP_2),22,root,oelinux123,5000,1000""","""Uart"",""UARTF"",""*$(PCUART_fixture_2),9600,8,One,None,None,10000,5000""",,,,,,,
+

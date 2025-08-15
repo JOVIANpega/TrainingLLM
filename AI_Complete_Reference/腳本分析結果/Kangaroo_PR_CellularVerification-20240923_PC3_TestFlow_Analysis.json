@@ -1,0 +1,1825 @@
+{
+  "file_info": {
+    "file_name": "Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+    "analysis_date": "2025-08-11T21:32:26.928491",
+    "file_path": "Centimani DOC/scripe_EXCEL\\KANGAROO\\Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx",
+    "script_type": "KANGAROO_SCRIPT",
+    "project_name": "KANGAROO",
+    "total_sheets": 12,
+    "total_rows": 663,
+    "total_columns": 141
+  },
+  "sheet_overview": {
+    "sheet_names": [
+      "Properties",
+      "Switch",
+      "Instrument",
+      "DUTs",
+      "Cellular Verification",
+      "5G_PathLoss",
+      "ANT0_TX",
+      "ANT3_TX",
+      "ANT0_RX",
+      "ANT1_RX",
+      "ANT2_RX",
+      "ANT3_RX"
+    ],
+    "sheet_analyses": {
+      "Properties": {
+        "sheet_name": "Properties",
+        "sheet_type": "properties",
+        "total_rows": 3,
+        "total_columns": 2,
+        "column_names": [
+          "Name",
+          "Value"
+        ],
+        "column_types": {
+          "Name": "object",
+          "Value": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [
+            "配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Name": "Version",
+              "Value": "2409231544340"
+            },
+            {
+              "Name": "Creator",
+              "Value": "Nancy"
+            },
+            {
+              "Name": "FailCount",
+              "Value": 0
+            }
+          ],
+          "non_null_counts": {
+            "Name": 3,
+            "Value": 3
+          },
+          "unique_counts": {
+            "Name": 3,
+            "Value": 3
+          }
+        }
+      },
+      "Switch": {
+        "sheet_name": "Switch",
+        "sheet_type": "switch",
+        "total_rows": 1,
+        "total_columns": 7,
+        "column_names": [
+          "Mount",
+          "Name",
+          "ControlDLL",
+          "Settings",
+          "Version",
+          "Loss",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "float64",
+          "Name": "object",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Version": "object",
+          "Loss": "int64",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "RFSwitch3001",
+              "ControlDLL": "RFSwitch3001.dll",
+              "Settings": "GPIB,GPIB0::1::INSTR,1,1",
+              "Version": "1.0.0.0",
+              "Loss": 0,
+              "Desc": "RF Switch 1 to 4"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 0,
+            "Name": 1,
+            "ControlDLL": 1,
+            "Settings": 1,
+            "Version": 1,
+            "Loss": 1,
+            "Desc": 1
+          },
+          "unique_counts": {
+            "Name": 1,
+            "ControlDLL": 1,
+            "Settings": 1,
+            "Version": 1,
+            "Desc": 1
+          }
+        }
+      },
+      "Instrument": {
+        "sheet_name": "Instrument",
+        "sheet_type": "instrument",
+        "total_rows": 44,
+        "total_columns": 9,
+        "column_names": [
+          "Mount",
+          "Name",
+          "Sub",
+          "ControlDLL",
+          "Settings",
+          "Functions",
+          "Version",
+          "Switch",
+          "Desc"
+        ],
+        "column_types": {
+          "Mount": "float64",
+          "Name": "object",
+          "Sub": "float64",
+          "ControlDLL": "object",
+          "Settings": "object",
+          "Functions": "object",
+          "Version": "object",
+          "Switch": "object",
+          "Desc": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Settings"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Mount": NaN,
+              "Name": "IPOWER2401",
+              "Sub": NaN,
+              "ControlDLL": "iPower2401.dll",
+              "Settings": "192.168.201.11,192.168.201.3,9999,1",
+              "Functions": "POWERSWITCH",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "Power Switch 2401 "
+            },
+            {
+              "Mount": NaN,
+              "Name": "OSP120",
+              "Sub": NaN,
+              "ControlDLL": "NFT.dll",
+              "Settings": "192.168.48.147,1000,6",
+              "Functions": "NFT",
+              "Version": "1.0.0.0",
+              "Switch": NaN,
+              "Desc": "NFT analyser OSP120"
+            },
+            {
+              "Mount": NaN,
+              "Name": "FeasaLED",
+              "Sub": 1.0,
+              "ControlDLL": "LED_analyser.dll",
+              "Settings": "*$(LED_AZ),04",
+              "Functions": "LED_Test",
+              "Version": "2.1.0.1",
+              "Switch": NaN,
+              "Desc": "LED analyser FeasaLED"
+            },
+            {
+              "Mount": NaN,
+              "Name": "iPowerPro800",
+              "Sub": NaN,
+              "ControlDLL": "iPowerPro800.dll",
+              "Settings": "*$(PCUART_P),1",
+              "Functions": "POWERSWITCH",
+              "Version": "1.0.1.0",
+              "Switch": NaN,
+              "Desc": "Power Switch Pro800"
+            },
+            {
+              "Mount": NaN,
+              "Name": "Transmitter1",
+              "Sub": 1.0,
+              "ControlDLL": "VirtualTransmitter.dll",
+              "Settings": "Transmitter1,192.168.1.11,2323",
+              "Functions": "TCP_Transfer",
+              "Version": "1.0.0.2",
+              "Switch": NaN,
+              "Desc": "Virtual Transmitter"
+            }
+          ],
+          "non_null_counts": {
+            "Mount": 0,
+            "Name": 44,
+            "Sub": 2,
+            "ControlDLL": 44,
+            "Settings": 43,
+            "Functions": 44,
+            "Version": 44,
+            "Switch": 1,
+            "Desc": 44
+          },
+          "unique_counts": {
+            "Name": 42,
+            "ControlDLL": 29,
+            "Settings": 41,
+            "Functions": 27,
+            "Version": 9,
+            "Switch": 1,
+            "Desc": 29
+          }
+        }
+      },
+      "DUTs": {
+        "sheet_name": "DUTs",
+        "sheet_type": "duts",
+        "total_rows": 2,
+        "total_columns": 16,
+        "column_names": [
+          "Load",
+          "DUT Name",
+          "Station",
+          "Parameter",
+          "SFIS_DeviceID",
+          "ScanBarcode( {Name,Lengh,Pattern} )",
+          "Connection1 (Type,Name,ConnectString)",
+          "Connection2 (Type,Name,ConnectString)",
+          "Connection3 (Type,Name,ConnectString)",
+          "Connection4(Type,Name,ConnectString)",
+          "Connection5(Type,Name,ConnectString)",
+          "Connection6(Type,Name,ConnectString)",
+          "Connection7(Type,Name,ConnectString)",
+          "Connection8(Type,Name,ConnectString)",
+          "Connection9(Type,Name,ConnectString)",
+          "Connection10(Type,Name,ConnectString)"
+        ],
+        "column_types": {
+          "Load": "object",
+          "DUT Name": "object",
+          "Station": "object",
+          "Parameter": "object",
+          "SFIS_DeviceID": "object",
+          "ScanBarcode( {Name,Lengh,Pattern} )": "object",
+          "Connection1 (Type,Name,ConnectString)": "object",
+          "Connection2 (Type,Name,ConnectString)": "object",
+          "Connection3 (Type,Name,ConnectString)": "float64",
+          "Connection4(Type,Name,ConnectString)": "float64",
+          "Connection5(Type,Name,ConnectString)": "float64",
+          "Connection6(Type,Name,ConnectString)": "float64",
+          "Connection7(Type,Name,ConnectString)": "float64",
+          "Connection8(Type,Name,ConnectString)": "float64",
+          "Connection9(Type,Name,ConnectString)": "float64",
+          "Connection10(Type,Name,ConnectString)": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [],
+          "test_items": [],
+          "configuration_items": [
+            "Parameter"
+          ],
+          "special_features": [
+            "設備配置工作表"
+          ],
+          "test_phases": [],
+          "execution_modes": []
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Load": "*$(LOAD_1)",
+              "DUT Name": "Kangaroo$Cellular Verification",
+              "Station": "Cellular Verification,0",
+              "Parameter": "*$(IQ_PORT)",
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": NaN,
+              "Connection1 (Type,Name,ConnectString)": "\"APP\",\"CmdConsole\",\".\\cmd.exe,1,60000,\"",
+              "Connection2 (Type,Name,ConnectString)": "\"Uart\",\"UART_fix\",\"*$(FX_UR1),9600,8,One,None,None,2000,2000\"",
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            },
+            {
+              "Load": "*$(LOAD_1)",
+              "DUT Name": "Kangaroo$5G_PathLoss",
+              "Station": "5G_PathLoss,1",
+              "Parameter": "*$(IQ_PORT)",
+              "SFIS_DeviceID": "*$(DEVID_1)",
+              "ScanBarcode( {Name,Lengh,Pattern} )": "{  ISN,1,[0-9A-F]  }",
+              "Connection1 (Type,Name,ConnectString)": NaN,
+              "Connection2 (Type,Name,ConnectString)": NaN,
+              "Connection3 (Type,Name,ConnectString)": NaN,
+              "Connection4(Type,Name,ConnectString)": NaN,
+              "Connection5(Type,Name,ConnectString)": NaN,
+              "Connection6(Type,Name,ConnectString)": NaN,
+              "Connection7(Type,Name,ConnectString)": NaN,
+              "Connection8(Type,Name,ConnectString)": NaN,
+              "Connection9(Type,Name,ConnectString)": NaN,
+              "Connection10(Type,Name,ConnectString)": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Load": 2,
+            "DUT Name": 2,
+            "Station": 2,
+            "Parameter": 2,
+            "SFIS_DeviceID": 2,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 1,
+            "Connection1 (Type,Name,ConnectString)": 1,
+            "Connection2 (Type,Name,ConnectString)": 1,
+            "Connection3 (Type,Name,ConnectString)": 0,
+            "Connection4(Type,Name,ConnectString)": 0,
+            "Connection5(Type,Name,ConnectString)": 0,
+            "Connection6(Type,Name,ConnectString)": 0,
+            "Connection7(Type,Name,ConnectString)": 0,
+            "Connection8(Type,Name,ConnectString)": 0,
+            "Connection9(Type,Name,ConnectString)": 0,
+            "Connection10(Type,Name,ConnectString)": 0
+          },
+          "unique_counts": {
+            "Load": 1,
+            "DUT Name": 2,
+            "Station": 2,
+            "Parameter": 1,
+            "SFIS_DeviceID": 1,
+            "ScanBarcode( {Name,Lengh,Pattern} )": 1,
+            "Connection1 (Type,Name,ConnectString)": 1,
+            "Connection2 (Type,Name,ConnectString)": 1
+          }
+        }
+      },
+      "Cellular Verification": {
+        "sheet_name": "Cellular Verification",
+        "sheet_type": "unknown",
+        "total_rows": 113,
+        "total_columns": 18,
+        "column_names": [
+          "Index_259",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16",
+          "Unnamed: 17"
+        ],
+        "column_types": {
+          "Index_259": "object",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "object",
+          "Instrument": "float64",
+          "Switch": "float64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "object",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64",
+          "Unnamed: 17": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            97.0,
+            99.0
+          ],
+          "execution_modes": [
+            "1",
+            "6",
+            "0",
+            "2:9",
+            "3",
+            "8",
+            "4:1,8",
+            "4:2,5",
+            "4:8,8",
+            "4:2,1",
+            "4:3,7",
+            "4:21,21",
+            "4:8,12",
+            "4:13,17",
+            3,
+            "4:2,3",
+            "4:6,8",
+            "4:9,9",
+            "4:12,14",
+            "4:15,15"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_259": "000",
+              "Phase": 0.0,
+              "Title": "0,CONNECT_DUT,40",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.GetPath",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "$cPath",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PC#-#PRG_GET_EXEPATH",
+              "TestID": "NUOP013",
+              "Unnamed: 16": 0.0,
+              "Unnamed: 17": NaN
+            },
+            {
+              "Index_259": "065",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Connect,\"UART_fix\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PC#-#Open Fixture_UART",
+              "TestID": "OTFX035",
+              "Unnamed: 16": 1.0,
+              "Unnamed: 17": NaN
+            },
+            {
+              "Index_259": "066",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Delay,\"500\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PC#-#Wait",
+              "TestID": "B7PL025",
+              "Unnamed: 16": 2.0,
+              "Unnamed: 17": NaN
+            },
+            {
+              "Index_259": "067",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": "UART_fix@TA 1 03\\r",
+              "Reply": "TA 1 03 PASS,END",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Fixture#-#Set Power ON",
+              "TestID": "IOET17N",
+              "Unnamed: 16": 3.0,
+              "Unnamed: 17": NaN
+            },
+            {
+              "Index_259": "001",
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.CMD,\"python.exe\",\".\\\\py\\\\SSH_C.py \\\"echo 0 >/proc/power/output4\\\"\",\"ON\",\"5000\"",
+              "Reply": "@Command pass",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "6",
+              "Description": "PC#-#Set Power OFF",
+              "TestID": "NUWL045",
+              "Unnamed: 16": 4.0,
+              "Unnamed: 17": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_259": 113,
+            "Phase": 14,
+            "Title": 19,
+            "Marco": 6,
+            "Instrument": 0,
+            "Switch": 0,
+            "Send": 113,
+            "Reply": 106,
+            "EndPrompt": 6,
+            "Ref": 25,
+            "Validation": 10,
+            "Prompt": 0,
+            "Waiting": 5,
+            "ExecMode": 113,
+            "Description": 113,
+            "TestID": 107,
+            "Unnamed: 16": 104,
+            "Unnamed: 17": 2
+          },
+          "unique_counts": {
+            "Index_259": 113,
+            "Title": 19,
+            "Marco": 6,
+            "Send": 74,
+            "Reply": 32,
+            "EndPrompt": 2,
+            "Ref": 20,
+            "Validation": 9,
+            "ExecMode": 20,
+            "Description": 76,
+            "TestID": 27
+          }
+        }
+      },
+      "5G_PathLoss": {
+        "sheet_name": "5G_PathLoss",
+        "sheet_type": "unknown",
+        "total_rows": 50,
+        "total_columns": 17,
+        "column_names": [
+          "Index_50",
+          "Phase",
+          "Title",
+          "Marco",
+          "Instrument",
+          "Switch",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 16"
+        ],
+        "column_types": {
+          "Index_50": "int64",
+          "Phase": "float64",
+          "Title": "object",
+          "Marco": "float64",
+          "Instrument": "float64",
+          "Switch": "float64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "float64",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 16": "float64"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "Phase",
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "execution_modes": [
+            "1",
+            "8",
+            "0",
+            "2:1",
+            "4:16,20",
+            "4:24,24"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_50": 100,
+              "Phase": 0.0,
+              "Title": "0,ScanLabel",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":ShowISN,\"*(ISN)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Get ISN",
+              "TestID": "CACK088",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_50": 101,
+              "Phase": NaN,
+              "Title": "0,CheckRoute",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":SfCheckRoute",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "8",
+              "Description": "CheckRoute",
+              "TestID": "OTCH013",
+              "Unnamed: 16": NaN
+            },
+            {
+              "Index_50": 102,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.GetPath",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "$cPath",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "PC#-#PRG_GET_EXEPATH",
+              "TestID": "IPIP005",
+              "Unnamed: 16": 0.0
+            },
+            {
+              "Index_50": 103,
+              "Phase": 1.0,
+              "Title": "0,Backup_CSV",
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Utility.CMD,\"*(cPath)\\py\\MoveCSV\\MoveCSV.exe\",\"*$(IQ5GPath)\\TestFlows\\Kangaroo\\NR5G_Conductive\",\"ON\",\"-1\",\"0\"",
+              "Reply": "@File_Move_Success",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Backup_Previous_PathLossFile@#$",
+              "TestID": "NUWL045",
+              "Unnamed: 16": 1.0
+            },
+            {
+              "Index_50": 104,
+              "Phase": NaN,
+              "Title": NaN,
+              "Marco": NaN,
+              "Instrument": NaN,
+              "Switch": NaN,
+              "Send": ":Delay,\"1000\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "1",
+              "Description": "Wait ",
+              "TestID": "B7PL025",
+              "Unnamed: 16": 9.0
+            }
+          ],
+          "non_null_counts": {
+            "Index_50": 50,
+            "Phase": 9,
+            "Title": 10,
+            "Marco": 0,
+            "Instrument": 0,
+            "Switch": 0,
+            "Send": 50,
+            "Reply": 50,
+            "EndPrompt": 0,
+            "Ref": 15,
+            "Validation": 0,
+            "Prompt": 0,
+            "Waiting": 5,
+            "ExecMode": 50,
+            "Description": 50,
+            "TestID": 50,
+            "Unnamed: 16": 48
+          },
+          "unique_counts": {
+            "Title": 10,
+            "Send": 41,
+            "Reply": 6,
+            "Ref": 11,
+            "ExecMode": 6,
+            "Description": 36,
+            "TestID": 7
+          }
+        }
+      },
+      "ANT0_TX": {
+        "sheet_name": "ANT0_TX",
+        "sheet_type": "unknown",
+        "total_rows": 81,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            "0",
+            "4:4,7",
+            "7:1,3000",
+            "4:8,8",
+            "4:13,16",
+            "7:10,3000",
+            "4:17,17",
+            "4:22,25",
+            "7:19,3000",
+            "4:26,26",
+            "4:31,34",
+            "7:28,3000",
+            "4:35,35",
+            "4:40,43",
+            "7:37,3000",
+            "4:44,44",
+            "4:49,52",
+            "7:46,3000",
+            "4:53,53",
+            "4:58,61",
+            "7:55,3000",
+            "4:62,62",
+            "4:67,70",
+            "7:64,3000",
+            "4:71,71",
+            "4:76,79",
+            "7:73,3000",
+            "4:80,80"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "4:4,7",
+              "Description": "DUT#-#{1}_LCH_ANT0_TX_Test@#$",
+              "TestID": "KALT037",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetOprVal,\"Parse_Count\",\"*(Parse_Count)+1\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Add Parse Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 81,
+            "Send": 81,
+            "Reply": 81,
+            "EndPrompt": 0,
+            "Ref": 18,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 81,
+            "Description": 81,
+            "TestID": 81,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 15,
+            "Reply": 10,
+            "Ref": 2,
+            "Validation": 1,
+            "ExecMode": 28,
+            "Description": 15,
+            "TestID": 11,
+            "Unnamed: 11": 1
+          }
+        }
+      },
+      "ANT3_TX": {
+        "sheet_name": "ANT3_TX",
+        "sheet_type": "unknown",
+        "total_rows": 81,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "object",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "object",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            "0",
+            "4:4,7",
+            "7:1,3000",
+            "4:8,8",
+            "4:13,16",
+            "7:10,3000",
+            "4:17,17",
+            "4:22,25",
+            "7:19,3000",
+            "4:26,26",
+            "4:31,34",
+            "7:28,3000",
+            "4:35,35",
+            "4:40,43",
+            "7:37,3000",
+            "4:44,44",
+            "4:49,52",
+            "7:46,3000",
+            "4:53,53",
+            "4:58,61",
+            "7:55,3000",
+            "4:62,62",
+            "4:67,70",
+            "7:64,3000",
+            "4:71,71",
+            "4:76,79",
+            "7:73,3000",
+            "4:80,80"
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "4:4,7",
+              "Description": "DUT#-#{1}_LCH_ANT3_TX_Test@#$",
+              "TestID": "KALT040",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetOprVal,\"Parse_Count\",\"*(Parse_Count)+1\"",
+              "Reply": "0",
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": "0",
+              "Description": "PC#-#Add Parse Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 81,
+            "Send": 81,
+            "Reply": 81,
+            "EndPrompt": 0,
+            "Ref": 18,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 81,
+            "Description": 81,
+            "TestID": 81,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 15,
+            "Reply": 10,
+            "Ref": 2,
+            "Validation": 1,
+            "ExecMode": 28,
+            "Description": 15,
+            "TestID": 11,
+            "Unnamed: 11": 1
+          }
+        }
+      },
+      "ANT0_RX": {
+        "sheet_name": "ANT0_RX",
+        "sheet_type": "unknown",
+        "total_rows": 72,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "int64",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "int64",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            0
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "DUT#-#{1}_LCH_ANT0_RX_LevTest@#$",
+              "TestID": "KALT067",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetVal,\"Parse_Count\",\"{3}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 72,
+            "Send": 72,
+            "Reply": 72,
+            "EndPrompt": 0,
+            "Ref": 36,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 72,
+            "Description": 72,
+            "TestID": 72,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 21,
+            "Ref": 2,
+            "Validation": 1,
+            "Description": 21,
+            "TestID": 10,
+            "Unnamed: 11": 1
+          }
+        }
+      },
+      "ANT1_RX": {
+        "sheet_name": "ANT1_RX",
+        "sheet_type": "unknown",
+        "total_rows": 72,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "int64",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "int64",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            0
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "DUT#-#{1}_LCH_ANT1_RX_LevTest@#$",
+              "TestID": "KALT068",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetVal,\"Parse_Count\",\"{3}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 72,
+            "Send": 72,
+            "Reply": 72,
+            "EndPrompt": 0,
+            "Ref": 36,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 72,
+            "Description": 72,
+            "TestID": 72,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 21,
+            "Ref": 2,
+            "Validation": 1,
+            "Description": 21,
+            "TestID": 10,
+            "Unnamed: 11": 1
+          }
+        }
+      },
+      "ANT2_RX": {
+        "sheet_name": "ANT2_RX",
+        "sheet_type": "unknown",
+        "total_rows": 72,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "int64",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "int64",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            0
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "DUT#-#{1}_LCH_ANT2_RX_LevTest@#$",
+              "TestID": "KALT069",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetVal,\"Parse_Count\",\"{3}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 72,
+            "Send": 72,
+            "Reply": 72,
+            "EndPrompt": 0,
+            "Ref": 36,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 72,
+            "Description": 72,
+            "TestID": 72,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 21,
+            "Ref": 2,
+            "Validation": 1,
+            "Description": 21,
+            "TestID": 10,
+            "Unnamed: 11": 1
+          }
+        }
+      },
+      "ANT3_RX": {
+        "sheet_name": "ANT3_RX",
+        "sheet_type": "unknown",
+        "total_rows": 72,
+        "total_columns": 12,
+        "column_names": [
+          "Index_1",
+          "Send",
+          "Reply",
+          "EndPrompt",
+          "Ref",
+          "Validation",
+          "Prompt",
+          "Waiting",
+          "ExecMode",
+          "Description",
+          "TestID",
+          "Unnamed: 11"
+        ],
+        "column_types": {
+          "Index_1": "int64",
+          "Send": "object",
+          "Reply": "int64",
+          "EndPrompt": "float64",
+          "Ref": "object",
+          "Validation": "object",
+          "Prompt": "float64",
+          "Waiting": "float64",
+          "ExecMode": "int64",
+          "Description": "object",
+          "TestID": "object",
+          "Unnamed: 11": "object"
+        },
+        "content_analysis": {
+          "data_patterns": {},
+          "key_columns": [
+            "TestID"
+          ],
+          "test_items": [],
+          "configuration_items": [],
+          "special_features": [],
+          "test_phases": [],
+          "execution_modes": [
+            0
+          ]
+        },
+        "sample_data": {
+          "first_5_rows": [
+            {
+              "Index_1": 0,
+              "Send": ":SetVal,\"Parse_Count\",\"{2}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": "n78"
+            },
+            {
+              "Index_1": 1,
+              "Send": ":Utility.Rtxt,\"{0}\",\"*(Parse_Count)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "MSG:rpString,\"\\,\\,\",\"\\,    \\,\"",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Parse_TestLog_Column@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 2,
+              "Send": ":Utility.StrSpilt,\"*(MSG)\",\"\\,\",\"-1\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": "Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult",
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Spilt_TestItem@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 3,
+              "Send": ":SetVal,\"*(TestItem)_Result\",\"*(MeasureValue)\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": "(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "DUT#-#{1}_LCH_ANT3_RX_LevTest@#$",
+              "TestID": "KALT070",
+              "Unnamed: 11": NaN
+            },
+            {
+              "Index_1": 4,
+              "Send": ":SetVal,\"Parse_Count\",\"{3}\"",
+              "Reply": 0,
+              "EndPrompt": NaN,
+              "Ref": NaN,
+              "Validation": NaN,
+              "Prompt": NaN,
+              "Waiting": NaN,
+              "ExecMode": 0,
+              "Description": "PC#-#Set_InitParse_Count@#$",
+              "TestID": "KAWI011",
+              "Unnamed: 11": NaN
+            }
+          ],
+          "non_null_counts": {
+            "Index_1": 72,
+            "Send": 72,
+            "Reply": 72,
+            "EndPrompt": 0,
+            "Ref": 36,
+            "Validation": 18,
+            "Prompt": 0,
+            "Waiting": 0,
+            "ExecMode": 72,
+            "Description": 72,
+            "TestID": 72,
+            "Unnamed: 11": 1
+          },
+          "unique_counts": {
+            "Send": 21,
+            "Ref": 2,
+            "Validation": 1,
+            "Description": 21,
+            "TestID": 10,
+            "Unnamed: 11": 1
+          }
+        }
+      }
+    }
+  },
+  "main_features": [
+    "配置管理功能",
+    "多樣化測試支援",
+    "多設備測試支援",
+    "儀器參數配置",
+    "KANGAROO專案專用"
+  ],
+  "test_flow_analysis": {
+    "test_phases": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      97.0,
+      99.0
+    ],
+    "test_sequence": [
+      "初始化配置",
+      "設備連接測試",
+      "功能測試執行",
+      "結果驗證",
+      "報告生成"
+    ],
+    "dependencies": [
+      "設備連接 → 配置載入",
+      "配置載入 → 測試執行",
+      "測試執行 → 結果收集",
+      "結果收集 → 報告生成"
+    ],
+    "error_handling": []
+  },
+  "script_characteristics": {
+    "complexity_level": "複雜",
+    "test_coverage": "全面功能測試",
+    "script_organization": "配置分離設計",
+    "maintainability": "良好",
+    "reusability": "中等"
+  },
+  "project_specific_analysis": {
+    "project_name": "KANGAROO",
+    "script_type": "KANGAROO_SCRIPT",
+    "special_capabilities": [
+      "多DUT測試支援",
+      "WiFi/BT校準測試",
+      "FW升級測試",
+      "OQC檢查流程"
+    ],
+    "best_practices": [
+      "模組化腳本設計",
+      "配置與執行分離",
+      "標準化測試流程"
+    ],
+    "learning_focus": [
+      "複雜測試流程管理",
+      "多設備協調測試",
+      "射頻測試最佳實踐"
+    ]
+  },
+  "ai_integration_notes": {
+    "ai_learning_focus": [
+      "KANGAROO專案腳本模式學習",
+      "腳本組織和結構設計",
+      "測試流程邏輯理解",
+      "配置管理最佳實踐"
+    ],
+    "script_patterns": [
+      "配置工作表 + 測試工作表結構",
+      "設備配置與測試執行分離",
+      "模組化腳本設計模式",
+      "標準化測試流程"
+    ],
+    "integration_benefits": [
+      "提高腳本生成準確性",
+      "支援KANGAROO專案腳本開發",
+      "優化測試流程設計",
+      "標準化腳本結構"
+    ],
+    "usage_recommendations": [
+      "作為KANGAROO專案腳本模板",
+      "學習KANGAROO專案腳本設計",
+      "參考配置管理最佳實踐",
+      "理解測試流程邏輯"
+    ]
+  }
+}

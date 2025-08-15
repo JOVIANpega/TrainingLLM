@@ -1,0 +1,1143 @@
+{
+  "Centimani DOC/Global.ini": {
+    "total_sections": 2,
+    "total_settings": 33,
+    "section_summary": {
+      "Settings": {
+        "setting_count": 19,
+        "comment_count": 5,
+        "sample_settings": [
+          "PCIP_1",
+          "DUTIP_1",
+          "DUT_UR1",
+          "PCUART_fixture",
+          "DUT_Login"
+        ]
+      },
+      "Scripts": {
+        "setting_count": 14,
+        "comment_count": 11,
+        "sample_settings": [
+          "Product_SKU",
+          "MFG_WIFI_MB",
+          "FW_VERSION",
+          "sfisSKU",
+          "VALO360_ALL_MODEL"
+        ]
+      }
+    },
+    "setting_types": {
+      "Network": 3,
+      "Other": 28,
+      "Feature_Flag": 1,
+      "Device_Info": 1
+    },
+    "key_settings": [
+      {
+        "section": "Settings",
+        "key": "PCIP_1",
+        "value": "192.168.11.3",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUT_UR1",
+        "value": "COM4",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "PCUART_fixture",
+        "value": "COM5",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUT_Login",
+        "value": "root",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_1",
+        "value": "true",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_2",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_3",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_4",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_1",
+        "value": "125335",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_2",
+        "value": "825201",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_3",
+        "value": "825201",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_4",
+        "value": "517864",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "NI6008_DEV1",
+        "value": "Dev1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "NI6008_DEV2",
+        "value": "Dev2",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DAQ_1",
+        "value": "Dev1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DAQ_2",
+        "value": "Dev2",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LED_Light1",
+        "value": "01",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LED_AZ1",
+        "value": "COM3",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Product_SKU",
+        "value": "R110",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "MFG_WIFI_MB",
+        "value": "version 18.35.387.23.108",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "FW_VERSION",
+        "value": "0.5.4.38.0_715bae2",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "sfisSKU",
+        "value": "N3C2401C",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_ALL_MODEL",
+        "value": "@69-2E224C20P02||@69-2E224C30P01||@69-2E224C23P02||@N3C2401C||@N3C2401NB||@N3C2401W||@69-2E224624P02",
+        "type": "Device_Info",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_5G",
+        "value": "@69-2E224C20P02||@N3C2401C",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_NObattery",
+        "value": "@69-2E224C30P01||@N3C2401NB",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_WIFI",
+        "value": "@69-2E224C23P02||@N3C2401W||@69-2E224624P02",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM1",
+        "value": "466977004990154",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM2",
+        "value": "466977004990155",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM3",
+        "value": "466977004933066",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Check _ANT8",
+        "value": "SDX65_131_SIM8380G-M2-HS_B3J2W550_QTM545_838_900_P1.03_20250103",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Check _ANT9",
+        "value": "SDX65_LE131_M2_M44_PCIE_HS_V1.05_250121",
+        "type": "Other",
+        "comments": []
+      }
+    ]
+  },
+  "Centimani DOC/System.ini": {
+    "total_sections": 10,
+    "total_settings": 107,
+    "section_summary": {
+      "Settings": {
+        "setting_count": 19,
+        "comment_count": 5,
+        "sample_settings": [
+          "PCIP_1",
+          "DUTIP_1",
+          "DUT_UR1",
+          "PCUART_fixture",
+          "DUT_Login"
+        ]
+      },
+      "Scripts": {
+        "setting_count": 14,
+        "comment_count": 11,
+        "sample_settings": [
+          "Product_SKU",
+          "MFG_WIFI_MB",
+          "FW_VERSION",
+          "sfisSKU",
+          "VALO360_ALL_MODEL"
+        ]
+      },
+      "System": {
+        "setting_count": 16,
+        "comment_count": 0,
+        "sample_settings": [
+          "LargeWindow",
+          "DUTFlowDirection",
+          "RetryCount",
+          "DeviceSemaphore",
+          "DebugMode"
+        ]
+      },
+      "IpFinder": {
+        "setting_count": 6,
+        "comment_count": 0,
+        "sample_settings": [
+          "IpFinder_Enable",
+          "IpFinder_LocalIP",
+          "IpFinder_Segment",
+          "IpFinder_LastNoStart",
+          "IpFinder_LastNoEnd"
+        ]
+      },
+      "iPLAS": {
+        "setting_count": 13,
+        "comment_count": 0,
+        "sample_settings": [
+          "iPLAS_Enable",
+          "iPLAS_DebugMsg",
+          "iPLAS_ProjectName",
+          "iPLAS_ScanDirectories",
+          "iPLAS_UploadPassLog"
+        ]
+      },
+      "SFIS": {
+        "setting_count": 20,
+        "comment_count": 5,
+        "sample_settings": [
+          "SFIS_Enable",
+          "SFIS_AutoLogin",
+          "SFIS_LinkIPLAS",
+          "SFIS_WebLink",
+          "SFIS_TSP"
+        ]
+      },
+      "FTP": {
+        "setting_count": 3,
+        "comment_count": 0,
+        "sample_settings": [
+          "FTP_Enable",
+          "FTP_Host",
+          "FTP_Folder"
+        ]
+      },
+      "MiniCloud": {
+        "setting_count": 10,
+        "comment_count": 0,
+        "sample_settings": [
+          "MiniCloud_Enable",
+          "MiniCloud_Host",
+          "MiniCloud_ProjectName",
+          "MiniCloud_ModelName",
+          "MiniCloud_LogPath"
+        ]
+      },
+      "CSVReport": {
+        "setting_count": 5,
+        "comment_count": 0,
+        "sample_settings": [
+          "CSVReport_Enable",
+          "CSVReport_LogFile",
+          "CSVReport_WhiteList",
+          "CSVReport_ContactInfo",
+          "CSVReport_ToHex"
+        ]
+      },
+      "Checksum": {
+        "setting_count": 1,
+        "comment_count": 0,
+        "sample_settings": [
+          "VALO360_TestFlow_20250324_MB_ER.xlsx"
+        ]
+      }
+    },
+    "setting_types": {
+      "Network": 30,
+      "Other": 52,
+      "Feature_Flag": 12,
+      "Device_Info": 3,
+      "File_Path": 4,
+      "Communication": 6
+    },
+    "key_settings": [
+      {
+        "section": "Settings",
+        "key": "PCIP_1",
+        "value": "192.168.11.3",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUT_UR1",
+        "value": "COM4",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "PCUART_fixture",
+        "value": "COM5",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DUT_Login",
+        "value": "root",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_1",
+        "value": "true",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_2",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_3",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LOAD_4",
+        "value": "false",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_1",
+        "value": "125335",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_2",
+        "value": "825201",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_3",
+        "value": "825201",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DEVID_4",
+        "value": "517864",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "NI6008_DEV1",
+        "value": "Dev1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "NI6008_DEV2",
+        "value": "Dev2",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DAQ_1",
+        "value": "Dev1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "DAQ_2",
+        "value": "Dev2",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LED_Light1",
+        "value": "01",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Settings",
+        "key": "LED_AZ1",
+        "value": "COM3",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Product_SKU",
+        "value": "R110",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "MFG_WIFI_MB",
+        "value": "version 18.35.387.23.108",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "FW_VERSION",
+        "value": "0.5.4.38.0_715bae2",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "sfisSKU",
+        "value": "N3C2401C",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_ALL_MODEL",
+        "value": "@69-2E224C20P02||@69-2E224C30P01||@69-2E224C23P02||@N3C2401C||@N3C2401NB||@N3C2401W||@69-2E224624P02",
+        "type": "Device_Info",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_5G",
+        "value": "@69-2E224C20P02||@N3C2401C",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_NObattery",
+        "value": "@69-2E224C30P01||@N3C2401NB",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "VALO360_WIFI",
+        "value": "@69-2E224C23P02||@N3C2401W||@69-2E224624P02",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM1",
+        "value": "466977004990154",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM2",
+        "value": "466977004990155",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "SIM3",
+        "value": "466977004933066",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "DUTIP_1",
+        "value": "192.168.11.143",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Check _ANT8",
+        "value": "SDX65_131_SIM8380G-M2-HS_B3J2W550_QTM545_838_900_P1.03_20250103",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "Scripts",
+        "key": "Check _ANT9",
+        "value": "SDX65_LE131_M2_M44_PCIE_HS_V1.05_250121",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "LargeWindow",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "DUTFlowDirection",
+        "value": "0",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "RetryCount",
+        "value": "4",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "DeviceSemaphore",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "DebugMode",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "IndividualScanBarCode",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "NewFormatScriptFile",
+        "value": "VALO360_TestFlow_20250324_MB_ER.xlsx",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "TestItemCodeFile",
+        "value": "Test Item Code V2.00_20241106.xlsx",
+        "type": "File_Path",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "StationList",
+        "value": "MB,TEMP",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "StationName",
+        "value": "MB",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "SendWithout\\n",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "LoopRunning",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "RobotMode",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "DontLogRef",
+        "value": "1",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "DontConvertErrorCode",
+        "value": "0",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "System",
+        "key": "CreateReport",
+        "value": "1",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_Enable",
+        "value": "0",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_LocalIP",
+        "value": "192.168.102.111",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_Segment",
+        "value": "192.168.102",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_LastNoStart",
+        "value": "25",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_LastNoEnd",
+        "value": "30",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "IpFinder",
+        "key": "IpFinder_SaveDebugLog",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_Enable",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_DebugMsg",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_ProjectName",
+        "value": "VALO360",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_ScanDirectories",
+        "value": "Log;Report;Record;Debug",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadPassLog",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadFailLog",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadValidInSeconds",
+        "value": "600",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadFileTypes",
+        "value": "log;ini;ct;bmp;csv;wav;ct;txt",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadDebugFile",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_UploadMatchISN",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_Site",
+        "value": "DC",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_EncryptedZip",
+        "value": "",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "iPLAS",
+        "key": "iPLAS_SkipErrorCode",
+        "value": "BSFO14;BSFO75;OTCH013",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_Enable",
+        "value": "1",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_AutoLogin",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_LinkIPLAS",
+        "value": "1",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_WebLink",
+        "value": "http://pxd-sftsp-n3.sfis.pegatroncorp.com/SFISWebService/SFISTSPWebService.asmx",
+        "type": "Other",
+        "comments": [
+          "SFIS_WebLink=http://172.18.125.49/SFISWebService/SFISTSPWebService.asmx,2,ErrorMapping.el",
+          "SFIS_WebLink=http://172.24.248.17/SFISWebService/SFISTSPWebService.asmx,2,ErrorMapping.el",
+          "SFIS_WebLink=http://172.24.255.113/SFISWebService/SFISTSPWebService.asmx,2,ErrorMapping.el",
+          "SFIS_WebLink=http://10.176.33.13/SFISWebService/SFISTSPWebService.asmx,2,ErrorMapping.el"
+        ]
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_TSP",
+        "value": "5GB,2",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_OPID_LENGTH",
+        "value": "9",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_OPID_PATTERN",
+        "value": "[L-S][0-9A-Z][0-9A-Z][0-9A-Z][0-9][0-9][0-9][0-9][0-9]",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_CheckRouteType",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_RepairEnable",
+        "value": "1",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_RepairType",
+        "value": "1",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_RepairReason",
+        "value": "ZR",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_RepairDuty",
+        "value": "7C0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_RepairNGRP",
+        "value": "AUTO2A",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_SkipSaveResultOnFail",
+        "value": "0",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_GetDateISN",
+        "value": "111111111111111",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_ResultFile",
+        "value": "",
+        "type": "File_Path",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_SaveGPRS",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_SaveError",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_LoginID",
+        "value": "",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "SFIS",
+        "key": "SFIS_BreakGoName",
+        "value": "",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "FTP",
+        "key": "FTP_Enable",
+        "value": "0",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "FTP",
+        "key": "FTP_Host",
+        "value": "172.24.255.135",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "FTP",
+        "key": "FTP_Folder",
+        "value": "NOVA360/5G",
+        "type": "File_Path",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_Enable",
+        "value": "1",
+        "type": "Feature_Flag",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_Host",
+        "value": "172.22.248.50",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_ProjectName",
+        "value": "VALO360",
+        "type": "Device_Info",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_ModelName",
+        "value": "VALO360_5G",
+        "type": "Device_Info",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_LogPath",
+        "value": "",
+        "type": "File_Path",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLAS",
+        "value": "0",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLASLogPath",
+        "value": "",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_DebugMode",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_iPLASProjectName",
+        "value": "VALO360",
+        "type": "Network",
+        "comments": []
+      },
+      {
+        "section": "MiniCloud",
+        "key": "MiniCloud_BreakGo",
+        "value": "0",
+        "type": "Other",
+        "comments": []
+      },
+      {
+        "section": "CSVReport",
+        "key": "CSVReport_Enable",
+        "value": "1",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "CSVReport",
+        "key": "CSVReport_LogFile",
+        "value": "VALO360_DeviceID_825242.csv",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "CSVReport",
+        "key": "CSVReport_WhiteList",
+        "value": "",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "CSVReport",
+        "key": "CSVReport_ContactInfo",
+        "value": "",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "CSVReport",
+        "key": "CSVReport_ToHex",
+        "value": "",
+        "type": "Communication",
+        "comments": []
+      },
+      {
+        "section": "Checksum",
+        "key": "VALO360_TestFlow_20250324_MB_ER.xlsx",
+        "value": "F99EBA0B7D22FBA9D7E37C9587944B66FAF089A3E1796C385C47FAB5E5CDB0D2",
+        "type": "Other",
+        "comments": []
+      }
+    ]
+  }
+}

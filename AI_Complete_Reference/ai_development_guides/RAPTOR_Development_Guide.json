@@ -1,0 +1,151 @@
+{
+  "project_name": "RAPTOR",
+  "description": "RAPTOR專案AI腳本開發指南",
+  "created_date": "2025-08-12T00:15:23.866976",
+  "field_overview": {
+    "total_fields": 44,
+    "field_categories": {
+      "all_fields": [
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Description",
+        "EndPrompt",
+        "ExecMode",
+        "Functions",
+        "Index_186",
+        "Index_234",
+        "Index_385",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "Parameter",
+        "Phase",
+        "Prompt",
+        "Ref",
+        "Reply",
+        "SFIS_DeviceID",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Send",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "TestID",
+        "Title",
+        "Validation",
+        "Value",
+        "Version",
+        "Waiting"
+      ],
+      "other_fields": [
+        "Connection1 (Type,Name,ConnectString)",
+        "Connection10(Type,Name,ConnectString)",
+        "Connection2 (Type,Name,ConnectString)",
+        "Connection3 (Type,Name,ConnectString)",
+        "Connection4(Type,Name,ConnectString)",
+        "Connection5(Type,Name,ConnectString)",
+        "Connection6(Type,Name,ConnectString)",
+        "Connection7(Type,Name,ConnectString)",
+        "Connection8(Type,Name,ConnectString)",
+        "Connection9(Type,Name,ConnectString)",
+        "ControlDLL",
+        "DUT Name",
+        "Desc",
+        "Description",
+        "EndPrompt",
+        "Functions",
+        "Index_186",
+        "Index_234",
+        "Index_385",
+        "Instrument",
+        "Load",
+        "Loss",
+        "Marco",
+        "Mount",
+        "Name",
+        "Parameter",
+        "Prompt",
+        "Ref",
+        "SFIS_DeviceID",
+        "ScanBarcode( {Name,Lengh,Pattern} )",
+        "Settings",
+        "Station",
+        "Sub",
+        "Switch",
+        "TestID",
+        "Title",
+        "Value",
+        "Version",
+        "Waiting"
+      ],
+      "phase_fields": [
+        "Phase"
+      ],
+      "action_fields": [
+        "Send"
+      ],
+      "response_fields": [
+        "Reply"
+      ],
+      "validation_fields": [
+        "Validation"
+      ],
+      "execution_fields": [
+        "ExecMode"
+      ]
+    },
+    "key_fields": [
+      "ExecMode",
+      "Phase",
+      "Validation",
+      "Send"
+    ]
+  },
+  "logic_overview": {
+    "total_files": 2,
+    "complexity_distribution": {
+      "simple": 0,
+      "medium": 2,
+      "complex": 0
+    },
+    "common_patterns": [
+      "階段式測試流程"
+    ]
+  },
+  "development_tips": [
+    "RAPTOR專案採用複雜的測試流程結構",
+    "重視測試覆蓋率和完整性",
+    "支援高級錯誤處理和恢復機制",
+    "參考RAPTOR專案的現有腳本結構",
+    "保持與專案標準的一致性",
+    "使用專案特定的欄位命名規範"
+  ],
+  "common_issues": [
+    "欄位命名不一致導致維護困難",
+    "缺少適當的錯誤處理機制",
+    "測試流程邏輯過於複雜",
+    "缺少必要的驗證步驟",
+    "儀器參數配置不完整"
+  ],
+  "optimization_suggestions": [
+    "標準化欄位命名規範",
+    "簡化複雜的測試流程",
+    "增加錯誤處理和恢復機制",
+    "優化測試執行順序",
+    "實作並行測試執行"
+  ]
+}

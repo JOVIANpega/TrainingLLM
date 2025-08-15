@@ -1,0 +1,845 @@
+{
+  "project_name": "Kilimanjaro",
+  "description": "Kilimanjaro專案腳本邏輯參考",
+  "analysis_date": "2025-08-12T00:12:13.147685",
+  "total_files": 2,
+  "logic_overview": {
+    "Kilimanjaro_LED_20201116_TestFlow.xlsx": {
+      "file_name": "Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\Kilimanjaro\\Kilimanjaro_LED_20201116_TestFlow.xlsx",
+      "total_sheets": 9,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2102051138170"
+            ],
+            [
+              "Creator",
+              "lupin_weng"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 6,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "RFSwitch3001",
+              "RFSwitch3001.dll",
+              "GPIB,GPIB0::1::INSTR,1,1",
+              "1.0.0.0",
+              "0",
+              "RF Switch 1 to 4"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 41,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "IPOWER2401",
+              "",
+              "iPower2401.dll",
+              "192.168.201.11,192.168.201.3,9999,1",
+              "POWERSWITCH",
+              "1.0.0.0",
+              "",
+              "Power Switch 2401 "
+            ],
+            [
+              "",
+              "OSP120",
+              "",
+              "NFT.dll",
+              "192.168.48.147,1000,6",
+              "NFT",
+              "1.0.0.0",
+              "",
+              "NFT analyser OSP120"
+            ],
+            [
+              "",
+              "FeasaLED",
+              "1",
+              "LED_analyser.dll",
+              "*$(LED_AZ),04",
+              "LED_Test",
+              "2.1.0.1",
+              "",
+              "LED analyser FeasaLED"
+            ],
+            [
+              "",
+              "iPowerPro800",
+              "",
+              "iPowerPro800.dll",
+              "*$(PCUART_P),1",
+              "POWERSWITCH",
+              "1.0.1.0",
+              "",
+              "Power Switch Pro800"
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 6,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(LOAD_4)",
+              "Kilimanjaro_LED_golden_Up",
+              "LED_golden_Up,0",
+              "*$(PCIP_1),0",
+              "*$(DEVID_2)",
+              "{  ISN,1,[0-9A-F]  }",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1),9600,8,One,None,None,10000,5000\"",
+              "\"DLL:LV_Library.dll\",\"MyDLL\",\"Dev1\"",
+              "\"Uart\",\"UARTF\",\"*$(DUT_FX),115200,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_2)",
+              "Kilimanjaro_LED_golden_Fix",
+              "LED_golden_Fix,0",
+              "*$(PCIP_1),0",
+              "*$(DEVID_2)",
+              "{  ISN,13,[0-9A-F]  }",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1),9600,8,One,None,None,10000,5000\"",
+              "\"DLL:LV_Library.dll\",\"MyDLL\",\"Dev1\"",
+              "\"Uart\",\"UARTF\",\"*$(DUT_FX),115200,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_1)",
+              "Kilimanjaro_LED_24",
+              "LED_24,1",
+              "*$(PCIP_1),0",
+              "*$(DEVID_1)",
+              "{  ISN,13,[0-9A-F]  }",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "\"Uart\",\"FUART\",\"*$(FX_UR1),9600,8,One,None,None,10000,5000\"",
+              "\"DLL:LV_Library.dll\",\"MyDLL\",\"Dev1\"",
+              "\"Uart\",\"UARTF\",\"*$(DUT_FX),115200,8,One,None,None,10000,5000\""
+            ],
+            [
+              "*$(LOAD_3)",
+              "Kilimanjaro_LED_M",
+              "LED_M,1",
+              "*$(PCIP_1),0",
+              "*$(DEVID_3)",
+              "{  ISN,19,[0-9A-F]  }",
+              "\"Uart\",\"UART\",\"*$(DUT_UR1),115200,8,One,None,None,10000,5000\"",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "LED_golden_Test",
+          "max_row": 899,
+          "max_column": 18,
+          "headers": [
+            "Index_35",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+              "是",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@FixUpDnOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@Led1SOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "LED_golden_Up",
+          "max_row": 798,
+          "max_column": 18,
+          "headers": [
+            "Index_35",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+              "是",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@FixUpDnOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@Led1SOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "LED_golden_Fix",
+          "max_row": 798,
+          "max_column": 18,
+          "headers": [
+            "Index_35",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+              "是",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@FixUpDnOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@Led1SOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "LED_24",
+          "max_row": 802,
+          "max_column": 18,
+          "headers": [
+            "Index_35",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowConfirmBox,\"please put dut\",\"是;否\"",
+              "是",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@FixUpDnOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UARTF@Led1SOn\\r\\n",
+              "@Done",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "LED_M",
+          "max_row": 790,
+          "max_column": 18,
+          "headers": [
+            "Index_35",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "000",
+              "0",
+              "0,CheckRoute",
+              "",
+              "",
+              "",
+              ":ShowImageMessage,\"Loimage.gif\",\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "001",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "UART@\\n",
+              "@$",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ShowISN,\"*(ISN)\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":SfCheckRoute",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    }
+  },
+  "common_patterns": {},
+  "best_practices": []
+}

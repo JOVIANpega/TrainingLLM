@@ -1,0 +1,13 @@
+﻿Platform,Category,File_Name
+KANGAROO,Mainboard,Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx
+KANGAROO,OQC,Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx
+KANGAROO,Cellular,Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx
+KANGAROO,MultiDUT,Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx
+VALO360,ER2,VALO360_ER2 OQC Function Check List_202504122_for Factory.xlsx
+VALO360,ER2,VALO360_ER2 OQC Function Check List_20250418.xlsx
+VALO360,ER2,VALO360_TestFlow_20250218_ER2.xlsx
+VALO360,ER2,VALO360_TestFlow_20250318_MB_ER2.xlsx
+VALO360,POE,VALO360_TestFlow_20250218_POE_LoopOK.xlsx
+VALO360,POE,VALO360_TestFlow_20250307_POE.xlsx
+VALO360,IMU,VALO360_TestFlow_20250326_IMU.xlsx
+VALO360,Function,VALO360_TestFlow_20250407_Function.xlsx

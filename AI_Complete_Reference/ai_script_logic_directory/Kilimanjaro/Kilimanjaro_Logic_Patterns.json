@@ -1,0 +1,26 @@
+{
+  "project_name": "Kilimanjaro",
+  "description": "Kilimanjaro專案邏輯模式參考",
+  "analysis_date": "2025-08-12T00:12:15.137102",
+  "logic_patterns": {
+    "Kilimanjaro_LED_20201116_TestFlow.xlsx": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    }
+  },
+  "flow_structures": {
+    "Kilimanjaro_LED_20201116_TestFlow.xlsx": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    }
+  },
+  "control_structures": {},
+  "error_handling_patterns": {}
+}

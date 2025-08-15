@@ -1,0 +1,50 @@
+﻿Sheet,Row Type,Name,Value
+Properties,Sample_1,Version,2409231544340
+Properties,Sample_2,Creator,Nancy
+
+Sheet,Row Type,Load,DUT Name,Station,Parameter,SFIS_DeviceID,"ScanBarcode( {Name,Lengh,Pattern} )","Connection1 (Type,Name,ConnectString)","Connection2 (Type,Name,ConnectString)","Connection3 (Type,Name,ConnectString)","Connection4(Type,Name,ConnectString)","Connection5(Type,Name,ConnectString)","Connection6(Type,Name,ConnectString)","Connection7(Type,Name,ConnectString)","Connection8(Type,Name,ConnectString)","Connection9(Type,Name,ConnectString)","Connection10(Type,Name,ConnectString)"
+DUTs,Sample_1,*$(LOAD_1),Kangaroo$Cellular Verification,"Cellular Verification,0",*$(IQ_PORT),*$(DEVID_1),,"""APP"",""CmdConsole"","".\cmd.exe,1,60000,""","""Uart"",""UART_fix"",""*$(FX_UR1),9600,8,One,None,None,2000,2000""",,,,,,,,
+DUTs,Sample_2,*$(LOAD_1),Kangaroo$5G_PathLoss,"5G_PathLoss,1",*$(IQ_PORT),*$(DEVID_1),"{  ISN,1,[0-9A-F]  }",,,,,,,,,,
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT0_TX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT0_TX,Sample_2,04,":SetOprVal,""Parse_Count"",""*(Parse_Count)+1""",0,,0,,
+ANT0_TX,Sample_3,05,":GetVal,""Parse_Count""",{3},,{3},,
+ANT0_TX,Sample_4,06,":Delay,""0000""",0,,0,,
+ANT0_TX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT3_TX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT3_TX,Sample_2,04,":SetOprVal,""Parse_Count"",""*(Parse_Count)+1""",0,,0,,
+ANT3_TX,Sample_3,05,":GetVal,""Parse_Count""",{3},,{3},,
+ANT3_TX,Sample_4,06,":Delay,""0000""",0,,0,,
+ANT3_TX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT0_RX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT0_RX,Sample_2,04,":SetVal,""Parse_Count"",""{3}""",0,,0,,
+ANT0_RX,Sample_3,05,":Utility.Rtxt,""{0}"",""*(Parse_Count)""","MSG:rpString,""\,\,"",""\,    \,""",,"MSG:rpString,""\,\,"",""\,    \,""",,
+ANT0_RX,Sample_4,06,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,
+ANT0_RX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT1_RX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT1_RX,Sample_2,04,":SetVal,""Parse_Count"",""{3}""",0,,0,,
+ANT1_RX,Sample_3,05,":Utility.Rtxt,""{0}"",""*(Parse_Count)""","MSG:rpString,""\,\,"",""\,    \,""",,"MSG:rpString,""\,\,"",""\,    \,""",,
+ANT1_RX,Sample_4,06,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,
+ANT1_RX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT2_RX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT2_RX,Sample_2,04,":SetVal,""Parse_Count"",""{3}""",0,,0,,
+ANT2_RX,Sample_3,05,":Utility.Rtxt,""{0}"",""*(Parse_Count)""","MSG:rpString,""\,\,"",""\,    \,""",,"MSG:rpString,""\,\,"",""\,    \,""",,
+ANT2_RX,Sample_4,06,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,
+ANT2_RX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+
+Sheet,Row Type,02,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",0,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,0,PC#-#Spilt_TestItem@#$,KAWI011
+ANT3_RX,Sample_1,03,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+ANT3_RX,Sample_2,04,":SetVal,""Parse_Count"",""{3}""",0,,0,,
+ANT3_RX,Sample_3,05,":Utility.Rtxt,""{0}"",""*(Parse_Count)""","MSG:rpString,""\,\,"",""\,    \,""",,"MSG:rpString,""\,\,"",""\,    \,""",,
+ANT3_RX,Sample_4,06,":Utility.StrSpilt,""*(MSG)"",""\,"",""-1""",Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,Index;$TestItem;Unit;$MeasureValue;$LowerLimit;$UpperLimit;TestResult,,
+ANT3_RX,Sample_5,07,":SetVal,""*(TestItem)_Result"",""*(MeasureValue)""",0,,0,"(*(TestItem)_Result,%f,*(LowerLimit),*(UpperLimit))",
+

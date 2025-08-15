@@ -1,0 +1,56 @@
+{
+  "project_name": "ZEBRA",
+  "description": "ZEBRA專案邏輯模式參考",
+  "analysis_date": "2025-08-12T00:12:18.893197",
+  "logic_patterns": {
+    "Zebra_20190417_TestFlow.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "wifi_TestFlow.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    },
+    "Zebra_20190725_TestFlow0801.XLSX": {
+      "phase_based": {
+        "phase_column": 1,
+        "has_send": true,
+        "has_reply": true,
+        "has_validation": true
+      }
+    }
+  },
+  "flow_structures": {
+    "Zebra_20190417_TestFlow.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "wifi_TestFlow.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    },
+    "Zebra_20190725_TestFlow0801.XLSX": {
+      "has_phase_based_flow": true,
+      "has_conditional_logic": false,
+      "has_loop_logic": false,
+      "has_error_handling": false,
+      "flow_complexity": "medium"
+    }
+  },
+  "control_structures": {},
+  "error_handling_patterns": {}
+}

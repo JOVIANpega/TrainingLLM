@@ -1,0 +1,24 @@
+﻿分析日期,2025-08-11T11:02:24.316386
+分析檔案數量,10
+
+測試項目總結
+總項目數,5346
+工作表數量,2
+工作表: Test Item All,5247
+工作表: Version History,99
+
+測試流程總結
+總檔案數,9
+總工作表數,56
+測試流程工作表數,15
+
+檔案詳細資訊
+Kangaroo_DWeSIMandFWUP_MultiDUT_TestFlow-20250414.xlsx,工作表: 5,測試流程: 1
+Kangaroo_MP_AIR_TestFlow_20250326C.xlsx,工作表: 5,測試流程: 1
+Pega_Kangaroo_TestFlow_Mainboard_MP_250407.xlsx,工作表: 5,測試流程: 1
+Pega_Kangaroo_TestFlow_MP_FWdownload_20250410-RecordUSBInfo.xlsx,工作表: 5,測試流程: 1
+Pega_Kangaroo_TestFlow-WIFI&BT_CAL&VERIF_MP_20250421.XLSX,工作表: 6,測試流程: 1
+Pega_Kangaroo_TestFlow-WIFIOTA_MP_20250419_ForFWUpgrade.XLSX,工作表: 6,測試流程: 1
+Pega_Kangaroo_TestFlow-Final Check_MP_20250415_CBNGSIMSLOT1.xlsx,工作表: 6,測試流程: 1
+Pega_Kangaroo_TestFlow-OQC_MP_20250415_CBNGSIMSLOT1.xlsx,工作表: 6,測試流程: 1
+Kangaroo_PR_CellularVerification-20240923_PC3_TestFlow.xlsx,工作表: 12,測試流程: 7

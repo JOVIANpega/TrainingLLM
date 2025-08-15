@@ -1,0 +1,11 @@
+ISN,#Status,#ErrorMessage,#DateTime,#TestTime,#DeviceID,008:PRG_GET_EXEPATH,009:Open  Commnad Line,011:flash_firmware_checkDMpor
+UL,,,,,,NA,NA,NA
+LL,,,,,,NA,NA,NA
+AVG,,,,,,NA,NA,NA
+MIN,,,,,,NA,NA,NA
+MAX,,,,,,NA,NA,NA
+STD,,,,,,NA,NA,NA
+CpU,,,,,,NA,NA,NA
+CpL,,,,,,NA,NA,NA
+Cpk,,,,,,NA,NA,NA
+'777,PASS,PASS,2025-07-28_14-41-10,41,512314,0,0,@SUCCESS

@@ -1,0 +1,1372 @@
+{
+  "project_name": "ZEBRA",
+  "description": "Zebra專案腳本邏輯參考",
+  "analysis_date": "2025-08-12T00:12:16.107958",
+  "total_files": 6,
+  "logic_overview": {
+    "Zebra_20190417_TestFlow.XLSX": {
+      "file_name": "Zebra_20190417_TestFlow.XLSX",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\ZEBRA\\Zebra_20190417_TestFlow.XLSX",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "1905291539147"
+            ],
+            [
+              "Creator",
+              "jovian_li"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 5,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "ET5X_FA5",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "ET5X_FA5",
+              "switch_C",
+              "",
+              "USBCSwitchLibary.dll",
+              "",
+              "switch",
+              "1.0.0.0",
+              "",
+              "usb switch"
+            ],
+            [
+              "L10A_FA5",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "L10A_FA5",
+              "PS2005-1",
+              "1",
+              "PSS2005.dll",
+              "GPIB,GPIB0::8::INSTR",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "1.0.0.1",
+              "",
+              "DC Power 2005"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 18,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "ET5X_FA5",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 167,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(Load_1)",
+              "ET5X$ET5X_FA5",
+              "ET5X_FA5,*$(RUN_LOOP1)",
+              "",
+              "*$(DEVID_1)",
+              "",
+              "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "",
+              ""
+            ],
+            [
+              "*$(Load_1)",
+              "L10A$L10A_FA5",
+              "L10A_FA5,*$(RUN_LOOP1)",
+              "",
+              "*$(DEVID_1)",
+              "",
+              "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "L10A_FA5",
+          "max_row": 984,
+          "max_column": 20,
+          "headers": [
+            "Index_105",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "1",
+              "0,2303 Voltage 7.8V ON",
+              "",
+              "MVolt",
+              "B2302",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ReleaseDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "004",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ObtainSubDevice,\"PS2005-1\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "ET5X_FA5",
+          "max_row": 978,
+          "max_column": 20,
+          "headers": [
+            "Index_44",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "1",
+              "0,SWITCH_set_0_DUT",
+              "",
+              "switch",
+              "switch_C",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.switch,\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "2",
+              "0,2303 Voltage 4V ON",
+              "",
+              "MVolt",
+              "B2302",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "004",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Send,\"*RST\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "wifi_TestFlow.XLSX": {
+      "file_name": "wifi_TestFlow.XLSX",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\ZEBRA\\wifi_TestFlow.XLSX",
+      "total_sheets": 5,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "2009211835393"
+            ],
+            [
+              "Creator",
+              "jovian_li"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 9,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "",
+              "switch_C",
+              "",
+              "USBCSwitchLibary.dll",
+              "",
+              "switch",
+              "1.0.0.0",
+              "",
+              "usb switch"
+            ],
+            [
+              "",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "",
+              "PS2005-1",
+              "1",
+              "PSS2005.dll",
+              "GPIB,GPIB0::8::INSTR",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "1.0.0.1",
+              "",
+              "DC Power 2005"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 18,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "RF",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 161,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(Load_1)",
+              "SKU02$WifiCalibration",
+              "WifiCalibration,*$(RUN_LOOP1)",
+              "*$(PCIP_1),1",
+              "*$(DEVID_1)",
+              "",
+              "\"APP\",\"OvcWrite\",\"*$(OvcWritePath),1,5000\" ",
+              "\"APP\",\"OvcWrite1\",\"*$(OvcWrite1Path),1,5000\" ",
+              "\"APP\",\"CmdConsole\",\"cmd.exe,1,40000,\"",
+              "\"DLL:FanProject.dll\",\"FanDLL\",\"1\""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "WifiCalibration",
+          "max_row": 909,
+          "max_column": 17,
+          "headers": [
+            "Index_46",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "0",
+              "0,Delete last Log",
+              "",
+              "TCP_Transfer",
+              "Transmitter{1}",
+              ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\Log\\logOutput.txt\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_00037f500001.bin\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\NvBin\\calData_*$(Wifimac).bin\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "004",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Utility.DFile,\"C:\\LitePoint\\IQfact+\\IQfact+_QCA_6174_3.3.1.Eng21_Lock_dubug\\bin\\bdwlan.bin\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    },
+    "Zebra_20190725_TestFlow0801.XLSX": {
+      "file_name": "Zebra_20190725_TestFlow0801.XLSX",
+      "file_path": "AI_Complete_Reference\\Centimani DOC\\scripe_EXCEL\\ZEBRA\\Zebra_20190725_TestFlow0801.XLSX",
+      "total_sheets": 6,
+      "sheets": [
+        {
+          "name": "Properties",
+          "max_row": 19,
+          "max_column": 2,
+          "headers": [
+            "Name",
+            "Value"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "Version",
+              "1907261337258"
+            ],
+            [
+              "Creator",
+              "jovian_li"
+            ],
+            [
+              "FailCount",
+              "0"
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "Instrument",
+          "max_row": 5,
+          "max_column": 9,
+          "headers": [
+            "Mount",
+            "Name",
+            "Sub",
+            "ControlDLL",
+            "Settings",
+            "Functions",
+            "Version",
+            "Switch",
+            "Desc"
+          ],
+          "field_patterns": {
+            "switch": {
+              "connection_fields": [],
+              "status_fields": []
+            }
+          },
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "ET5X_FA5",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "ET5X_FA5",
+              "switch_C",
+              "",
+              "USBCSwitchLibary.dll",
+              "",
+              "switch",
+              "1.0.0.0",
+              "",
+              "usb switch"
+            ],
+            [
+              "L10A_FA5",
+              "B2302",
+              "",
+              "SCPI_Controller.dll",
+              "GPIB,*$(B2302_GPIB),3",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff",
+              "1.0.0.0",
+              "",
+              "Keithley 2302"
+            ],
+            [
+              "L10A_FA5",
+              "PS2005-1",
+              "1",
+              "PSS2005.dll",
+              "GPIB,GPIB0::8::INSTR",
+              "MCurr,MVolt,SCurr,SVolt,SON,OnOff,CLR",
+              "1.0.0.1",
+              "",
+              "DC Power 2005"
+            ]
+          ]
+        },
+        {
+          "name": "Switch",
+          "max_row": 4,
+          "max_column": 7,
+          "headers": [
+            "Mount",
+            "Name",
+            "ControlDLL",
+            "Settings",
+            "Version",
+            "Loss",
+            "Desc"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "ET5X_FA5",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "DUTs",
+          "max_row": 3,
+          "max_column": 16,
+          "headers": [
+            "Load",
+            "DUT Name",
+            "Station",
+            "Parameter",
+            "SFIS_DeviceID",
+            "ScanBarcode( {Name,Lengh,Pattern} )",
+            "Connection1 (Type,Name,ConnectString)",
+            "Connection2 (Type,Name,ConnectString)",
+            "Connection3 (Type,Name,ConnectString)",
+            "Connection4(Type,Name,ConnectString)",
+            "Connection5(Type,Name,ConnectString)",
+            "Connection6(Type,Name,ConnectString)",
+            "Connection7(Type,Name,ConnectString)",
+            "Connection8(Type,Name,ConnectString)",
+            "Connection9(Type,Name,ConnectString)",
+            "Connection10(Type,Name,ConnectString)"
+          ],
+          "field_patterns": {},
+          "logic_structures": {},
+          "data_samples": [
+            [
+              "*$(Load_1)",
+              "ET5X$ET5X_FA5",
+              "ET5X_FA5,*$(RUN_LOOP1)",
+              "",
+              "*$(DEVID_1)",
+              "",
+              "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "",
+              ""
+            ],
+            [
+              "*$(Load_1)",
+              "L10A$L10A_FA5",
+              "L10A_FA5,*$(RUN_LOOP1)",
+              "",
+              "*$(DEVID_1)",
+              "",
+              "\"DLL:DutQDART.dll\",\"DUTL\",\"*$(WLAN_COM),1\"",
+              "\"APP\",\"OvcWrite\",\"*$(OvcWritePath_Z),1,5000\" ",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "L10A_FA5",
+          "max_row": 984,
+          "max_column": 20,
+          "headers": [
+            "Index_105",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "1",
+              "0,2303 Voltage 7.8V ON",
+              "",
+              "MVolt",
+              "B2302",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Send,\":VOLT 7.8;:CURR 5;:OUTP ON;\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ReleaseDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "004",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":ObtainSubDevice,\"PS2005-1\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "name": "ET5X_FA5",
+          "max_row": 990,
+          "max_column": 23,
+          "headers": [
+            "Index_44",
+            "Phase",
+            "Title",
+            "Marco",
+            "Instrument",
+            "Switch",
+            "Send",
+            "Reply",
+            "EndPrompt",
+            "Ref",
+            "Validation",
+            "Prompt",
+            "Waiting",
+            "ExecMode",
+            "Description",
+            "TestID",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "field_patterns": {
+            "test_flow": {
+              "phase_fields": [
+                "Phase"
+              ],
+              "action_fields": [
+                "Send"
+              ],
+              "response_fields": [
+                "Reply"
+              ],
+              "validation_fields": [
+                "Validation"
+              ],
+              "execution_fields": [
+                "ExecMode"
+              ]
+            },
+            "control": {
+              "condition_fields": [],
+              "loop_fields": [],
+              "jump_fields": []
+            },
+            "error_handling": {
+              "error_fields": [],
+              "retry_fields": [],
+              "fallback_fields": []
+            }
+          },
+          "logic_structures": {
+            "phase_based": {
+              "phase_column": 1,
+              "has_send": true,
+              "has_reply": true,
+              "has_validation": true
+            }
+          },
+          "data_samples": [
+            [
+              "001",
+              "1",
+              "0,SWITCH_set_0_DUT",
+              "",
+              "switch",
+              "switch_C",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "002",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.switch,\"0\"",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "003",
+              "2",
+              "0,2303 Voltage 4V ON",
+              "",
+              "MVolt",
+              "B2302",
+              ":ObtainDevice",
+              "0",
+              "",
+              ""
+            ],
+            [
+              "004",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ":Dev.Send,\"*RST\"",
+              "0",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "field_patterns": {
+        "switch": {
+          "connection_fields": [],
+          "status_fields": []
+        },
+        "test_flow": {
+          "phase_fields": [
+            "Phase"
+          ],
+          "action_fields": [
+            "Send"
+          ],
+          "response_fields": [
+            "Reply"
+          ],
+          "validation_fields": [
+            "Validation"
+          ],
+          "execution_fields": [
+            "ExecMode"
+          ]
+        },
+        "control": {
+          "condition_fields": [],
+          "loop_fields": [],
+          "jump_fields": []
+        },
+        "error_handling": {
+          "error_fields": [],
+          "retry_fields": [],
+          "fallback_fields": []
+        }
+      },
+      "logic_structures": {
+        "phase_based": {
+          "phase_column": 1,
+          "has_send": true,
+          "has_reply": true,
+          "has_validation": true
+        }
+      }
+    }
+  },
+  "common_patterns": {},
+  "best_practices": []
+}
